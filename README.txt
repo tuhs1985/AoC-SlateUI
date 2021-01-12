@@ -1,7 +1,5 @@
 Slate V 1.0 // G13 GUI // Designed By:  Tus
 
-Contact:  Robert.Dufrane@gmail.com
-
 Requirements:
 
 - Supported Resolutions:	1024x768
@@ -59,7 +57,7 @@ Known Issues:
 
 Modifcations:
 
-This mod is no longer upkept.  All modifications are allowed an encouraged.  
+This mod is no longer upkept.  All modifications are allowed and encouraged.  
 		
 
 Disclaimer:
