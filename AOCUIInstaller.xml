@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- This is AOC UI installer xml for the Slate UI-->
+<install name="Slate v1.0">
+	<corefiles>
+		<files path="Customized" topath="Data\Gui\Customized"/>
+	</corefiles>
+	<options index="0">
+		<option name="Slate G13 59 Hotkeys" path="Customized\Layouts\Slate-G13_59"/>
+		<option name="Slate G13 59 Hotkeys-Transparent" path="Customized\Layouts\Slate-G13_59-Transparent"/>
+		<option name="Slate G13 41 Hotkeys" path="Customized\Layouts\Slate-G13_41"/>
+		<option name="Slate G13 41 Hotkeys-Transparent" path="Customized\Layouts\Slate-G13_41-Transparent"/>
+		<option name="Slate G13 22 Hotkeys" path="Customized\Layouts\Slate-G13_22"/>
+		<option name="Slate G13 22 Hotkeys-Transparent" path="Customized\Layouts\Slate-G13_22-Transparent"/>
+	</options>
+</install>
