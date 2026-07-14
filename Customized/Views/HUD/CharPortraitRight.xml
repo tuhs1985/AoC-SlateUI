@@ -25,12 +25,12 @@
 	      
 	<View view_layout="vertical" h_alignment="CENTER" v_alignment="TOP">
 	  <BuffListView name              = "BuffListView"
-                    h_local_alignment = "CENTER"
+                    h_local_alignment = "LEFT"
                     layout_borders    = "Rect(0,0,265,0)"
                     icon_size         = "Point(31,31)"
-                    icon_spacing      = "Point(3,3)"
-                    full_size_limit   = "10"
-                    max_columns       = "9"
+                    icon_spacing      = "Point(1,1)"
+                    full_size_limit   = "22"
+                    max_columns       = "11"
                     filter            = "friendly | hostile"
       />	
 
