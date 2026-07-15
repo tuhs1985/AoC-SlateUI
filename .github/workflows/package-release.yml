@@ -1,0 +1,45 @@
+name: Package release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out release
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.release.tag_name }}
+
+      - name: Create ZIP packages
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p dist
+
+          (
+            cd "AoC Slate UI"
+            zip -r "../dist/AoC Slate UI.zip" .
+          )
+
+          (
+            cd "AoC Strange UI + Slate UI"
+            zip -r "../dist/AoC Strange UI + Slate UI.zip" .
+          )
+
+      - name: Upload ZIP packages to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          gh release upload "${{ github.event.release.tag_name }}" \
+            "dist/AoC Slate UI.zip" \
+            "dist/AoC Strange UI + Slate UI.zip" \
+            --clobber
