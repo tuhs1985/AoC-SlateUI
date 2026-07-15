@@ -30,7 +30,7 @@
                     icon_size         = "Point(31,31)"
                     icon_spacing      = "Point(1,1)"
                     full_size_limit   = "22"
-                    max_columns       = "1"
+                    max_columns       = "11"
                     filter            = "friendly | hostile"
       />	
 

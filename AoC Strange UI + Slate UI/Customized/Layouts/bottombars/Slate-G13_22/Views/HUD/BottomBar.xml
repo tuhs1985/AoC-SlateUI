@@ -189,16 +189,26 @@
                     layout_borders="Rect(0,0,-264,22)"
 					/>
 	
-	<View view_layout="stacked" v_alignment="BOTTOM" h_alignment="CENTER" layout_borders="Rect(0,0,0,199)">
+		<View view_layout="stacked" v_alignment="BOTTOM" h_alignment="CENTER" layout_borders="Rect(0,0,0,199)">
+
 			<View view_layout="stacked" h_alignment="LEFT" layout_borders="Rect(0,0,189,0)">
-			<BitmapView bitmap_gfx="../../Customized/gfx/bottombars/spacer.tga" />
-			<SoulFragmentBar name="MovableSoulFragmentBar" v_local_alignment="BOTTOM" layout_borders="Rect(0,0,0,0)"/>
+				<BitmapView bitmap_gfx="../../Customized/gfx/bottombars/spacer.tga" />
+
+				<SoulFragmentBar
+					v_local_alignment="BOTTOM"
+					layout_borders="Rect(0,0,0,0)" />
 			</View>
-			<View view_layout="stacked" h_alignment="CENTER"layout_borders="Rect(197,0,0,6)">
-			<BitmapView bitmap_gfx="../../Customized/gfx/bottombars/spacer.tga" />
-            <PetCommandBar name="MovablePetCommandBar" v_local_alignment="BOTTOM" h_local_alignment="LEFT" layout_borders="Rect(0,0,0,0)"/>
+
+			<View view_layout="stacked" h_alignment="CENTER" layout_borders="Rect(197,0,0,6)">
+				<BitmapView bitmap_gfx="../../Customized/gfx/bottombars/spacer.tga" />
+
+				<PetCommandBar
+					v_local_alignment="BOTTOM"
+					h_local_alignment="LEFT"
+					layout_borders="Rect(0,0,0,0)" />
 			</View>
-	</View>			
+
+		</View>		
 	</View>
 
 	
