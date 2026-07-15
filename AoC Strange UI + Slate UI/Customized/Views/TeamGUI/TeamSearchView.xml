@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<View col_count_size="68.0" col_lvl_size="90.0" col_name_size="30.0" min_size_extend="Point(571,145)" name="Root" view_flags="WID_IGNORE_WHEN_HIDDEN" view_layout="vertical" xmlns:template="template.dtd">
+    <template:TextView template:source="LargeTextView"/>           
+    <template:MultiColListView template:source="LargeMultiColListView"/>
+    <template:Button template:source="LargeButton"/>
+    <template:RangeSpinnerEditor template:source="LargeRangeSpinnerEditor"/>
+	<View max_size_extend="Point(COORD_MAX,-1)" max_size_limit="Point(COORD_MAX,145)" min_size_extend="Point(-1,145)" view_layout="vertical">
+        <View name="PageHeader"/>
+        <VLayoutSpacer/>
+        <View h_alignment="LEFT" layout_borders="Rect(12,0,8,0)" max_size_extend="Point(COORD_MAX,-1)" view_layout="vertical">
+            <RegionSelectMenu current_text="&lt;localized token=Region /&gt;" layout_borders="Rect(0,0,0,6)" max_size_extend="Point(200,-1)" name="RegionSelectView"/>
+        	<View v_alignment="BOTTOM" view_layout="horizontal">
+        		<View view_layout="vertical">
+        			<TextView value="&lt;localized token=TeamGUI_TeamSearchView_LevelRange /&gt;"/>
+        			<RangeSpinnerEditor cur_max_value="10" cur_min_value="1" layout_borders="Rect(0,6,0,0)" max="80" min="1" name="LevelRange"/>
+        		</View>                                
+        		<View layout_borders="Rect(89,0,0,0)" view_layout="vertical">
+        			<TextView value="&lt;localized token=TeamGUI_TeamSearchView_MemberCount /&gt;"/>
+        			<RangeSpinnerEditor cur_max_value="5" cur_min_value="2" layout_borders="Rect(0,6,0,0)" max="6" min="1" name="MemberCountRange"/>
+        		</View>                     
+                <HLayoutSpacer/>
+                <Button label="&lt;localized token=TeamGUI_TeamSearchView_Search /&gt;" layout_borders="Rect(0,0,0,-2)" name="TeamSearchButton" template:source="StdButtonPaper"/> 
+        	</View>            
+        </View>
+        <VLayoutSpacer/>
+    </View>
+    <View name="SearchResultDock" view_flags="WID_IGNORE_WHEN_HIDDEN" view_layout="stacked">
+        <View h_alignment="RIGHT" layout_borders="Rect(0,0,3,0)" max_size_extend="Point(COORD_MAX,COORD_MAX)" v_alignment="BOTTOM" view_layout="stacked">
+            <BitmapView bitmap_gfx="GUIcomponents/ornaments/ornament_lr.tga"/>
+        </View>
+        <View view_layout="vertical">
+            <View name="SearchResultHeader"/>
+        	<View view_layout="stacked" layout_borders="Rect(8,0,8,0)" min_size_extend="Point(-1,250)" max_size_extend="Point(COORD_MAX,250)">
+                <MultiColListView name="ResultListView" view_flags="MLF_ALLOW_SINGLE_SELECT|MLF_AUTOLAYOUT"/>
+                <TextView name="NoSearchResults" default_color="white" font="NORMAL" value="&lt;localized token=GenericGUI_NoSearchResults /&gt;" />
+            </View>
+        	<View layout_borders="Rect(0,0,10,0)" view_layout="horizontal">
+        		<HLayoutSpacer/>
+                <Button label="&lt;localized token=TeamGUI_TeamSearchView_JoinParty /&gt;" name="JoinTeamButton" template:source="StdButtonPaper"/>    		    		
+        	</View>
+        </View>
+    </View>
+</View><!--Group Search Tab-->

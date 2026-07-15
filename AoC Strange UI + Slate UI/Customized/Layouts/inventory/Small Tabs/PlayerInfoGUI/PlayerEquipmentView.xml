@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 62542 $ (must be within the first 200 characters of the file) -->
+
+<!-- Strange UI 2015 -->
+
+<View view_layout="stacked" layout_borders="Rect(-17,0,0,-10)">
+  
+<View view_layout="vertical" h_alignment="CENTER">
+    
+<View view_layout="horizontal" v_alignment="TOP">
+      
+<TextView font="LARGE" name="CharacterRace" />
+      
+<TextView font="LARGE" value=" " />
+      
+<TextView font="LARGE" name="CharacterClass" />
+   
+</View>
+    
+
+<View view_layout="horizontal" v_alignment="TOP">
+      
+<TextView font="LARGE" value="&lt;Localized token=Level&gt;" />
+      
+<TextView font="LARGE" value=" " />
+      
+<TextView font="LARGE" name="CharacterLevel" />
+    
+</View>
+   
+
+
+<!-- max_size_extend from "panel_size_normal" in MainSplitView.xml -->
+ 
+<View name="char_view_container" view_layout="stacked" max_size_limit="Point(400,505)" min_size_extend="Point(400,505)"/>
+  
+
+</View>
+
+</View>

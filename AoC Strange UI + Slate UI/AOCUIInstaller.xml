@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- AOC install xml for Strange UI 2016 -->
+<install name="Strange UI 2016">
+	<corefiles>
+		<files path="Customized" topath="Data\Gui\Customized"/>
+		<files path="Customized\Mod Foxcat" topath="Data\Gui"/>
+		<files path="Customized\Flash" topath="Data\Gui\Default\Flash"/>
+		<files path="Customized\LoadingScreen\Loadingscreen0" topath="Data\Gui\Aoc\Loading screens\gfx\loadscreens\0"/>
+		<files path="Customized\LoadingScreen\Loadingscreen1" topath="Data\Gui\Aoc\Loading screens\gfx\loadscreens\2003"/>
+		<files path="Customized\LoadingScreen\Loadingscreen1" topath="Data\Gui\Aoc\Loading screens\gfx\loadscreens\2004"/>
+		<files path="Customized\LoadingScreen\Loadingscreen1" topath="Data\Gui\Aoc\Loading screens\gfx\loadscreens\2011"/>
+		<files path="Customized\LoadingScreen\Loadingscreen1" topath="Data\Gui\Aoc\Loading screens\gfx\loadscreens\3003"/>
+		<files path="Customized\LoadingScreen\Loadingscreen1" topath="Data\Gui\Aoc\Loading screens\gfx\loadscreens\3006"/>
+		<files path="Customized\LoadingScreen\Loadingscreen1" topath="Data\Gui\Aoc\Loading screens\gfx\loadscreens\4020"/>
+		<files path="Customized\LoadingScreen\Loadingscreen1" topath="Data\Gui\Aoc\Loading screens\gfx\loadscreens\5301"/>
+		<files path="Customized\LoadingScreen\Loadingscreen1" topath="Data\Gui\Aoc\Loading screens\gfx\loadscreens\5302"/>
+		<files path="Customized\LoadingScreen\Loadingscreen1" topath="Data\Gui\Aoc\Loading screens\gfx\loadscreens\5303"/>
+		<files path="Customized\Scripts" topath="Scripts"/>
+		</corefiles>
+
+
+	<options index="0">
+	<option name="Please Click 'More options' below" path="Customized\" topath="" selected="true"/>
+
+
+
+		<optiongroup name="Bottombars" description="Choose your bottombars. H = horizontal portrait. V = vertical portrait.">
+				<option name="S59" 
+			path="Customized\Layouts\bottombars\Slate-G13_59\" 
+			topath="Customized\" 
+			selected="false"/>
+
+		<option name="S59T" 
+			path="Customized\Layouts\bottombars\Slate-G13_59-Transparent\" 
+			topath="Customized\" 
+			selected="true"/>
+
+		<option name="S41" 
+			path="Customized\Layouts\bottombars\Slate-G13_41\" 
+			topath="Customized\" 
+			selected="false"/>
+
+		<option name="S41T" 
+			path="Customized\Layouts\bottombars\Slate-G13_41-Transparent\" 
+			topath="Customized\" 
+			selected="false"/>
+
+		<option name="S22" 
+			path="Customized\Layouts\bottombars\Slate-G13_22\" 
+			topath="Customized\" 
+			selected="false"/>
+
+		<option name="S22T" 
+			path="Customized\Layouts\bottombars\Slate-G13_22-Transparent\" 
+			topath="Customized\" 
+			selected="false"/>
+		</optiongroup>
+
+
+
+			<optiongroup name="Minimap" description="Choose the display of your minimap and social menu. MINIMALIST AND ULTRAMINIMALIST PLEASE PICK 'CLASSIC STRANGE'or it won't look minimalist.">
+		<option name="Classic Strange" path="" topath="" previewpath="Customized\Layouts\previews\Right.jpg" selected="true"/>
+		<option name="Left" path="Customized\Layouts\Minimap Socialmenu\Left\" topath="Customized\Views\" previewpath="Customized\Layouts\previews\Left.jpg" selected="false"/>
+		<option name="Left and Right" path="Customized\Layouts\Minimap Socialmenu\Left Right\" topath="Customized\Views\" previewpath="Customized\Layouts\previews\Left Right.jpg" selected="false"/>
+		<option name="LnR Classic btn" path="Customized\Layouts\Minimap Socialmenu\Classic\" topath="Customized\Views\" previewpath="Customized\Layouts\previews\Left Right Classic.jpg" selected="false"/>
+		</optiongroup>
+
+
+
+		<optiongroup name="Left portrait" description="Choose your custom left portrait. Won't work for minimalist bottombars.">
+		<option name="Default" path="Customized\Layouts\portraits\Default\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\previews\portrait default.jpg" selected="true"/>
+		<option name="Blood" path="Customized\Layouts\portraits\Blood\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\previews\portrait blood.jpg" selected="false"/>
+		<option name="Electric" path="Customized\Layouts\portraits\Electric\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\previews\portrait electric.jpg" selected="false"/>
+		<option name="Fire" path="Customized\Layouts\portraits\Fire\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\previews\portrait fire.jpg" selected="false"/>
+		<option name="Poison" path="Customized\Layouts\portraits\Poison\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\previews\portrait poison.jpg" selected="false"/>
+		<option name="Assassin" path="Customized\Layouts\portraits\Icons\sin\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\portraits\Icons\sin\p_left.png" selected="false"/>
+		<option name="Barbarian" path="Customized\Layouts\portraits\Icons\barbarian\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\portraits\Icons\barbarian\p_left.png" selected="false"/>
+		<option name="BearShaman" path="Customized\Layouts\portraits\Icons\shaman\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\portraits\Icons\shaman\p_left.png" selected="false"/>
+		<option name="Conqueror" path="Customized\Layouts\portraits\Icons\conq\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\portraits\Icons\conq\p_left.png" selected="false"/>
+		<option name="Demonologue" path="Customized\Layouts\portraits\Icons\demo\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\portraits\Icons\demo\p_left.png" selected="false"/>
+		<option name="DarkTemplar" path="Customized\Layouts\portraits\Icons\dt\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\portraits\Icons\dt\p_left.png" selected="false"/>
+		<option name="Guardian" path="Customized\Layouts\portraits\Icons\guard\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\portraits\Icons\guard\p_left.png" selected="false"/>
+		<option name="HoX" path="Customized\Layouts\portraits\Icons\hox\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\portraits\Icons\hox\p_left.png" selected="false"/>
+		<option name="Necromancer" path="Customized\Layouts\portraits\Icons\necro\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\portraits\Icons\necro\p_left.png" selected="false"/>
+		<option name="PoM" path="Customized\Layouts\portraits\Icons\pom\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\portraits\Icons\pom\p_left.png" selected="false"/>
+		<option name="Ranger" path="Customized\Layouts\portraits\Icons\ranger\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\portraits\Icons\ranger\p_left.png" selected="false"/>
+		<option name="ToS" path="Customized\Layouts\portraits\Icons\tos\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\portraits\Icons\tos\p_left.png" selected="false"/>
+		</optiongroup> 
+
+
+		
+		<optiongroup name="Fonts" description="Choose the size of the text.">
+		<option name="Normal" path="" topath="" previewpath="Customized\Layouts\previews\smallfont.jpg" selected="true"/>
+		<option name="Bold" path="Customized\Layouts\bigger font\" topath="Customized\" previewpath="Customized\Layouts\previews\largefont.jpg" selected="false"/>
+		</optiongroup>
+
+
+
+		<optiongroup name="Text color" description="Choose the color of the text. Chat, item descriptions, combo/spell descriptions...">
+		<option name="Strange UI" path="Customized\Layouts\textcolors\Strange\" topath="Customized\" previewpath="" selected="true"/>
+		<option name="Mirage UI" path="Customized\Layouts\textcolors\Mirage\" topath="Customized\" previewpath="" selected="false"/>
+		<option name="Lurvi's trip" path="Customized\Layouts\textcolors\Lurvi\" topath="Customized\" previewpath="" selected="false"/>
+		<option name="Vanilla AoC" path="" topath="" previewpath="" selected="false"/>
+		</optiongroup>
+
+
+
+<optiongroup name="Mouse pointer" description="Choose your mousepointers">
+		<option name="Classic" path="Customized\Layouts\MousePointers\Classic" topath="Aoc\MousePointers\gfx\MousePointers\" previewpath="Customized\Layouts\previews\classicpointers.jpg" selected="true"/>
+		<option name="Fire UI" path="Customized\Layouts\MousePointers\Fire UI" topath="Aoc\MousePointers\gfx\MousePointers\" previewpath="Customized\Layouts\previews\pointers.jpg" selected="false"/>
+		<option name="Blue" path="Customized\Layouts\MousePointers\Blue" topath="Aoc\MousePointers\gfx\MousePointers\" previewpath="Customized\Layouts\previews\pointersblue.jpg" selected="false"/>
+		<option name="Darkblue" path="Customized\Layouts\MousePointers\Darkblue" topath="Aoc\MousePointers\gfx\MousePointers\" previewpath="Customized\Layouts\previews\pointersdarkblue.jpg" selected="false"/>
+		<option name="Epic" path="Customized\Layouts\MousePointers\Epic" topath="Aoc\MousePointers\gfx\MousePointers\" previewpath="Customized\Layouts\previews\pointersepic.jpg" selected="false"/>
+		<option name="Green" path="Customized\Layouts\MousePointers\Green" topath="Aoc\MousePointers\gfx\MousePointers\" previewpath="Customized\Layouts\previews\pointersgreen.jpg" selected="false"/>
+		</optiongroup>
+
+
+
+
+		<optiongroup name="Combo" description="Choose your Combo Sequence Indicator">
+		<option name="Vertical small" 	path="Customized\Layouts\CSI\vertical small\" 	topath="Customized\Views\ComboSequenceIndicator\" previewpath="Customized\Layouts\previews\vertical small.jpg" selected="true"/>
+		<option name="VS dark" 	path="Customized\Layouts\CSI\vertical small dark\" 	topath="Customized\Views\ComboSequenceIndicator\" previewpath="Customized\Layouts\previews\vertical small dark.jpg" selected="false"/>
+		<option name="Vertical large" 	path="Customized\Layouts\CSI\vertical large\" 	topath="Customized\Views\ComboSequenceIndicator\" previewpath="Customized\Layouts\previews\vertical large.jpg" selected="false"/>
+		<option name="VL dark" 	path="Customized\Layouts\CSI\vertical large dark\" 	topath="Customized\Views\ComboSequenceIndicator\" previewpath="Customized\Layouts\previews\vertical large dark.jpg" selected="false"/>
+		<option name="Horizontal small" path="Customized\Layouts\CSI\horizontal small\" 	topath="Customized\Views\ComboSequenceIndicator\" previewpath="Customized\Layouts\previews\horizontal small.jpg" selected="false"/>
+		<option name="HS dark" path="Customized\Layouts\CSI\horizontal small dark\" 	topath="Customized\Views\ComboSequenceIndicator\" previewpath="Customized\Layouts\previews\horizontal small dark.jpg" selected="false"/>
+		<option name="Horizontal large" path="Customized\Layouts\CSI\horizontal large\" 	topath="Customized\Views\ComboSequenceIndicator\" previewpath="Customized\Layouts\previews\horizontal large.jpg" selected="false"/>
+		<option name="HL dark" path="Customized\Layouts\CSI\horizontal large dark\" 	topath="Customized\Views\ComboSequenceIndicator\" previewpath="Customized\Layouts\previews\horizontal large dark.jpg" selected="false"/>
+		</optiongroup>
+
+
+		
+
+		<optiongroup name="Emote Window" description="Choose your emote window">
+		<option name="Strange 2015" path="Customized\Layouts\emote window\EmoteGUI\" topath="Customized\views\EmoteGUI\" previewpath="Customized\Layouts\previews\Emote Strange.jpg" selected="true"/>
+		<option name="Default" path="" topath="" previewpath="Customized\Layouts\previews\Emote classic.jpg" selected="false"/>		
+		</optiongroup>
+
+
+				
+		<optiongroup name="Power Tab" description="Choose your PowerTab background">
+		<option name="Classic Strange" path="Customized\Layouts\powertab\Classic Strange\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\previews\Classic Strange.jpg" selected="true"/>
+		<option name="Strange 2015" path="Customized\Layouts\powertab\Strange 2015\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\previews\Strange 2015.jpg" selected="false"/>
+		<option name="Shield" path="Customized\Layouts\powertab\Shield\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\previews\Shield.jpg" selected="false"/>
+		<option name="Phroilan Gardner" path="Customized\Layouts\powertab\Phroilan Gardner\" topath="Customized\gfx\frames\" previewpath="Customized\Layouts\previews\Phroilan Gardner.jpg" selected="false"/>
+		<option name="No BG" path="Customized\Layouts\powertab\None\" topath="Customized\gfx\frames\" previewpath="" selected="false"/>
+		</optiongroup> 
+
+
+
+		<optiongroup name="Inventory" description="Choose your inventory display. 'On The Fly' is available for all bottombars but OTF Mini and Ultramini are specific to their bottombars.">
+		<option name="8x8 Size L" path="Customized\Layouts\inventory\8x8\" topath="Customized\Views\MainGUI\" previewpath="Customized\Layouts\previews\8x8.jpg" selected="true"/>
+			<option name="10x10 Size M" path="" topath="" previewpath="Customized\Layouts\previews\10x10.jpg" selected="false"/>
+		<option name="14x15 Size S" path="Customized\Layouts\inventory\14x15\" topath="Customized\Views\MainGUI\" previewpath="Customized\Layouts\previews\14x14.jpg" selected="false"/>
+		<option name="On The Fly" path="Customized\Layouts\inventory\Transparent\" topath="Customized\Views\MainGUI\" previewpath="Customized\Layouts\previews\7x7.jpg" selected="false"/>
+		<option name="OTF Mini" path="Customized\Layouts\inventory\Minimalist\" topath="Customized\Views\MainGUI\" previewpath="Customized\Layouts\previews\7x7 mini.jpg" selected="false"/>
+		<option name="OTF Ultramini" path="Customized\Layouts\inventory\Ultra\" topath="Customized\Views\MainGUI\" previewpath="Customized\Layouts\previews\7x7 ultra.jpg" selected="false"/>
+		<option name="Small Tabs" path="Customized\Layouts\inventory\Small Tabs\" topath="Customized\Views\" previewpath="Customized\Layouts\previews\Small Tabs.jpg" selected="false"/>
+		</optiongroup>
+
+
+
+		<optiongroup name="Bank Space" description="Choose your bank display">
+		<option name="12x8 Size M" path="" topath="" previewpath="" selected="true"/>
+		<option name="25x12 Size S" path="Customized\Layouts\tradepost\" topath="Customized\Views\TradePostGUI\" previewpath="" selected="false"/>
+		<option name="10x5 Classic" path="Customized\Layouts\tradepost\10x5\" topath="Customized\Views\TradePostGUI\" previewpath="" selected="false"/>
+		</optiongroup>
+
+
+		<optiongroup name="Raid bars" description="Choose your raid bars display">
+		<option name="Classic small" path="" topath="" previewpath="Customized\Layouts\previews\raid bars classic.jpg" selected="true"/>
+		<option name="Bigger" path="Customized\Layouts\Raid bars\" topath="Customized\Views\TeamGUI\" previewpath="Customized\Layouts\previews\raid bars new.jpg" selected="false"/>
+		</optiongroup>
+
+
+		<optiongroup name="Raid bars" description="Choose your group buffs display">
+		<option name="Strange" path="" topath="" previewpath="Customized\Layouts\previews\strangegroup.jpg" selected="true"/>
+		<option name="Classic" path="Customized\Layouts\Group bars\" topath="Customized\Views\TeamGUI\" previewpath="Customized\Layouts\previews\normalgroup.jpg" selected="false"/>
+		</optiongroup>
+
+
+		<optiongroup name="Target's target" description="Movable Target's target? or normal floating portraits?">
+		<option name="Normal" path="" topath="" previewpath="Customized\Layouts\previews\normaltargetstarget.jpg" selected="true"/>
+		<option name="Red TT" path="Customized\Layouts\movable targets target\Red\" topath="Customized\" previewpath="Customized\Layouts\previews\targetstarget.jpg" selected="false"/>
+		<option name="Red +buffs" path="Customized\Layouts\movable targets target\Red Buffs\" topath="Customized\" previewpath="Customized\Layouts\previews\targetstargetbuffs.jpg" selected="false"/>
+		<option name="Yellow TT" path="Customized\Layouts\movable targets target\Yellow\" topath="Customized\" previewpath="Customized\Layouts\previews\targetstargety.jpg" selected="false"/>
+		<option name="Yellow +buffs" path="Customized\Layouts\movable targets target\Yellow Buffs\" topath="Customized\" previewpath="Customized\Layouts\previews\targetstargetybuffs.jpg" selected="false"/>
+		<option name="Big lifebar" path="Customized\Layouts\movable targets target\Big lifebar\" topath="Customized\" previewpath="Customized\Layouts\previews\targetstargetbl.jpg" selected="false"/>
+		<option name="Lurvi's trip" path="Customized\Layouts\movable targets target\Lurvi\" topath="Customized\" previewpath="Customized\Layouts\previews\lurvitt.jpg" selected="false"/>		
+		
+		</optiongroup>
+
+
+		<optiongroup name="Menu Buttons" description="Choose the color of your menu buttons. Skip if ultra minimalist.">
+		<option name="Blood" path="Customized\Layouts\menu\blood\" topath="Customized\gfx\menubtn\" previewpath="Customized\Layouts\previews\menublood.jpg" selected="true"/>
+		<option name="Blue" path="Customized\Layouts\menu\blue\" topath="Customized\gfx\menubtn\" previewpath="Customized\Layouts\previews\menublue.jpg" selected="false"/>
+		<option name="Bronze" path="Customized\Layouts\menu\bronze\" topath="Customized\gfx\menubtn\" previewpath="Customized\Layouts\previews\menubronze.jpg" selected="false"/>
+		<option name="Darkblue" path="Customized\Layouts\menu\darkblue\" topath="Customized\gfx\menubtn\" previewpath="Customized\Layouts\previews\menudarkblue.jpg" selected="false"/>
+		<option name="Epic" path="Customized\Layouts\menu\epic\" topath="Customized\gfx\menubtn\" previewpath="Customized\Layouts\previews\menuepic.jpg" selected="false"/>
+		<option name="Gold" path="Customized\Layouts\menu\gold\" topath="Customized\gfx\menubtn\" previewpath="Customized\Layouts\previews\menugold.jpg" selected="false"/>
+		<option name="Green" path="Customized\Layouts\menu\green\" topath="Customized\gfx\menubtn\" previewpath="Customized\Layouts\previews\menugreen.jpg" selected="false"/>
+		<option name="Minimalist" path="Customized\Layouts\menu\minimalist\" topath="Customized\gfx\menubtn\" previewpath="Customized\Layouts\previews\menuminimalist.jpg" selected="false"/>
+		</optiongroup>
+
+
+
+
+		<optiongroup name="Castbar Background" description="Choose your castbar background">
+		<option name="70% Opacity" path="" topath="" previewpath="Customized\Layouts\previews\castbar_bg.jpg" selected="true"/>
+		<option name="95% Opacity" path="Customized\Layouts\castbar\dark bg\" topath="Customized\Views\" previewpath="Customized\Layouts\previews\castbar_bg2.jpg" selected="false"/>
+		</optiongroup>
+
+
+
+
+		<optiongroup name="Castbar" description="Choose the color of your castbars">
+		<option name="Blood" path="Customized\Layouts\castbar\blood\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\castbar\blood\castbar.png" selected="true"/>
+		<option name="Blue" path="Customized\Layouts\castbar\blue\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\castbar\blue\castbar.png" selected="false"/>
+		<option name="Bronze" path="Customized\Layouts\castbar\bronze\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\castbar\bronze\castbar.png" selected="false"/>
+		<option name="Darkblue" path="Customized\Layouts\castbar\darkblue\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\castbar\darkblue\castbar.png" selected="false"/>
+		<option name="Epic" path="Customized\Layouts\castbar\epic\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\castbar\epic\castbar.png" selected="false"/>
+		<option name="Gold" path="Customized\Layouts\castbar\gold\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\castbar\gold\castbar.png" selected="false"/>
+		<option name="Green" path="Customized\Layouts\castbar\green\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\castbar\green\castbar.png" selected="false"/>
+		<option name="Fire" path="Customized\Layouts\castbar\fire\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\previews\castbarfire.jpg" selected="false"/>
+		<option name="BlueFire" path="Customized\Layouts\castbar\bluefire\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\previews\castbarbluefire.jpg" selected="false"/>
+		<option name="Blood" path="Customized\Layouts\castbar\newblood\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\previews\castbarblood.jpg" selected="false"/>
+		<option name="Skull" path="Customized\Layouts\castbar\skull\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\previews\castbarskull.jpg" selected="false"/>
+		<option name="Weed" path="Customized\Layouts\castbar\weed\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\previews\castbarweed.jpg" selected="false"/>
+		<option name="Full Orange" path="Customized\Layouts\castbar\full orange\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\previews\castbarfullorange.jpg" selected="false"/>
+		<option name="Full Green" path="Customized\Layouts\castbar\full green\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\previews\castbarfullgreen.jpg" selected="false"/>
+		<option name="Full Blue" path="Customized\Layouts\castbar\full blue\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\previews\castbarfullblue.jpg" selected="false"/>
+		<option name="Full Purple" path="Customized\Layouts\castbar\full purple\" topath="Customized\gfx\castbar\" previewpath="Customized\Layouts\previews\castbarfullpurple.jpg" selected="false"/>
+		<option name="100% invisible" path="Customized\Layouts\castbar\invisible\" topath="Customized\Views\" previewpath="Customized\Layouts\previews\nocastbar.jpg" selected="false"/>
+		</optiongroup>
+
+
+
+
+		<optiongroup name="Shields" description="Choose the color of the mobs' directional shields">
+		<option name="Normal" path="" topath="" previewpath="Customized\Layouts\previews\WhiteShields.jpg" selected="true"/>
+		<option name="Red" path="Customized\DirectionalShields\Red\" topath="Aoc\DirectionalShields\gfx\textureatlas\" previewpath="Customized\Layouts\previews\RedShields.jpg" selected="false"/>
+		<option name="Green" path="Customized\DirectionalShields\Green\" topath="Aoc\DirectionalShields\gfx\textureatlas\" previewpath="Customized\Layouts\previews\GreenShields.jpg" selected="false"/>
+		<option name="Orange" path="Customized\DirectionalShields\Orange\" topath="Aoc\DirectionalShields\gfx\textureatlas\" previewpath="Customized\Layouts\previews\OrangeShields.jpg" selected="false"/>
+		<option name="Yellow" path="Customized\DirectionalShields\Yellow\" topath="Aoc\DirectionalShields\gfx\textureatlas\" previewpath="Customized\Layouts\previews\YellowShields.jpg" selected="false"/>
+		</optiongroup>
+
+
+
+		<optiongroup name="Login Screen" description="Choose which login background will appear first. 'No BG' has no bg at all. Keaira option is 2 images of her.">
+		<option name="Assassin" path="Customized\Layouts\login\Sin\" topath="Customized\Launcher\" previewpath="Customized\Layouts\previews\Assassin.jpg" selected="true"/>
+		<option name="Barbarian" path="Customized\Layouts\login\Barb\" topath="Customized\Launcher\" previewpath="Customized\Layouts\previews\Barb.jpg" selected="false"/>
+		<option name="BearShaman" path="Customized\Layouts\login\BS\" topath="Customized\Launcher\" previewpath="Customized\Layouts\previews\BS.jpg" selected="false"/>
+		<option name="Conqueror" path="Customized\Layouts\login\Conq\" topath="Customized\Launcher\" previewpath="Customized\Layouts\previews\Conq.jpg" selected="false"/>
+		<option name="Demonologist" path="Customized\Layouts\login\Demo\" topath="Customized\Launcher\" previewpath="Customized\Layouts\previews\Demonologist.jpg" selected="false"/>
+		<option name="DarkTemplar" path="Customized\Layouts\login\DT\" topath="Customized\Launcher\" previewpath="Customized\Layouts\previews\DT.jpg" selected="false"/>
+		<option name="Guardian" path="Customized\Layouts\login\Guard\" topath="Customized\Launcher\" previewpath="Customized\Layouts\previews\Guard.jpg" selected="false"/>
+		<option name="HoX" path="Customized\Layouts\login\HoX\" topath="Customized\Launcher\" 
+previewpath="Customized\Layouts\previews\HoX.jpg" selected="false"/>
+		<option name="Necromancer" path="Customized\Layouts\login\Necro\" topath="Customized\Launcher\" previewpath="Customized\Layouts\previews\Necro.jpg" selected="false"/>
+		<option name="PoM" path="Customized\Layouts\login\PoM\" topath="Customized\Launcher\" 
+previewpath="Customized\Layouts\previews\PoM.jpg" selected="false"/>
+		<option name="Ranger" path="Customized\Layouts\login\Ranger\" topath="Customized\Launcher\" previewpath="Customized\Layouts\previews\Ranger.jpg" selected="false"/>
+		<option name="ToS" path="Customized\Layouts\login\ToS\" topath="Customized\Launcher\" 
+previewpath="Customized\Layouts\previews\ToS.jpg" selected="false"/>
+		<option name="No BG" path="Customized\Layouts\login\None\" topath="Customized\Launcher\" 
+previewpath="Customized\Layouts\previews\nobg.jpg" selected="false"/>
+		<option name="Keaira" path="Customized\Layouts\login\Keaira\" topath="Customized\Launcher\" 
+previewpath="Customized\Layouts\previews\Keaira.jpg" selected="false"/>
+		</optiongroup>	
+
+
+	
+		<optiongroup name="Loading screen" description="Loading: Lore or no lore? that is the question">
+		<option name="Howard" path="" topath="" previewpath="Customized\Layouts\previews\loadinglore.jpg" selected="true"/>
+		<option name="No Howard" path="Customized\Layouts\loading\" topath="Customized\Views\" previewpath="Customized\Layouts\previews\loading.jpg" selected="false"/>
+		</optiongroup>	
+
+
+
+		<optiongroup name="Soulshards" description="Choose your assassin soulshards">
+		<option name="Lights" path="" topath="" previewpath="Customized\Layouts\previews\soulshardlights.jpg" selected="true"/>
+		<option name="Skulls" path="Customized\Layouts\soulshards\skull" topath="Customized\gfx\soulshards\" previewpath="Customized\Layouts\previews\soulshardskull.jpg" selected="false"/>
+		<option name="Purple shards" path="Customized\Layouts\soulshards\shards" topath="Customized\gfx\soulshards\" previewpath="Customized\Layouts\previews\soulshards.jpg" selected="false"/>
+		</optiongroup>
+
+
+
+		<optiongroup name="Waypoints" description="Yorgomir waypoints indicates panoramas, leap of faith, targets of interest, milestones etc">
+		<option name="Yorgomir" path="Customized\Yorgomir WP\" topath="Aoc\Yorgomir WP\" previewpath="Customized\Layouts\previews\yorgomir.jpg" selected="true"/>		
+		<option name="Normal" path="" topath="" previewpath="Customized\Layouts\previews\noyorgomir.jpg" selected="false"/>
+		</optiongroup>
+
+
+
+		<optiongroup name="Combat Rose" description="Choose the color of the combat rose">
+		<option name="Blood" path="Customized\Layouts\rose\blood\" topath="Customized\Views\CombatRose\" selected="true"/>
+		<option name="Blue" path="Customized\Layouts\rose\blue\" topath="Customized\Views\CombatRose\" selected="false"/>
+		<option name="Bronze" path="Customized\Layouts\rose\bronze\" topath="Customized\Views\CombatRose\" selected="false"/>
+		<option name="Darkblue" path="Customized\Layouts\rose\darkblue\" topath="Customized\Views\CombatRose\" selected="false"/>
+		<option name="Epic" path="Customized\Layouts\rose\epic\" topath="Customized\Views\CombatRose\" selected="false"/>
+		<option name="Gold" path="Customized\Layouts\rose\gold\" topath="Customized\Views\CombatRose\" selected="false"/>
+		<option name="Green" path="Customized\Layouts\rose\green\" topath="Customized\Views\CombatRose\" selected="false"/>
+		</optiongroup>
+
+
+
+		<optiongroup name="Installation" description="Quick Tutorial. Just press 'close' if you already know the installation process">
+		<option name="IMPORTANT" path="" topath="" previewpath="Customized\Layouts\previews\tuto.jpg" selected="true"/>
+		<option name="Flash Castbars" path="" topath="" previewpath="Customized\Layouts\previews\castbartuto.jpg" selected="false"/>
+		<option name="Add Minislots" path="" topath="" previewpath="Customized\Layouts\previews\minislots.jpg" selected="false"/>
+		<option name="Enjoy!" path="" topath="" previewpath="Customized\Layouts\previews\Gif.gif" selected="false"/>
+		</optiongroup>	
+
+	</options>
+</install>

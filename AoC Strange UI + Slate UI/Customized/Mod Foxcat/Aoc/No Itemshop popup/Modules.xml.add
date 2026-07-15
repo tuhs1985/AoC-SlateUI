@@ -1,0 +1,6 @@
+	<Module name = "NoLoginShop"
+		movie				= "NoLoginShop.swf"
+		flags				= "GMF_PRELOAD"
+		depth_layer	= "Back"
+		sub_depth	= "0"
+	/>

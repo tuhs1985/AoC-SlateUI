@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<View accept_timer_ticks="5" bck_paths_path="Views/InventoryBitmapPaths48.xml" cell_count="Point(2,2)" grid_borders="Rect(0,0,0,0)" icon_borders="Rect(4,4,4,4)" icon_size="Point(59.0,60.0)" layout_borders="Rect(0,0,0,0)" max_icon_zoom="1.75" max_number_of_lines="4" name="Root" preferred_icon_spacing="Point(3,3)" v_alignment="TOP" view_layout="stacked" xmlns:template="template.dtd">
+    
+<BorderView gfx_tl         = "../../Customized/gfx/frames/right_tab_topleft.png"
+				gfx_tr         = "../../Customized/gfx/frames/left_tab_topright.png"
+				gfx_bl         = "../../Customized/gfx/frames/right_tab_bottomleft.png"
+				gfx_br         = "../../Customized/gfx/frames/left_tab_bottomright.png"
+				gfx_left       = "../../Customized/gfx/frames/right_tab_left.png"
+				gfx_top        = "../../Customized/gfx/frames/left_tab_top.png"
+				gfx_right      = "../../Customized/gfx/frames/left_tab_right.png"
+				gfx_bottom     = "../../Customized/gfx/frames/left_tab_bottom.png"
+				gfx_background = "../../Customized/gfx/frames/bg.png"
+				bg_bitmap_borders     = "Rect(20,20,20,20)"
+layout_borders="Rect(4,20,4,70)" layout_inner_borders="Rect(-8,0,-10,0)" max_size_extend="Point(COORD_MAX,COORD_MAX)" name="PlayerTrade" view_flags="BVF_TILE_ALL_BORDERS|BVF_TILE_BACKGROUND" view_layout="vertical">			
+		
+
+<View name="WindowTitle" view_layout="horizontal">
+			
+<HLayoutSpacer/>
+			
+<TextView default_color="active" font="HYBORIANLARGE" layout_borders="Rect(50,12,50,0)" name="TradePtPTitle" value="&lt;localized token=TradeView_Trade /&gt;"/>
+			<HLayoutSpacer/>
+		</View>
+		<View layout_borders="Rect(24,15,24,30)" name="MainView" view_layout="vertical">
+			<View layout_borders="Rect(22,0,26,-5)" name="TwinContView" view_layout="horizontal">
+				<View name="MyOfferStack" view_layout="stacked">
+	
+
+<BorderView gfx_background="TradeItemGUI/green_overlay_background.tga" 
+gfx_bl="TradeItemGUI/green_overlay_bottomleft.tga" 
+gfx_bottom="TradeItemGUI/green_overlay_bottom.tga" 
+gfx_br="TradeItemGUI/green_overlay_bottomright.tga" 
+gfx_left="TradeItemGUI/green_overlay_left.tga" 
+gfx_right="TradeItemGUI/green_overlay_right.tga" 
+gfx_tl="TradeItemGUI/green_overlay_topleft.tga" 
+gfx_top="TradeItemGUI/green_overlay_top.tga" 
+gfx_tr="TradeItemGUI/green_overlay_topright.tga" max_size_extend="Point(COORD_MAX,COORD_MAX)" name="OurLockedBorders" view_layout="stacked"/>
+					
+
+<View layout_borders="Rect(6,5,6,7)" name="MyOffer" view_layout="vertical">
+						
+<View layout_borders="Rect(0,0,0,0)" view_layout="horizontal">
+				
+<HLayoutSpacer/>
+							
+<TextView default_color="gray" font="LARGE" name="MyOfferText" value="&lt;localized token=TradeView_MyOffer /&gt;"/>
+							
+<HLayoutSpacer/>
+	
+</View>
+						
+
+<BorderView layout_borders="Rect(0,5,0,5)" name="OurBorder" view_layout="stacked">
+							
+<View name="OurInventoryDock" view_layout="stacked"/>
+						
+</BorderView>
+
+						<MoneyView layout_borders="Rect(0,0,0,5)" layout_mode="vertical" name="OurMoneyView" value="0"/>
+					
+</View>
+		</View>
+				
+
+<BitmapView bitmap_gfx="TradeItemGUI/atlantian_strip.tga" max_size_extend="Point(-1,COORD_MAX)" min_size_limit="Point(COORD_MAX,-1)" view_flags="BMF_TILE_VERTICALLY"/>
+				
+<View name="OthersOfferStack" view_layout="stacked">
+
+
+<BorderView 
+gfx_background="TradeItemGUI/green_overlay_background.tga" 
+gfx_bl="TradeItemGUI/green_overlay_bottomleft.tga" 
+gfx_bottom="TradeItemGUI/green_overlay_bottom.tga" 
+gfx_br="TradeItemGUI/green_overlay_bottomright.tga" 
+gfx_left="TradeItemGUI/green_overlay_left.tga" 
+gfx_right="TradeItemGUI/green_overlay_right.tga" 
+gfx_tl="TradeItemGUI/green_overlay_topleft.tga" 
+gfx_top="TradeItemGUI/green_overlay_top.tga" 
+gfx_tr="TradeItemGUI/green_overlay_topright.tga" 
+max_size_extend="Point(COORD_MAX,COORD_MAX)" name="OthersLockedBorders" view_layout="stacked"/>
+					
+<View layout_borders="Rect(6,5,8,7)" name="OthersOffer" view_layout="vertical">
+						
+
+<View layout_borders="Rect(0,0,0,0)" view_layout="horizontal">
+
+
+<HLayoutSpacer/>
+						
+<TextView default_color="gray" font="LARGE" name="OthersOfferText" value="&lt;localized token=TradeView_OthersOffer /&gt;"/>
+							
+<HLayoutSpacer/>
+			</View>
+						
+
+<BorderView layout_borders="Rect(0,5,0,5)" view_layout="stacked">
+		<View name="PartnerInventoryDock" view_layout="stacked"/>
+
+</BorderView>
+						
+
+<MoneyView layout_borders="Rect(0,0,0,5)" layout_mode="vertical" name="PartnerMoneyView" value="0"/>
+					
+</View>
+				
+</View>
+			
+</View>
+			
+
+<!-- This divider is not being cliped by the parent because the main border view has 
+negative inside layouts-->
+			
+
+<BorderView 
+gfx_background="" 
+gfx_bl="" 
+gfx_bottom="" 
+gfx_br="" 
+gfx_left="" 
+gfx_tl="" 
+gfx_top="" 
+gfx_tr="" max_size_extend="Point(COORD_MAX,-1)" min_size_limit="Point(-1,COORD_MAX)" name="WoodenDivider" view_flags="BVF_TILE_BACKGROUND" view_layout="horizontal"/>
+			
+
+<!--TextView value="Waiting" layout_borders="Rect(0,5,0,0)" name="PartnerAcceptedIndicator"/-->
+			
+<View layout_borders="Rect(-5,0,0,5)" view_layout="horizontal">
+				
+<HLayoutSpacer/>
+				
+
+<Button label="&lt;localized token=Accept /&gt;" name="AcceptButton" template:source="StdButtonPaper"/>				
+			<Button label="&lt;localized token=Reject /&gt;" name="DeclineButton" template:source="StdButtonPaper"/>
+				<HLayoutSpacer/>
+			
+</View>
+		
+	
+<!--View name="PartnerStatusDock" layout_borders="Rect(0,5,5,5)"/-->
+		
+</View>
+	</BorderView>	
+	
+<View layout_borders="Rect(3,10,3,0)" name="portraits" view_layout="horizontal">
+		
+
+<template:CharRenderView bacground_gfx="" layout_borders="Rect(0,0,4,10)" size="Point(47,47)"/>
+		
+<View layout_borders="Rect(0,0,0,0)" view_layout="stacked">
+
+<BitmapView bitmap_gfx=""/>
+			
+<BitmapView bitmap_gfx="" name="others_portrait"/>
+		
+</View>
+		
+<HLayoutSpacer/>
+		
+<View layout_borders="Rect(0,0,0,0)" view_layout="stacked">
+	
+<BitmapView bitmap_gfx=""/>
+			
+<BitmapView bitmap_gfx="" name="my_portrait"/>
+		
+</View>
+	
+</View>
+
+</View>

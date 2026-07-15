@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Root>
+    <Waypoint type="destination" instance="101" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Treasure Chest&lt;/font&gt;" tooltip_text="#8 (ground floor)" position="Point(156.994293,106.335358)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="102" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Treasure Chest&lt;/font&gt;" tooltip_text="#9 (2nd floor)" position="Point(183.182220,175.696228)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="103" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Stolen Vigdis Supplies&lt;/font&gt;" tooltip_text="#20 (4th floor)" position="Point(161.609360,211.566040)" normal_bitmap="WpIcons/treasure_chest.tga" />
+</Root>

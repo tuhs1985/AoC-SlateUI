@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<View name="Root" view_flags="WID_IGNORE_WHEN_HIDDEN" view_layout="stacked" xmlns:template="template.dtd">
+  <template:TextView template:source="LargeTextView"/>
+  <template:TextInputView template:source="LargeTextInputView"/>
+  <template:Button template:source="LargeButton"/>
+
+  <View view_layout="stacked" h_alignment="EXTEND" v_alignment="EXTEND" min_size_limit="Point(-1,-1)" max_size_extend="Point(COORD_MAX,COORD_MAX)" view_alpha="0.9">
+    <BitmapView name="WinnersBitmap" bitmap_gfx="TeamGui/massivepvp_illustration_winners.tga"/>
+  </View>
+  <View view_layout="stacked" h_alignment="RIGHT_EXTEND" v_alignment="EXTEND" min_size_limit="Point(-1,-1)" max_size_extend="Point(COORD_MAX,COORD_MAX)" view_alpha="0.9" layout_borders="Rect(0,0,0,0)">
+    <BitmapView name="LosersBitmap" bitmap_gfx="TeamGui/massivepvp_illustration_losers.tga"/>
+  </View>
+
+  <View min_size_extend="Point(571,145)" view_flags="WID_IGNORE_WHEN_HIDDEN" view_layout="vertical">
+    <View name="Summary" view_layout="vertical" min_size_extend="Point(-1,145)" max_size_extend="Point(COORD_MAX,-1)" max_size_limit="Point(COORD_MAX,145)">
+      <View name="MassivePvPHeader"/>
+      <VLayoutSpacer/>
+      <DropdownMenu name="PlayFieldSelector" view_flags="DMF_DONT_AUTOSELECT_ON_INSERT"/>
+      <BitmapView bitmap_gfx      = "sidebars/horizontal_dividerline.tga"
+                  max_size_extend = "Point(COORD_MAX,-1)"
+                  layout_borders  = "Rect(3,0,3,3)"
+            />
+      <TextView name="TitleView" default_color="active" font="HYBORIANLARGE" feature_flags="TVF_RENDER_HALO|TVF_RENDER_SHADOW|TVF_ENABLE_SHADOW" />
+      <TextView name="CityName" font="HYBORIANLARGE" feature_flags="TVF_RENDER_HALO|TVF_RENDER_SHADOW|TVF_ENABLE_SHADOW"/>
+      <TextView name="DefendingGuild" feature_flags="TVF_RENDER_HALO|TVF_RENDER_SHADOW|TVF_ENABLE_SHADOW"/>
+      <TextView name="TimerView" feature_flags="TVF_RENDER_HALO|TVF_RENDER_SHADOW|TVF_ENABLE_SHADOW"/>
+      <VLayoutSpacer/>
+    </View>
+    <ViewSelector max_size_extend="Point(COORD_MAX,COORD_MAX)" name="ViewSelector" min_size_extend="Point(-1,400)">
+      <View name="TimeTableView" view_layout="vertical">
+        <View name="TimeTableDock" view_layout="stacked"/>
+        <Button name="ShowPreviousScores" label="&lt;localized token=PvPMassiveResults_ShowScores /&gt;" view_flags="WID_IGNORE_WHEN_HIDDEN" width_group="Buttons" width_group_owner="Root" template:source="StdButtonPaper"/>
+      </View>
+      <View name="GuildScoresView" view_layout="vertical">
+        <View name="GuildScoresHeader"/>
+        <View name="GuildScoresDock"/>
+        <View view_layout="horizontal">
+          <Button name="GuildScoresButton" label="&lt;localized token=PvPMassiveResults_YouWin_GuildScoresButton /&gt;" width_group="Buttons" width_group_owner="Root" template:source="StdButtonPaper"/>
+          <Button name="GuildScoresShowTimeTable" label="&lt;localized token=PvPMassiveResults_ShowTimeTable /&gt;" view_flags="WID_IGNORE_WHEN_HIDDEN" widt_group="Buttons" width_group_owner="Root" template:source="StdButtonPaper"/>
+        </View>
+      </View>
+      <View name="PlayerScoresView" view_layout="vertical">
+        <View name="PlayerScoresHeader"/>
+        <View name="PlayerScoresDock"/>
+        <View view_layout="horizontal">
+          <Button name="PlayerScoresButton" label="&lt;localized token=PvPMassiveResults_YouWin_PlayerScoresButton /&gt;" width_group="Buttons" width_group_owner="Root" template:source="StdButtonPaper"/>
+          <Button name="PlayerScoresShowTimeTable" label="&lt;localized token=PvPMassiveResults_ShowTimeTable /&gt;" view_flags="WID_IGNORE_WHEN_HIDDEN" width_group="Buttons" width_group_owner="Root" template:source="StdButtonPaper"/>
+        </View>
+      </View>
+    </ViewSelector>
+  </View>
+</View>

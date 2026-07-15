@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 554999 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View view_layout="stacked" layout_borders="Rect(0,0,0,-1)">
+	<BitmapView bitmap_gfx="../../Customized/gfx/soulshards/soulshardsnew.png"/>
+	<View view_layout="horizontal">
+		<BitmapView name="Shard0" bitmap_gfx="../../Customized/gfx/soulshards/soulshard_on2new.png"/>
+		<BitmapView name="Shard1" bitmap_gfx="../../Customized/gfx/soulshards/soulshard_on2new.png"/>
+		<BitmapView name="Shard2" bitmap_gfx="../../Customized/gfx/soulshards/soulshard_on2new.png"/>
+		<BitmapView name="Shard3" bitmap_gfx="../../Customized/gfx/soulshards/soulshard_on2new.png"/>
+		<BitmapView name="Shard4" bitmap_gfx="../../Customized/gfx/soulshards/soulshard_on2new.png"/>
+	</View>
+</View>

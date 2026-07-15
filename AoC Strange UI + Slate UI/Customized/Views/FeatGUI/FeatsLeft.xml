@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 269390 $ (must be within the first 200 characters of the file) -->
+<View xmlns:template="template.dtd" view_layout="vertical" v_alignment="TOP">
+    <TabbedFeatGridView name="FeatGridView" show_first_half="true"/>
+</View>

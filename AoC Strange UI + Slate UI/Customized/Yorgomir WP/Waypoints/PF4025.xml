@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Root>
+	<Waypoint type="region" instance="4020" name=" " position="Point(54,324)"
+		  normal_bitmap="WorldmapGUI/minimap_marker_yellow.tga"
+	      tooltip_title="&lt;localized token=MapGUI_WorldMap_CityofTortage&gt;"
+		  tooltip_text="&lt;localized token=MapGUI_WorldMapRegionPositions_CityofTortage /&gt;"
+	      tooltip_image="WorldMap/regionimage_4020.tga"
+		  min_level="5"
+	      max_level="19"
+		  >
+		  <Attribute label="&lt;localized id=1 category=GameActionData /&gt;"  value="&lt;localized token=WPTooltip_Hub&gt;"/>
+		  <Attribute label="&lt;localized token=Level&gt;" value=":LEVEL_RANGE"/>	
+	</Waypoint>
+    <Waypoint type="destination" instance="101" name="&lt;font color=&apos;#FFFF00&apos;&gt;#8&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#FFFF00&apos;&gt;Tham&apos;Kur&lt;/font&gt;" tooltip_text="Target of Interest #8" position="Point(170,170)" normal_bitmap="WpIcons/target_of_interest.tga" />
+    <Waypoint type="destination" instance="102" name="&lt;font color=&apos;#FFFF00&apos;&gt;#10&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#FFFF00&apos;&gt;Tapah&lt;/font&gt;" tooltip_text="Target of Interest #10" position="Point(413,182)" normal_bitmap="WpIcons/target_of_interest.tga" />
+    <Waypoint type="destination" instance="103" name="&lt;font color=&apos;#FFFF00&apos;&gt;#11&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#FFFF00&apos;&gt;Bat Demon Kothar-Wa&lt;/font&gt;" tooltip_text="Target of Interest #11" position="Point(468,250)" normal_bitmap="WpIcons/target_of_interest.tga" />
+    <Waypoint type="destination" instance="104" name="&lt;font color=&apos;#FFFF00&apos;&gt;#12&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#FFFF00&apos;&gt;Al&apos;Gol the Corpsefeaster&lt;/font&gt;" tooltip_text="Target of Interest #12" position="Point(375,430)" normal_bitmap="WpIcons/target_of_interest.tga" />
+    <Waypoint type="destination" instance="105" name="&lt;font color=&apos;#00FF00&apos;&gt;The Inlet&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#00FF00&apos;&gt;The Inlet&lt;/font&gt;" tooltip_text="Panorama #11" position="Point(152.402298,244.881897)" normal_bitmap="WpIcons/Panorama.tga" />
+    <Waypoint type="destination" instance="106" name="&lt;font color=&apos;#00FF00&apos;&gt;Trail of Fire&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#00FF00&apos;&gt;Trail of Fire&lt;/font&gt;" tooltip_text="Panorama #12" position="Point(322.878967,54.026367)" normal_bitmap="WpIcons/Panorama.tga" />
+    <Waypoint type="destination" instance="107" name="&lt;font color=&apos;#00FF00&apos;&gt;Icarus Tower&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#00FF00&apos;&gt;Icarus Tower&lt;/font&gt;" tooltip_text="Panorama #13" position="Point(478.483643,246.991180)" normal_bitmap="WpIcons/Panorama.tga" />
+    <Waypoint type="destination" instance="108" name="&lt;font color=&apos;#00FF00&apos;&gt;Pictish Overwatch&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#00FF00&apos;&gt;Pictish Overwatch&lt;/font&gt;" tooltip_text="Panorama #14" position="Point(118.679367,360.088409)" normal_bitmap="WpIcons/Panorama.tga" />
+    <Waypoint type="destination" instance="109" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Treasure Chest&lt;/font&gt;" tooltip_text="#1" position="Point(280.301514,320.459290)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="110" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Treasure Chest&lt;/font&gt;" tooltip_text="#2" position="Point(320.675995,200.216217)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="111" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Treasure Chest&lt;/font&gt;" tooltip_text="#3" position="Point(209.304291,99.522034)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="112" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Treasure Chest&lt;/font&gt;" tooltip_text="#4" position="Point(444.717133,423.206635)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="113" name="Acheronian Circle" tooltip_title="&lt;font color=&apos;#FFFFFF&apos;&gt;Acheronian Circle&lt;/font&gt;" tooltip_text="Leap of Faith #1" position="Point(463,228)" normal_bitmap="WpIcons/leap_of_faith.tga" />
+</Root>

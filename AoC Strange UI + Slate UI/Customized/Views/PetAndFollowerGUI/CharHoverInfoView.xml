@@ -1,0 +1,120 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- $Change: 556257 $ (must be within the first 200 characters of the file) -->
+<View view_layout="vertical">
+    
+<TextView name="NameView" layout_borders="Rect(0,20,0,6)" default_color="white" font="LARGE"/>
+
+    
+
+<View name="StatContainerView" view_flags="WID_IGNORE_WHEN_HIDDEN" view_layout="grid" layout_borders="Rect(10,0,10,10)">
+	
+<LayoutRow>
+	    	    
+<TextView name="RaceView" h_local_alignment="LEFT"/>
+	
+</LayoutRow>
+
+	
+<LayoutRow>
+	    
+<TextView name="ClassView" h_local_alignment="LEFT"/>
+	
+<TextView name="LevelView" h_local_alignment="RIGHT" layout_borders="Rect(5,0,0,0)"/>
+	
+</LayoutRow>
+	
+
+<LayoutRow>
+	   
+<TextView name="LocationView" h_local_alignment="LEFT"/>
+	
+</LayoutRow>
+ 
+</View>
+
+
+    
+
+<PetPointView name="CostView"
+		  
+	view_flags="WID_IGNORE_WHEN_HIDDEN"
+		  	
+	layout_borders="Rect(0,0,0,6)"
+		  
+	petpoint_gfx_empty="PortraitGUI/petpoint_empty.tga"
+		  	
+	petpoint_gfx_full="PortraitGUI/petpoint_full.tga"
+		  	max_pet_points = "8" />
+
+    
+
+<CharStatBar name="HealthBar"
+		 	
+	stat_type="health"
+		 
+	orientation="right"
+		 
+	slide_down_time="0.1"
+		 
+	slide_up_time="1.1"
+		 	
+	flash_on_reduce="false"
+		 
+	bg_gfx="../../Customized/gfx/PortraitGUI/floatingportrait/bg.png"
+		 
+	fg_gfx="../../Customized/gfx/PortraitGUI/floatingportrait/health.png"
+		 	
+	flash_gfx="" />
+    
+
+<CharStatBar name="ManaBar"
+		 
+	view_flags="WID_IGNORE_WHEN_HIDDEN"
+		
+	stat_type="mana"
+		 
+	orientation="right"
+		 
+	autohide="true"
+		 
+	slide_down_time="0.5"
+			
+	slide_up_time="1.1"
+		 
+	bg_gfx="../../Customized/gfx/PortraitGUI/floatingportrait/bg.png"
+		 	
+	fg_gfx="../../Customized/gfx/PortraitGUI/floatingportrait/mana.png"
+		 	flash_gfx="" 
+/>
+    
+
+<CharStatBar name="StaminaBar"
+		 	
+	view_flags="WID_IGNORE_WHEN_HIDDEN"
+		 
+	stat_type="stamina"
+		 
+	orientation="right"
+		 
+	autohide="true"
+		
+	slide_down_time="1.1"
+		 
+	slide_up_time="1.1"
+		 
+	bg_gfx="../../Customized/gfx/PortraitGUI/floatingportrait/bg.png"
+		 	
+	fg_gfx="../../Customized/gfx/PortraitGUI/floatingportrait/stamina.png"
+		 	flash_gfx="" 
+/>
+    
+
+<BuffListView name="BuffListView" 	layout_borders="Rect(5,5,5,0)" 
+	max_columns="5" 
+	icon_size="Point(23,23)" 
+	icon_spacing="Point(3,3)"
+	
+/>
+<TextView name="RaidMoveView" layout_borders="Rect(0,0,0,6)" default_color="active" font="SMALL"/>
+
+</View>

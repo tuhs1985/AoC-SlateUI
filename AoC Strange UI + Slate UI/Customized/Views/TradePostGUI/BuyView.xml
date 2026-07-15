@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 3 / Bombata / Fds Ishtar -->
+<View criteria_not_met_color="negative" 
+      listview_children_indention="30.0f" 
+      listview_color_selected="active" 
+      listview_color_unselected="standard" 
+      listview_font="LARGE_SC" 
+      listview_font2="LARGE" 
+      name="Root" 
+      view_layout="stacked">
+    <template:TextView template:source="LargeTextView"/>    
+    <BitmapView view_layout="vertical" bitmap_gfx="../../Customized/gfx/Launcher/empty.png" view_flags="BMF_TILE|BMF_IGNORE_BITMAP_SIZE" max_size_extend="Point(COORD_MAX,COORD_MAX)">
+    	<View layout_borders="Rect(0,0,0,0)" view_layout="vertical">            
+            <BitmapView view_layout="horizontal" bitmap_gfx="GUIcomponents/Window/titlebar.tga" view_flags="BMF_TILE|BMF_IGNORE_BITMAP_SIZE" v_alignment="CENTER"
+                        min_size_extend = "Point(COORD_MAX,-1)" max_size_limit = "Point(-1,COORD_MAX)" layout_inner_borders="Rect(7,3,7,6)">            
+                <TextView name="Title" value="&lt;localized token=GenericGUI_Search category=GenericGUI /&gt;" default_color="active" font="Large" feature_flags="TVF_ENABLE_SHADOW|TVF_RENDER_SHADOW|TVF_RENDER_HALO"/>
+                <HLayoutSpacer/>
+                <CheckBox label="&lt;localized token=TradePostGUI_BuyView_AllowedByFeats category=Tradepost /&gt;" name="AllowedByFeats" layout_borders="Rect(0,-1,5,1)" label_font="Large"/>
+				<CheckBox label="&lt;localized token=TradePostGUI_BuyView_UseExactName category=Tradepost /&gt;" name="UseExactName" layout_borders="Rect(0,-1,5,1)" label_font="Large" value="false"/>
+                <CheckBox label="&lt;localized token=TradePostGUI_BuyView_AdvancedSearch category=Tradepost /&gt;" name="AdvancedSearch" layout_borders="Rect(0,-1,0,1)" label_font="Large" value="false"/>
+            </BitmapView>
+            <View view_layout="vertical" layout_borders="Rect(5,5,5,5)" >
+        		<View layout_borders="Rect(0,0,0,0)" view_layout="horizontal" v_alignment="BOTTOM">
+                    <View layout_borders="Rect(0,0,0,0)" view_layout="vertical" h_alignment="LEFT">
+                        <TextView value="&lt;localized token=TradePostGUI_BuyView_ItemCategorySearch category=Tradepost /&gt;" layout_borders="Rect(4,0,0,0)"/>
+                        <DropdownMenu layout_borders="Rect(0,0,0,0)" name="SearchItemCategory" max_size_limit="Point(125,COORD_MAX)"/>	                    
+                    </View>
+                    <View layout_borders="Rect(0,0,0,0)" view_layout="vertical" h_alignment="LEFT">
+                        <TextView value="&lt;localized token=TradePostGUI_BuyView_LocationSlot category=Tradepost /&gt;" layout_borders="Rect(4,0,0,0)"/>
+                        <DropdownMenu layout_borders="Rect(0,0,0,0)" name="SlotLocation" max_size_limit="Point(125,COORD_MAX)"/>
+                    </View>
+                    <View layout_borders="Rect(0,0,0,0)" view_layout="vertical" h_alignment="LEFT">
+                        <TextView name="ItemRarityLabel" value="&lt;localized category=SkillShortName id=499 /&gt;" layout_borders="Rect(4,0,0,0)"/>
+                        <DropdownMenu layout_borders="Rect(0,0,0,0)" name="ItemRarity" max_size_limit="Point(125,COORD_MAX)"/>
+                    </View>
+                    <View layout_borders="Rect(0,0,0,0)" view_layout="vertical" h_alignment="LEFT" max_size_extend="Point(COORD_MAX,-1)">
+                        <TextView value="&lt;localized token=TradePostGUI_BuyView_NameSearchIncludeexclude category=Tradepost /&gt;" layout_borders="Rect(4,0,0,0)"/>
+                        <TextInputView layout_borders="Rect(0,0,0,0)" min_size_extend="Point(100,-1)" max_size_extend="Point(COORD_MAX,-1)" name="SearchInclude" text_font="LARGE"/>
+                    </View>
+                    <View name="NormalSearchButtonDock" view_layout="stacked" v_alignment="BOTTOM">
+                        <Button label="&lt;localized token=TradePostGUI_BuyView_Search category=Tradepost /&gt;" name="SearchButton" layout_borders="Rect(0,0,0,-2)" template:source="StdButtonPaper"/>
+                    </View>
+
+        		</View>
+                <View layout_borders="Rect(0,3,0,0)" name="AdvancedDock" view_layout="horizontal" view_flags="WID_IGNORE_WHEN_HIDDEN">
+                    <View layout_borders="Rect(0,0,0,0)" view_layout="vertical" h_alignment="LEFT">
+                        <TextView value="&lt;localized token=TradePostGUI_BuyView_PriceMinmax category=Tradepost /&gt;" layout_borders="Rect(4,0,0,0)"/>
+                        <View layout_borders="Rect(0,0,0,0)" view_layout="horizontal">
+                            <MoneyInputView feature_flags="TVF_NUMERIC" min_size_extend="Point(60,-1)" max_size_extend="Point(COORD_MAX,-1)" name="SearchMinPrice" view_flags="MIVF_NOT_DISPLAY_ERROR|WID_HANDLE_MOUSE"/>
+                            <TextView value="-" layout_borders="Rect(-2,0,0,0)"/>
+                            <MoneyInputView feature_flags="TVF_NUMERIC" min_size_extend="Point(60,-1)" layout_borders="Rect(0,0,0,0)" max_size_extend="Point(COORD_MAX,-1)" name="SearchMaxPrice" view_flags="WID_HANDLE_MOUSE|MIVF_NOT_DISPLAY_ERROR"/>
+                        </View>
+                    </View>
+                    <View layout_borders="Rect(0,0,0,0)" view_layout="vertical" h_alignment="LEFT">
+                        <TextView value="&lt;localized token=TradePostGUI_BuyView_LevelRange category=Tradepost /&gt;" layout_borders="Rect(4,0,0,0)"/>
+                        <RangeSpinnerEditor cur_min_value="1" cur_max_value="80" min="1" max="80" label_borders="Rect(0,0,0,0)" name="LevelRange" custom_label="-" text_font="LARGE"/>
+                    </View>
+                    <View layout_borders="Rect(0,0,0,0)" view_layout="vertical" h_alignment="LEFT">
+                        <TextView value="&lt;localized token=TradePostGUI_BuyView_StackSizeMinmax category=Tradepost /&gt;" layout_borders="Rect(4,0,0,0)"/>
+                        <View layout_borders="Rect(0,0,0,0)" view_layout="horizontal">
+                            <TextInputView feature_flags="TVF_NUMERIC" min_size_extend="Point(60,-1)" max_size_extend="Point(COORD_MAX,-1)" name="SearchMinStackSize" view_flags="MIVF_NOT_DISPLAY_ERROR|WID_HANDLE_MOUSE"/>
+                            <TextView value="-" layout_borders="Rect(-2,0,0,0)"/>
+                            <TextInputView feature_flags="TVF_NUMERIC" min_size_extend="Point(60,-1)" layout_borders="Rect(0,0,0,0)" max_size_extend="Point(COORD_MAX,-1)" name="SearchMaxStackSize" view_flags="WID_HANDLE_MOUSE|MIVF_NOT_DISPLAY_ERROR"/>
+                        </View>
+                    </View>
+                    <View layout_borders="Rect(0,0,0,0)" view_layout="vertical" h_alignment="LEFT">
+                        <TextView value="&lt;localized token=TradePostGUI_BuyView_SellerName category=Tradepost /&gt;" layout_borders="Rect(4,0,0,0)"/>
+                        <TextInputView name="SellerName" layout_borders="Rect(0,0,0,0)" min_size_extend="Point(150,-1)" text_font="LARGE"/>
+                    </View>
+                    <HLayoutSpacer/>
+                    <View name="AdvcSearchButtonDock" view_layout="stacked"/>
+                </View>
+            </View>            
+    		<View name="ResultsViewHeader"/>
+            <View name="ResultsView" view_layout="stacked" layout_borders="Rect(10,10,10,10)" max_size_extend="Point(COORD_MAX,COORD_MAX)">
+    			<MultiColListView name="ResultListView" view_flags="MLF_ALLOW_SINGLE_SELECT"
+                                  label_font_sorted="Large" label_font_unsorted="Large" font="Large"/>
+                <TextView name="NoSearchResults" default_color="white" font="NORMAL" value="&lt;localized token=GenericGUI_NoSearchResults /&gt;" />
+                <TextView name="Searching" default_color="white" font="NORMAL" value="&lt;localized token=GenericGUI_Searching /&gt;" />
+    		</View>
+    	</View>
+        <BitmapView name="BottomView" v_alignment="CENTER" layout_inner_borders="Rect(15,5,15,0)" layout_borders="Rect(0,0,0,0)" view_layout="horizontal" 
+                    bitmap_gfx="TradeItemGUI/tradepost_bottom.tga" view_flags="BMF_TILE|BMF_IGNORE_BITMAP_SIZE">
+            <MoneyView name="BankMoneyView" value="0"/>
+            <HLayoutSpacer/>
+    		<Button label="&lt;localized token=TradePostGUI_BuyView_Buy category=Tradepost /&gt;" name="Buy" template:source="StdButtonPaper"/>
+    		<Button label="&lt;localized token=Close /&gt;" name="Close" template:source="StdButtonPaper"/>
+        </BitmapView>  
+    </BitmapView>
+</View>

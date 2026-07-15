@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Root>
+	<Waypoint type="region" instance="2080" position="Point(120,35)"
+		  normal_bitmap="WorldmapGUI/minimap_marker_yellow.tga"
+	      tooltip_title="&lt;localized token=MapGUI_WorldMap_WildLandsofZelata&gt;"
+	      tooltip_text="&lt;localized token=MapGUI_WorldMapRegionPositions_WildLandsofZelata /&gt;"
+	      tooltip_image="WorldMap/regionimage_2080.tga"
+	      min_level="20"
+	      max_level="37"
+	      >
+		  <Attribute label="&lt;localized id=1 category=GameActionData /&gt;"  value="&lt;localized token=WPTooltip_AdventureRegion&gt;"/>
+		  <Attribute label="&lt;localized token=Level&gt;" value=":LEVEL_RANGE"/>	
+    </Waypoint>
+    <Waypoint type="destination" instance="101" name="&lt;font color=&apos;#FF4500&apos;&gt;Sophocles&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#FF0000&apos;&gt;Sophocles the Poetic&lt;/font&gt;" tooltip_text="" position="Point(780.440552,323.157776)" normal_bitmap="WpIcons/bane_target.tga">
+		<Attribute label="Bane of Nemedia #6" value="Sophocles"/></Waypoint>
+</Root>

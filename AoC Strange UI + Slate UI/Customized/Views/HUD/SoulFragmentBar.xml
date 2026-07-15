@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 244852 $ (must be within the first 200 characters of the file) -->
+<!-- Slate UI v1.0// G13 // Designed By: Tus -->
+<View view_layout="stacked">
+  <BitmapView bitmap_gfx="../../Customized/gfx/bottombars/soulshard_box.tga"/>
+  <View view_layout="horizontal" layout_borders="Rect(0,14,0,0)">
+    <BitmapView name="Shard0" bitmap_gfx="../../Customized/gfx/bottombars/soulshard.tga"/>
+    <BitmapView name="Shard1" bitmap_gfx="../../Customized/gfx/bottombars/soulshard.tga"/>
+    <BitmapView name="Shard2" bitmap_gfx="../../Customized/gfx/bottombars/soulshard.tga"/>
+    <BitmapView name="Shard3" bitmap_gfx="../../Customized/gfx/bottombars/soulshard.tga"/>
+    <BitmapView name="Shard4" bitmap_gfx="../../Customized/gfx/bottombars/soulshard.tga"/>
+  </View>
+</View>

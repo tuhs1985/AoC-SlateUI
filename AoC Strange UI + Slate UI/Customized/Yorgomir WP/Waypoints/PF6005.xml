@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Root>
+    <Waypoint type="destination" instance="101" name="" tooltip_title="memento" tooltip_text="" position="Point(149,237)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="102" name="" tooltip_title="memento" tooltip_text="" position="Point(272,354)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="103" name="" tooltip_title="memento" tooltip_text="" position="Point(321,255)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="104" name="" tooltip_title="memento" tooltip_text="" position="Point(354,189)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="105" name="" tooltip_title="memento" tooltip_text="" position="Point(178,166)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="106" name="" tooltip_title="memento" tooltip_text="" position="Point(213,195)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="107" name="" tooltip_title="memento" tooltip_text="" position="Point(185,129)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="108" name="" tooltip_title="memento" tooltip_text="" position="Point(193,78)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="109" name="" tooltip_title="memento" tooltip_text="" position="Point(179,52)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="110" name="" tooltip_title="memento" tooltip_text="" position="Point(340,300)" normal_bitmap="WpIcons/mark.tga" />
+</Root>

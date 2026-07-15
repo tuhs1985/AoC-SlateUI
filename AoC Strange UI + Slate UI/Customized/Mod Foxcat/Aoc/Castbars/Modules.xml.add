@@ -1,0 +1,10 @@
+	<Module
+		name              = "castbar"
+		movie             = "castbar.swf"
+		flags             = "GMF_CFG_STORE_USER_CONFIG"
+		depth_layer       = "Top"
+		sub_depth         = "0"
+		variable		      = "castbar"
+		criteria          = "castbar &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+		config_name       = "castbar settings"
+	/>

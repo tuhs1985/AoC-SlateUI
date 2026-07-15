@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Root>
+    <Waypoint type="destination" instance="101" name="dead child" tooltip_title="dead child" tooltip_text="#1" position="Point(277.067657,368.840027)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="102" name="dead child" tooltip_title="dead child" tooltip_text="#2" position="Point(459.413818,225.644409)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="103" name="dead child" tooltip_title="dead child" tooltip_text="#3" position="Point(339.447601,309.219849)" normal_bitmap="WpIcons/mark.tga" />
+</Root>

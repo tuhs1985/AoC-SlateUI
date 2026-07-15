@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<View col_count_size="68.0" col_lvl_size="88.0" col_name_size="30.0" col_recruit_size="73.0" min_size_extend="Point(571,145)" name="Root" view_flags="WID_IGNORE_WHEN_HIDDEN" view_layout="vertical" xmlns:template="template.dtd">
+    <template:TextView template:source="LargeTextView"/>       
+    <template:MultiColListView template:source="LargeMultiColListView"/>
+    <template:Button template:source="LargeButton"/>
+    <template:RangeSpinnerEditor template:source="LargeRangeSpinnerEditor"/>
+	<View max_size_extend="Point(COORD_MAX,-1)" min_size_extend="Point(-1,145)" view_layout="vertical">
+        <View name="PageHeader"/>        
+        
+        
+        <View v_alignment="TOP" layout_borders="Rect(0,0,0,0)" max_size_extend="Point(COORD_MAX,-1)" view_layout="horizontal">            
+            <View layout_inner_borders="Rect(0,0,50,0)" view_layout="vertical">
+                <TextView value="&lt;localized token=TeamGUI_GuildSearchView_LevelRange /&gt;"/>
+                <RangeSpinnerEditor cur_max_value="80" cur_min_value="1" layout_borders="Rect(0,6,0,0)" max="80" min="1" name="LevelRange"/>
+            </View>
+            <View view_layout="vertical">
+                <TextView value="&lt;localized token=TeamGUI_GuildSearchView_MemberCount /&gt;"/>
+                <RangeSpinnerEditor cur_max_value="100" cur_min_value="1" layout_borders="Rect(0,6,0,0)" max="999" min="1" name="MemberCountRange"/>
+            </View>
+            <View view_layout="vertical">
+                <TextView value="&lt;localized token=TeamGUI_GuildSearchView_GuildName /&gt;" layout_borders="Rect(0,5,0,0)" feature_flags="TVF_ENABLE_SHADOW|TVF_RENDER_SHADOW|TVF_RENDER_HALO"/>
+                <TextInputView name="NameSearch" feature_flags="TVF_ALLOW_TEXT_SELECTION|TVF_STOP_CLICK_THROUGH" font="LARGE" layout_borders="Rect(0,-5,0,0)" width_group="LastRow" width_group_owner="Root" text_font="Large"/>
+                <VLayoutSpacer/>
+                <Button label="&lt;localized token=TeamGUI_GuildSearchView_Search /&gt;" name="GuildSearchButton" template:source="StdButtonPaper"/>
+            </View>
+        </View>
+    </View>
+    <View name="SearchResultDock" view_flags="WID_IGNORE_WHEN_HIDDEN" view_layout="stacked">
+        <View h_alignment="RIGHT" layout_borders="Rect(0,0,3,0)" max_size_extend="Point(COORD_MAX,COORD_MAX)" v_alignment="BOTTOM" view_layout="stacked">
+            <BitmapView bitmap_gfx="GUIcomponents/ornaments/ornament_lr.tga"/>
+        </View>
+        <View view_layout="vertical">
+        	<View name="SearchResultHeader"/>
+            <View view_layout="stacked" layout_borders="Rect(8,0,8,0)" min_size_extend="Point(-1,250)" max_size_extend="Point(COORD_MAX,250)">
+                <MultiColListView name="ResultListView" view_flags="MLF_ALLOW_SINGLE_SELECT|MLF_AUTOLAYOUT"/>
+                <TextView name="NoSearchResults" default_color="white" font="NORMAL" value="&lt;localized token=GenericGUI_NoSearchResults /&gt;" />
+            </View>
+            <View layout_borders="Rect(0,0,10,0)" view_layout="horizontal">
+        		<HLayoutSpacer/>
+                <Button label="&lt;localized token=TeamGUI_GuildSearchView_ApplyForMembership /&gt;" name="JoinGuildButton" template:source="StdButtonPaper"/>    		
+        	</View>
+        </View>
+    </View>
+</View><!--Guild Search Tab-->

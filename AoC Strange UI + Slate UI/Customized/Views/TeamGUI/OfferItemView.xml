@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change:  $ (must be within the first 200 characters of the file) -->
+<View view_layout="stacked" h_alignment="RIGHT" v_alignment="TOP">
+  <BorderView gfx_background       = "QuestJournal/questpopup_background.tga"
+              gfx_bl               = "QuestJournal/questpopup_bottomleft.tga"
+              gfx_bottom           = "QuestJournal/questpopup_bottom.tga"
+              gfx_br               = "QuestJournal/questpopup_bottomright.tga"
+              gfx_left             = "QuestJournal/questpopup_left.tga"
+              gfx_right            = "QuestJournal/questpopup_right.tga"
+              gfx_tl               = "QuestJournal/questpopup_topleft.tga"
+              gfx_top              = "QuestJournal/questpopup_top.tga"
+              gfx_tr               = "QuestJournal/questpopup_topright.tga"
+              layout_borders       = "Rect(0,0,0,0)"
+              layout_inner_borders = "Rect(40,110,40,55)"
+              view_flags           = "BVF_TILE_ALL_BORDERS | BVF_TILE_BACKGROUND"
+              view_layout          = "vertical">
+    <TextView default_color="active" font="Large" layout_borders="Rect(0,0,0,11)" name="DialogTitle"/>
+    <View layout_borders="Rect(30,0,35,5)" view_layout="horizontal">
+      <BitmapView bitmap_gfx="QuestJournal/iconslot_64_orn_left.tga"/>
+      <ItemSlotView name           = "OfferedItem"
+                    icon_borders   = "Point(9,9)"
+                    layout_borders = "Rect(3,0,0,0)"
+                    max_zoom       = "1.5"
+                    slot_paths     = "Views/QuestJournal/QuestRewardSlotPaths.xml"
+                    slot_size      = "Point(73,73)"
+                    view_flags     = "SHOW_BCKG_COLORS | WID_HANDLE_MOUSE"
+                    zoom_in_time   = "0.15"
+                    zoom_out_time  = "0.3"
+      />
+      <BitmapView bitmap_gfx="QuestJournal/iconslot_64_orn_right.tga"/>
+    </View>
+    <View view_layout="horizontal">
+      <Button label="&lt;localized token=Accept /&gt;" name="AcceptButton" template:source="StdButtonPaper"/>
+      <View view_layout="stacked">
+        <Button label="&lt;localized token=Decline /&gt;" name="DeclineButton" template:source="StdButtonPaper"/>
+        <Button label="&lt;localized token=Cancel /&gt;" name="CancelButton" template:source="StdButtonPaper"/>
+      </View>
+    </View>
+  </BorderView>
+  <Button name            = "CloseButton"
+          gfxid_highlight = "GUIcomponents/closebuttons/close_white_hover.tga"
+          gfxid_pressed   = "GUIcomponents/closebuttons/close_white_pressed.tga"
+          gfxid_raised    = "GUIcomponents/closebuttons/close_white.tga"
+          layout_borders  = "Rect(0,95,10,0)"
+          max_zoom        = "1"/>
+</View>

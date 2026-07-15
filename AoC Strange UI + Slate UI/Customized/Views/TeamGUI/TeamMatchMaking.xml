@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<View name="Root" 
+      min_size_extend="Point(571,145)"       
+      view_flags="WID_IGNORE_WHEN_HIDDEN" 
+      view_layout="vertical" 
+      xmlns:template="template.dtd">
+    <template:TextView template:source="LargeTextView"/>           
+    <template:MultiColListView template:source="LargeMultiColListView"/>
+    <template:Button template:source="LargeButton"/>
+    <template:RangeSpinnerEditor template:source="LargeRangeSpinnerEditor"/>    
+    <View min_size_extend="Point(-1,145)" max_size_limit="Point(COORD_MAX,145)" view_layout="vertical">
+        <View name="PageHeader"/>
+        <VLayoutSpacer/>
+        <View layout_borders="Rect(12,0,8,0)" view_layout="horizontal">
+    		<View layout_inner_borders="Rect(0,0,0,0)" view_layout="vertical">
+                <RegionSelectMenu current_text="&lt;localized token=Region /&gt;" layout_borders="Rect(0,0,0,0)" max_size_limit="Point(200,COORD_MAX)" min_size_extend="Point(200,-1)" name="RegionSelectView" view_flags="DMF_DONT_UPDATE_LABEL"/>
+                <DropdownMenu current_text="&lt;localized token=Race /&gt;" layout_borders="Rect(0,-5,0,0)" max_size_limit="Point(200,COORD_MAX)" min_size_extend="Point(200,-1)" name="RaceSelectView" view_flags="DMF_DONT_UPDATE_LABEL"/>
+                <DropdownMenu current_text="&lt;localized token=Class /&gt;" layout_borders="Rect(0,-5,0,0)" max_size_limit="Point(200,COORD_MAX)" min_size_extend="Point(200,-1)" name="ClassSelectView" view_flags="DMF_DONT_UPDATE_LABEL"/>
+    		</View>
+    		<HLayoutSpacer/>
+    		<View layout_inner_borders="Rect(0,0,5,0)" max_size_extend="Point(-1,COORD_MAX)" min_size_limit="Point(COORD_MAX,-1)" view_layout="vertical">
+                <DropdownMenu current_text="&lt;localized token=Is_Looking_For /&gt;" layout_borders="Rect(0,0,0,0)" 
+                              max_size_limit="Point(200,COORD_MAX)" min_size_extend="Point(200,-1)" name="LookingForSelectView" view_flags="DMF_DONT_UPDATE_LABEL"/>
+                <VLayoutSpacer/>
+                <View layout_borders="Rect(-5,0,0,0)" view_layout="vertical">
+        			<TextView value="&lt;localized token=TeamGUI_TeamMatchMaking_LevelRange /&gt;" layout_borders="Rect(0,0,0,0)"/>
+        			<RangeSpinnerEditor cur_max_value="15" cur_min_value="5" layout_borders="Rect(0,0,0,0)" max="80" min="1" name="LevelRange"/>                    
+                </View>
+    		</View>
+    		<HLayoutSpacer/>
+            <View h_alignment="CENTER" layout_borders="Rect(0,0,0,0)" view_layout="vertical">
+                <TextView value="&lt;localized token=TeamGUI_TeamMatchMaking_PlayerName /&gt;" layout_borders="Rect(0,5,0,0)" feature_flags="TVF_ENABLE_SHADOW|TVF_RENDER_SHADOW|TVF_RENDER_HALO"/>
+                <TextInputView name="NameSearch" feature_flags="TVF_ALLOW_TEXT_SELECTION|TVF_STOP_CLICK_THROUGH" font="LARGE" layout_borders="Rect(0,-5,0,0)" width_group="LastRow" width_group_owner="Root" text_font="Large"/>
+                <Button label="&lt;localized token=TeamGUI_TeamMatchMaking_Search /&gt;" name="SearchButton" template:source="StdButtonPaper"/>                
+            </View>
+    	</View>
+        <VLayoutSpacer/>
+    </View>
+    <View name="SearchResultDock" view_flags="WID_IGNORE_WHEN_HIDDEN" view_layout="stacked" max_size_extend="Point(COORD_MAX,COORD_MAX)" v_alignment="TOP">        
+        <View h_alignment="RIGHT" layout_borders="Rect(0,0,3,0)" max_size_extend="Point(COORD_MAX,COORD_MAX)" v_alignment="BOTTOM" view_layout="stacked">
+            <BitmapView bitmap_gfx="GUIcomponents/ornaments/ornament_lr.tga"/>
+        </View>
+        <View view_layout="vertical">
+            <View name="SearchResultHeader"/>
+            <View view_layout="stacked" layout_borders="Rect(8,0,8,0)" min_size_extend="Point(-1,250)" max_size_extend="Point(COORD_MAX,250)">
+                <MultiColListView name="ResultListView" view_flags="MLF_ALLOW_SINGLE_SELECT|MLF_AUTOLAYOUT" max_size_extend="Point(COORD_MAX,COORD_MAX)"/>
+                <View view_layout="stacked" max_size_extend="Point(COORD_MAX,COORD_MAX)">
+                    <TextView name="NoSearchResults" default_color="white" font="NORMAL" value="&lt;localized token=GenericGUI_NoSearchResults /&gt;"/>
+                </View>
+            </View>
+            <View layout_borders="Rect(0,0,10,0)" view_layout="horizontal">
+                <HLayoutSpacer/>
+                <Button label="&lt;localized token=TeamGUI_TeamMatchMaking_InviteToParty /&gt;" name="InviteToGroupButton" template:source="StdButtonPaper"/>
+                <Button label="&lt;localized token=TeamGUI_TeamMatchMaking_InviteToGuild /&gt;" name="InviteToGuildButton" view_flags="WID_IGNORE_WHEN_HIDDEN" template:source="StdButtonPaper"/>
+                <Button label="&lt;localized token=TeamGUI_TeamMatchMaking_Befriend /&gt;" name="BefriendButton" template:source="StdButtonPaper"/>        		        	
+            </View>        
+        </View>
+    </View>
+</View><!--People Search Tab-->

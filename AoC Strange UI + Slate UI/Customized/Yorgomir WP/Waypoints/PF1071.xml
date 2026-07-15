@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Root>
+    <Waypoint type="destination" instance="101" name="" tooltip_title="scroll" tooltip_text="Hard Mode trigger" position="Point(713.185852,346.794678)" normal_bitmap="WpIcons/mark.tga" />
+</Root>

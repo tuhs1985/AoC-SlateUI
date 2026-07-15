@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<View layout_inner_borders="Rect(0,5,0,5)" view_layout="vertical">
+	<MultiColListView name="ListView" view_flags="MLF_ALLOW_SINGLE_SELECT|MLF_AUTOLAYOUT|MLF_HIDE_HEADERS"/>
+	<View view_layout="horizontal">
+	    <HLayoutSpacer/>
+	    <Button label="&lt;localized token=Chat_ChatMacroView_New /&gt;" name="NewButton" width_group="Buttons" width_group_owner=":our_parent:" template:source="StdButtonPaper"/>
+	    <Button label="&lt;localized token=Chat_ChatMacroView_Edit /&gt;" name="EditButton" width_group="Buttons" width_group_owner=":our_parent:" template:source="StdButtonPaper"/>
+	    <Button label="&lt;localized token=Chat_ChatMacroView_Delete /&gt;" name="DeleteButton" width_group="Buttons" width_group_owner=":our_parent:" template:source="StdButtonPaper"/>
+	</View>
+</View>

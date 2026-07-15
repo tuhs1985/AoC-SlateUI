@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<View min_size_extend="Point(571,515)" view_flags="WID_IGNORE_WHEN_HIDDEN" view_layout="vertical">
+	<MultiColListView layout_borders="Rect(10,15,10,0)" min_size_extend="Point(-1,50)" name="ResultListView" view_flags="MLF_ALLOW_SINGLE_SELECT|MLF_AUTOLAYOUT"/>
+	<View view_layout="horizontal">
+		<HLayoutSpacer/>
+		<Button label="&lt;localized token=TeamGUI_PvPSearchResultView_ApplyToJoin /&gt;" name="ApplyButton" template:source="StdButtonPaper"/>
+		<Button label="&lt;localized token=TeamGUI_PvPSearchResultView_Back /&gt;" layout_borders="Rect(5,0,0,0)" name="BackButton" template:source="StdButtonPaper"/>
+	</View>
+</View>

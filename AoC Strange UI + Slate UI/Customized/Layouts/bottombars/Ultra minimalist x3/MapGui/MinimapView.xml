@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+	<View view_layout         = "stacked"
+     	 	h_alignment         = "RIGHT"
+      		v_alignment         = "TOP"
+		waypoint_cap_radius = "65" 
+		view_alpha= "0.5">
+
+   	<BitmapView bitmap_gfx           = "../../Customized/gfx/map/ultraminimalist.png"
+		view_layout          = "stacked"
+		layout_borders       = "Rect(0,0,0,150)"
+		layout_inner_borders = "Rect(0,0,0,0)"/>
+
+	<Button name            = "RegionMapButton"
+		label="Map" 
+		label_font="LARGE" 
+		label_color="white"
+		gfxid_raised      = "../../Customized/gfx/map/btn.png"
+		gfxid_pressed     = "../../Customized/gfx/map/btn.png"
+		gfxid_highlight   = ""
+		view_tooltip_text = "&lt;localized token=MinimapToggleRegionButtonTooltip&gt;"
+		layout_borders  = "Rect(0,0,44,0)"/>    
+
+
+	<Button name            = "MenuButton"
+		label="Instance" 
+		label_font="LARGE" 
+		label_color="white"
+		gfxid_raised      = ""
+		gfxid_pressed     = ""
+		gfxid_highlight   = ""
+		layout_borders  = "Rect(-25,-3,95,0)"/>
+
+	<Button name              = "PendingQuestReward"
+          	gfxid_raised      = "Misc/collapse_down.tga"
+          	gfxid_pressed     = "Misc/collapse_down.tga"
+          	gfxid_highlight   = "Misc/collapse_glow.tga"
+          	layout_borders    = "Rect(155,12,0,0)" 
+          	view_tooltip_text = "&lt;localized token=GenericGUI_InventoryOverflow /&gt;"/>
+
+	<BitmapView name              = "NewMailButton"
+		bitmap_gfx        = "../../Customized/gfx/map/mail.png"
+		layout_borders    = "Rect(0,-5,70,0)"
+		view_tooltip_text = "&lt;localized token=YouVeGotNewMail category=Tradepost /&gt;"/>
+	
+</View>

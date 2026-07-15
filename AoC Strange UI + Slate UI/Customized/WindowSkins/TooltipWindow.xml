@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<View xmlns:template      = "template.dtd"
+      view_layout         = "stacked"
+      name                = "TooltipWindowRoot"
+      view_flags          = "WID_HANDLE_MOUSE"
+      h_alignment         = "STRETCH"
+      v_alignment         = "STRETCH"
+      resize_tl           = "Point(15,15)"
+      resize_tr           = "Point(15,15)"
+      resize_bl           = "Point(15,15)"
+      resize_br           = "Point(15,15)"
+      resize_edges        = "Rect(0,0,0,0)"
+      dragbar_height      = "30"
+      minimum_border_size = "Point(90,90)"
+      show_sound          = "sfx/gui/gui_window_popup.wav"
+      hide_sound          = "sfx/gui/gui_window_close.wav">
+  <BorderView h_alignment       = "LEFT"
+              v_alignment       = "TOP"
+              view_layout       = "stacked"
+              view_flags        = "BVF_TILE_ALL_BORDERS|BVF_TILE_BACKGROUND"            
+              gfx_tl         = "../../Customized/gfx/frames/right_tab_topleft.png"
+              gfx_tr         = "../../Customized/gfx/frames/left_tab_topright.png"
+              gfx_bl         = "../../Customized/gfx/frames/right_tab_bottomleft.png"
+              gfx_br         = "../../Customized/gfx/frames/left_tab_bottomright.png"
+              gfx_left       = "../../Customized/gfx/frames/right_tab_left.png"
+              gfx_top        = "../../Customized/gfx/frames/left_tab_top.png"
+              gfx_right      = "../../Customized/gfx/frames/left_tab_right.png"
+              gfx_bottom     = "../../Customized/gfx/frames/left_tab_bottom.png"
+              gfx_background = "../../Customized/gfx/frames/bg.png"
+              bg_bitmap_borders     = "Rect(20,20,20,20)">
+    <View view_layout="horizontal" max_size_extend="Point(150,-1)" min_size_extend="Point(-1,32)">
+      <View name="IconDock" view_layout="stacked" max_size_extend="Point(COORD_MAX,-1)" layout_borders="Rect(0,0,0,0)"/>
+      <TextView name           = "WndTitleView" 
+                font           = "LARGE"
+                default_color  = "active"
+                feature_flags  = "TVF_RENDER_HALO|TVF_RENDER_SHADOW|TVF_ENABLE_SHADOW"
+                layout_borders = "Rect(15,0,15,0)"
+      />
+      <HLayoutSpacer/>
+      <Button name            = "WndCloseButton"
+              layout_borders  = "Rect(0,0,5,5)"
+              max_zoom        = "1"
+              gfxid_raised    = "GUIcomponents/closebuttons/close_white.tga"
+              gfxid_pressed   = "GUIcomponents/closebuttons/close_white_pressed.tga"
+              gfxid_highlight = "GUIcomponents/closebuttons/close_white_hover.tga"
+      />                
+    </View>
+  </BorderView>
+  <ViewSelector name="WndViewSelector" layout_borders ="Rect(25,2,25,0)"/>
+</View>

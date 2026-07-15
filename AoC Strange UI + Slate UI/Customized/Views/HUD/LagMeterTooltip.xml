@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View xmlns:template="template.dtd" xmlns:nocreate="nocreate.dtd" view_layout="horizontal" h_alignment="LEFT">
+    <View view_layout="vertical">
+	<TextView value_token="PingMeterLatencyLabel" font="SMALL" default_color="silver"/>
+	<View view_layout="horizontal">
+	<TextView name="LatencyView" font="NORMAL_BOLD" default_color="active"/>
+	<TextView value_token="PingMeterLatencySuffix" font="SMALL" default_color="silver"/>
+    </View>
+	</View>
+	
+    <View view_layout="vertical" layout_borders="Rect(5,0,0,0)">
+	<TextView value_token="PingMeterFramerateLabel" font="SMALL" default_color="silver"/>
+	<View view_layout="horizontal">
+	<TextView name="ClientFramerateView" font="NORMAL_BOLD" default_color="active"/>
+	<TextView value_token="PingMeterFramerateSuffix" font="SMALL" default_color="silver"/>
+	</View>
+    </View>
+	
+	<View view_layout="vertical" layout_borders="Rect(5,0,0,0)">
+	<TextView value_token="PingMeterServerFramerateLabel" font="SMALL" default_color="silver"/>
+	<View view_layout="horizontal">
+	<TextView name="ServerFramerateView" font="NORMAL_BOLD" default_color="active"/>
+	<TextView value_token="PingMeterServerFramerateSuffix" font="SMALL" default_color="silver"/>
+    </View>
+	</View>
+</View>

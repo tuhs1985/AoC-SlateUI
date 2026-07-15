@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- $Change: 554999 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View view_layout="stacked">
+    <Button name="Button"
+	label = "Pvp"
+	interaction_borders="Rect(5,0,5,5)"
+	    gfxid_raised=""
+	    gfxid_pressed=""
+	    gfxid_highlight=""
+	    layout_borders="Rect(20,0,0,0)"  />
+</View>

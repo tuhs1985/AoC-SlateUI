@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View view_layout="vertical"  
+   paperslot_icon_full  ="tradeskills/paperslot_icon_full.tga"
+   paperslot_icon  ="tradeskills/paperslot_icon.tga"
+   paperslotmod_left_full= "tradeskills/paperslotmod_left_full.tga"
+   paperslotmod_right_full= "tradeskills/paperslotmod_right_full.tga"
+   paperslotmod_center_full= "tradeskills/paperslotmod_center_full.tga"
+   text_color_enable="active"
+   text_color_disable="silver"
+   paperslotmod_left= "tradeskills/paperslotmod_left.tga"
+   paperslotmod_right= "tradeskills/paperslotmod_right.tga"
+   paperslotmod_center= "tradeskills/paperslotmod_center.tga"
+
+>
+  
+    <ItemSlotView 
+      name="ItemView"
+      slot_size="Point(60,60)"
+      icon_borders="Point(8,8)"
+      layout_borders="Rect(0,0,0,0)"
+      />"
+    <View view_layout="horizontal">
+      <BorderView name="TextBorder" 
+        view_layout    = "horizontal"	
+        gfx_tl         = ""
+	  	gfx_tr         = ""
+		gfx_bl         = ""
+		gfx_br         = ""
+        gfx_left       = "tradeskills/paperslotmod_left_full.tga"
+		gfx_top        = ""
+        gfx_right      = "tradeskills/paperslotmod_right_full.tga"
+		gfx_bottom     = ""
+        gfx_background = "tradeskills/paperslotmod_center_full.tga"
+        client_borders = "Rect(0,0,0,0)"
+        layout_inner_borders="Rect(5,5,5,5)"          
+        min_size_extend="Point( 66, -1 )"
+        layout_borders="Rect(0,0,0,0)"
+            >
+        <TextView name="Text"
+            layout_borders="Rect(0,0,0,0)"
+            font="NORMAL"
+        />
+
+      </BorderView>
+    </View>
+  
+</View>

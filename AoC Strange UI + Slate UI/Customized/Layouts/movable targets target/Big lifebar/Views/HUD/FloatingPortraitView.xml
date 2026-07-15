@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 554999 $ (must be within the first 200 characters of the file) -->
+
+<View xmlns:template="template.dtd" name="left_portrait" view_layout="stacked" h_alignment="RIGHT">
+  
+<template:ProgressBar template:name = "ManaBarShort"
+		bg_gfx        = "../../Customized/gfx/frames/p_healthbgthinshort.png"
+		fg_gfx        = "../../Customized/gfx/frames/p_mana_thinshort.png"
+	/>
+	<template:ProgressBar template:name = "ManaBarLong"
+		bg_gfx        = "../../Customized/gfx/frames/p_healthbgthin1.png"
+		fg_gfx        = "../../Customized/gfx/frames/p_mana_thin.png"
+	/>
+	<template:ProgressBar template:name = "StaminaBarShort"
+		bg_gfx        = "../../Customized/gfx/frames/p_healthbgthinshort1.png"
+		fg_gfx        = "../../Customized/gfx/frames/p_stamina_thinshort.png"
+	/>
+	<template:ProgressBar template:name = "StaminaBarLong"
+		bg_gfx        = "../../Customized/gfx/frames/p_healthbgthin1.png"
+		fg_gfx        = "../../Customized/gfx/frames/p_stamina_thin.png"
+	/>
+
+
+
+<View view_layout="vertical" h_alignment="RIGHT">
+    <View view_layout="stacked" h_alignment="LEFT">
+      
+<View view_layout="vertical" name="StatBarsContainer" view_flags="BMF_USE_CURRENT_SIZE" v_alignment="TOP" h_alignment="LEFT">
+  
+</View>
+      
+
+<View name="StatBarsContainer" view_layout="vertical" layout_borders="Rect(5,0,0,0)" view_flags="WID_HANDLE_MOUSE">
+        
+<ProgressBar name           = "HealthBar"
+                     
+orientation     = "right"
+                     
+slider_mode     = "clip"
+                     
+slide_down_time = "0.1"
+         
+slide_up_time   = "0.0"
+                     
+left_margin     = "0"
+                     
+right_margin    = "0"
+                     
+flash_on_reduce = "false"
+                     
+bg_gfx          = "../../Customized/gfx/frames/p_healthbgTT1.png"  
+fg_gfx          = "../../Customized/gfx/frames/p_healthTT1.png"                    
+label_color     = "white"
+
+ />
+        
+
+<View name="StatBarsContainer" view_layout="horizontal" layout_borders="Rect(0,0,0,0)" view_flags="WID_HANDLE_MOUSE" h_local_alignment="LEFT">
+<ProgressBar name            = "StaminaBar"
+ 
+view_flags      = "WID_IGNORE_WHEN_HIDDEN|PBF_CLIP_MAX_COST"
+                     
+orientation     = "right"
+                     
+slider_mode     = "clip"
+slide_down_time = "0.1"
+                     
+slide_up_time   = "0.0"
+                     
+left_margin     = "0"
+                     
+bg_gfx          = ""
+   
+fg_gfx          = ""                     
+label_font      = "SMALL"
+        
+label_color     = "white"
+        />
+        
+
+<ProgressBar name            = "ManaBar"
+                     
+view_flags      = "WID_IGNORE_WHEN_HIDDEN|PBF_CLIP_MAX_COST"
+                     
+orientation     = "right"
+                     
+slider_mode     = "clip"
+slide_down_time = "0.1"
+                     
+slide_up_time   = "0.0"
+                     
+left_margin     = "0"
+                     
+bg_gfx          = ""
+    
+fg_gfx          = ""                     
+layout_borders  = "Rect(0,0,0,0)"
+                     
+label_font      = "SMALL"
+                     
+label_color     = "white"
+        />
+      
+
+</View>
+</View>
+ 
+
+<View view_layout="horizontal" h_local_alignment="LEFT" layout_borders="Rect(8,0,0,5)">
+        
+<TextView name = "NameView"
+ feature_flags  = "TVF_RENDER_SHADOW|TVF_RENDER_HALO"
+max_size_limit = "Point(217,COORD_MAX)"
+ default_color= "active"
+ font= "HUGE_BOLD"
+ layout_borders = "Rect(0,0,0,0)"
+ />
+        
+<TextView name="LevelView"
+ feature_flags  = "TVF_RENDER_SHADOW|TVF_RENDER_HALO"
+ default_color = "active"
+ font= "NORMAL"
+ layout_borders = "Rect(5,0,0,0)"
+ view_alpha = "0" />
+      
+</View>
+     
+</View>
+     
+
+
+<BuffListView name              = "BuffListView"
+                  
+h_local_alignment = "LEFT"
+                  
+layout_borders    = "Rect(6,5,0,0)"
+                  
+icon_size         = "Point(21,21)"
+                  
+icon_spacing      = "Point(3,3)"
+                  
+full_size_limit   = "18"
+                  
+max_columns       = "9"
+        filter            = "friendly | hostile"
+    />
+  
+</View>
+</View>
+

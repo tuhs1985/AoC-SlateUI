@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View	view_layout="stacked"
+	active_text_color = "red"
+	inactive_text_color = "standard"
+>
+	<BitmapView name="BackgroundView"
+		bitmap_gfx="../../Customized/gfx/death/location.tga"
+	/>
+	<View view_layout="vertical" min_size_limit="Point(-1,-1)" max_size_extend="Point(COORD_MAX,COORD_MAX)" layout_inner_borders="Rect(10,0,0,0)">
+		<TextView name="NameView"
+				font="SMALL"
+				default_color="red"
+				feature_flags="TVF_MULTILINE|TVF_RENDER_SHADOW|TVF_RENDER_HALO"/>
+		<TextView name="DistanceView"
+				font="SMALL"
+				default_color="active"
+				feature_flags="TVF_RENDER_SHADOW|TVF_RENDER_HALO" />
+		<ProgressBar name="StrengthView"
+				orientation="right"
+				bg_gfx="popupwindows/death/death_respower_empty.tga"
+				fg_gfx="popupwindows/death/death_respower_full.tga"
+		 />
+	</View>
+</View>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 3 / Bombata / Fds Ishtar -->
+<View ColIconSize="18" ColDateSize="150" ColFromSize="130" ColTimesOutSize="90" ColLetter="244" name="Root" view_layout="stacked" icon_borders="Point(2,2)" slot_size="Point(67,67)" xmlns:template="template.dtd">
+    <template:TextView template:source="LARGETextView"/>
+    <template:TextView template:source="TextInputTextViewTempl" template:name="TextInputViewTmpl" font="LARGE"/>
+    <BitmapView view_layout="vertical" bitmap_gfx="../../Customized/gfx/Launcher/empty.png" view_flags="BMF_TILE|BMF_IGNORE_BITMAP_SIZE" max_size_extend="Point(COORD_MAX,-1)">        
+        <View layout_borders="Rect(0,0,0,0)" view_layout="vertical" max_size_extend="Point(COORD_MAX,COORD_MAX)">
+            <BitmapView view_layout="horizontal" bitmap_gfx="GUIcomponents/Window/titlebar.tga" view_flags="BMF_TILE|BMF_IGNORE_BITMAP_SIZE" v_alignment="CENTER"
+                        max_size_extend = "Point(COORD_MAX,-1)" layout_inner_borders="Rect(7,-2,7,2)">            
+                <TextView name="Title" value="&lt;localized token=TradePostGUI_MailView_ReceivedMail category=Tradepost /&gt;" default_color="active" font="LARGE" feature_flags="TVF_ENABLE_SHADOW|TVF_RENDER_SHADOW|TVF_RENDER_HALO"/>
+                <HLayoutSpacer/>
+                <Button name="ComposeMailButton" layout_borders="Rect(0,0,0,0)" template:source="ClearButton"
+                        gfx_icon="TradeItemGUI/icon_compose_mail.tga" gfx_icon_highlight="TradeItemGUI/icon_compose_mail_hover.tga" label="&lt;localized token=TradePostGUI_MailView_ComposeLetter category=Tradepost /&gt;"/>
+            </BitmapView>            
+            <View layout_borders="Rect(5,0,0,0)" name="UpperView" view_layout="stacked" layout_weight="1">
+                <View name="NoMessages" view_layout="stacked" max_size_extend="Point(COORD_MAX,COORD_MAX)" view_flags="WID_IGNORE_WHEN_HIDDEN"><!--needed to expand the multicollistview-->
+                    <TextView default_color="white" font="NORMAL" value="&lt;localized token=TradePostGUI_MailView_NoMessages category=Tradepost /&gt;"/>
+                </View>
+                <MultiColListView layout_borders="Rect(0,0,0,0)" max_size_extend="Point(COORD_MAX,COORD_MAX)" name="MailList" view_flags="MLF_ALLOW_SINGLE_SELECT|MLF_AUTOLAYOUT"
+                                  label_font_sorted="LARGE" label_font_unsorted="LARGE" font="LARGE" special_font="LARGE_BOLD"/>
+            </View>
+            <View name="MainMailView" view_layout="stacked" max_size_extend = "Point(COORD_MAX,-1)" min_size_extend="Point(710,-1)" layout_weight="1">
+                <View name="MailChangeView" view_layout="stacked" max_size_extend = "Point(COORD_MAX,-1)">
+                    <View name="ComposeMail" h_alignment="LEFT" layout_borders="Rect(0,0,0,0)" view_layout="vertical" max_size_extend = "Point(COORD_MAX,-1)">
+                       
+                        <View view_layout="horizontal">
+                            <View layout_borders="Rect(0,0,15,35)" h_alignment="LEFT" view_layout="vertical" max_size_extend="Point(COORD_MAX,COORD_MAX)">
+                                <View v_alignment="TOP" view_layout="horizontal">
+                                    
+                                </View>
+                                
+                            </View>
+                            <View view_layout="vertical" min_size_extend="Point(-1,170)" layout_borders="Rect(0,135,15,0)" >
+                                <View name="ComposeItemSlotsContainer" view_layout="horizontal"/>
+                                
+                            </View>
+                        </View>
+                    </View>
+                    <View name="ReadMail" h_alignment="LEFT" view_layout="vertical" max_size_extend = "Point(COORD_MAX,-1)">
+                        <BitmapView view_layout="horizontal" bitmap_gfx="GUIcomponents/Window/titlebar.tga" view_flags="BMF_TILE|BMF_IGNORE_BITMAP_SIZE" v_alignment="CENTER"
+                                    max_size_extend = "Point(COORD_MAX,-1)" layout_inner_borders="Rect(7,-2,7,2)">  
+        
+                            <TextView name="ReadLetterTitle" default_color="active" font="LARGE" feature_flags="TVF_ENABLE_SHADOW|TVF_RENDER_SHADOW|TVF_RENDER_HALO"/>
+                            <HLayoutSpacer/>                
+                            <Button name="DeleteButton" layout_borders="Rect(0,0,0,0)" template:source="ClearButton"
+                                    gfx_icon="TradeItemGUI/delete_icon.tga" gfx_icon_highlight="TradeItemGUI/delete_icon_hover.tga" label="&lt;localized token=TradePostGUI_MailView_Delete category=Tradepost /&gt;"/>
+                            <Button name="ReceiveAtchsButton" template:source="ClearButton"
+                                    gfx_icon="TradeItemGUI/icon_take_attachments.tga" gfx_icon_highlight="TradeItemGUI/icon_take_attachments_hover.tga" label="&lt;localized token=TradePostGUI_MailView_ReceiveAllAttachments category=Tradepost /&gt;"/>
+                        </BitmapView>
+                       
+				 <View view_layout="horizontal">
+                            <TextView layout_borders="Rect(10,38,28,38)" name="MailMessageReader" font="LARGE" h_alignment="LEFT" v_scrollctrl_mode="SCROLLBAR_AUTO"
+                                      feature_flags="TVF_ALLOW_TEXT_SELECTION|TVF_MULTILINE|TVF_WORD_WRAP|TVF_WORD_SPLIT" max_size_extend="Point(COORD_MAX,-1)"
+                                      pref_size_mode="FLEXIBLE"/>  
+                            <View view_layout="vertical" min_size_extend="Point(-1,170)" layout_borders="Rect(0,35,15,0)" >
+                                <View name="ReadItemSlotsContainer" view_layout="horizontal"/>
+                                <MoneyInputView name="ReadMoneyInputView"/>
+
+                            </View>
+                        </View>
+                    </View>
+                </View>                
+                <!--View view_layout="horizontal" v_alignment="CENTER" >
+                    <HLayoutSpacer/>
+                    <View view_layout="vertical" min_size_extend="Point(-1,170)" layout_borders="Rect(0,35,15,0)" >
+                        <View name="ItemSlotsContainer" view_layout="horizontal"/>
+                        <MoneyInputView name="MoneyInputView"/>
+                    </View>                
+                </View-->
+            </View>
+        </View>
+        <BitmapView name="BottomView" v_alignment="CENTER" layout_inner_borders="Rect(20,5,20,0)" layout_borders="Rect(0,0,0,0)" view_layout="horizontal" 
+                bitmap_gfx="TradeItemGUI/tradepost_bottom.tga" view_flags="BMF_TILE|BMF_IGNORE_BITMAP_SIZE">
+            <MoneyView name="BankMoneyView" value="0"/>
+            <HLayoutSpacer/>
+            <Button name="ReplyLowerButton" label="&lt;localized token=TradePostGUI_MailView_Reply category=Tradepost /&gt;" view_flags="WID_IGNORE_WHEN_HIDDEN" template:source="StdButtonPaper"/>
+            <Button name="SendLowerButton" label="&lt;localized token=TradePostGUI_MailView_Send category=Tradepost /&gt;" view_flags="WID_IGNORE_WHEN_HIDDEN" template:source="StdButtonPaper"/>
+            <Button label="&lt;localized token=Close /&gt;" name="Close" view_flags="WID_IGNORE_WHEN_HIDDEN" template:source="StdButtonPaper"/>
+        </BitmapView>
+    </BitmapView>
+</View>

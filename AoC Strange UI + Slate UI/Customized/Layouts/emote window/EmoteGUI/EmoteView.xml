@@ -1,0 +1,166 @@
+<?xml versionng="U" encoding="utf-8" standalone="yes"?>
+<!-- $Change: 554999 $ (must be within the first 200 characters of the file) -->
+<View
+	xmlns:template	="template.dtd"
+	name			="root"
+	view_layout		="stacked"
+	_h_alignment	="center"
+	_view_flags		="WID_HANDLE_MOUSE"
+	_v_alignment	="center"
+	show_sound		="sfx/gui/gui_window_popup.wav"
+	hide_sound		="sfx/gui/gui_window_close.wav">
+
+<template:TextView font="HYBORIANSMALL" default_color="#cccccc" feature_flags="TVF_RENDER_SHADOW|TVF_RENDER_HALO" layout_borders="Rect(0,0,0,0)"/>
+
+<template:Button layout_borders="Rect(-5,0,-5,0)" label_borders="Rect(0,3,0,6)" label_font="small" view_flags="WID_IGNORE_WHEN_HIDDEN" min_size_extend	="Point(90,-1)" max_size_extend="Point(90,-1)">
+	<template:BorderView
+		template:name	="Raised"
+		gfx_left		="../../Customized/gfx/GUIComponents/button/paperbutton_left.tga"
+		gfx_right		="../../Customized/gfx/GUIComponents/button/paperbutton_right.tga"
+		gfx_background	="../../Customized/gfx/GUIComponents/button/paperbutton_center.tga"/>
+	<template:BorderView
+		template:name	="Pressed"
+		gfx_left		="../../Customized/gfx/GUIComponents/button/paperbutton_left_click.tga"
+		gfx_right		="../../Customized/gfx/GUIComponents/button/paperbutton_right_click.tga"
+		gfx_background	="../../Customized/gfx/GUIComponents/button/paperbutton_center_click.tga"/>
+	<template:BorderView
+		template:name	="Highlight"
+		gfx_left		="../../Customized/gfx/GUIComponents/button/paperbutton_left_hover.tga"
+		gfx_right		="../../Customized/gfx/GUIComponents/button/paperbutton_right_hover.tga"
+		gfx_background	="../../Customized/gfx/GUIComponents/button/paperbutton_center_hover.tga"/>
+</template:Button>
+
+	<View layout_borders="Rect(10,5,10,0)" view_layout="stacked">
+		<View view_layout="vertical" layout_borders="Rect(0,0,0,0)" max_size_extend="Point(310,COORD_MAX)" min_size_extend="Point(310,345)" max_size_limit="Point(310,620)">
+
+			<DropdownMenu view_tooltip_text="&lt;localized token=TXT_Allemotes category=emotes /&gt;" text_font="small" layout_borders="Rect(12,0,0,0)" name="FullEmoteList" max_size_limit="Point(COORD_MAX, COORD_MAX)"/>
+
+			<BorderView
+				h_alignment			="LEFT"
+				v_alignment			="TOP"
+				view_layout			="stacked"
+				view_flags			="BVF_TILE_ALL_BORDERS|BVF_TILE_BACKGROUND"
+				bg_bitmap_borders	="Rect(3,3,3,3)"
+				gfx_tl				="../../Customized/gfx/sidebars/darksetin_tl2.tga"
+				gfx_tr				="../../Customized/gfx/sidebars/darksetin_tr.tga"
+				gfx_bl				=""
+				gfx_br				=""
+				gfx_bottom			=""
+				gfx_left			="../../Customized/gfx/sidebars/darksetin_l.tga"
+				gfx_top				="../../Customized/gfx/sidebars/darksetin_t.tga"
+				gfx_right			="sidebars/darksetin_r.tga"
+				gfx_background		="sidebars/darksetin_bg.tga">
+
+		<ScrollView name="ButtonGrid" view_flags="WID_HANDLE_MOUSE" layout_borders="Rect(0,5,5,5)" v_scrollctrl_mode="SCROLLBAR_AUTO">
+			<ScrollViewChild layout_inner_borders="Rect(-10,0,15,0)" view_layout="vertical">
+				<View view_layout="horizontal" layout_borders="Rect(17,0,0,0)"><TextView value="Particles"/>
+</View>
+				<View view_layout="horizontal" layout_borders="Rect(17,-5,0,0)">
+					<Button name="GroupButton1" label="All" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+					<Button name="GroupButton2" label="Raid-PvP" max_size_extend="Point(80,-1" min_size_extend="Point(80,-1"/>
+					<Button name="GroupButton3" label="Group" max_size_extend="Point(1,-1" min_size_extend="Point(60,-1"/>
+					<Button name="GroupButton4" label="On Self" max_size_extend="Point(1,-1" min_size_extend="Point(70,-1"/>
+					<Button name="GroupButton5" label="None" max_size_extend="Point(1,-1" min_size_extend="Point(60,-1"/>
+				</View>
+				<View view_layout="horizontal" layout_borders="Rect(80,-10,0,0)">
+					<TextView value=" Player Names"/>
+					<Button name="GroupButton6" label="ON" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+					<Button name="GroupButton7" label="OFF" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+				</View>
+				<View view_layout="horizontal" layout_borders="Rect(33,-10,0,0)">
+					<TextView value="Players Healthbars"/>
+					<Button name="GroupButton8" label="ON" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+					<Button name="GroupButton9" label="OFF" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+				</View>
+				<View view_layout="horizontal" layout_borders="Rect(110,-10,0,0)">
+					<TextView value="Hide Gear?"/>
+					<Button name="GroupButton39" label="YES" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+					<Button name="GroupButton40" label="NO" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+				</View>
+				<View view_layout="horizontal" layout_borders="Rect(100,-10,0,0)">
+					<TextView value="Combat Log"/>
+					<Button name="GroupButton10" label="ON" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+					<Button name="GroupButton11" label="OFF" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+				</View>
+				<View view_layout="horizontal" layout_borders="Rect(83,-10,0,0)">
+					<TextView value="ACT Parse Link"/>
+					<Button name="GroupButton12" label="Sel" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+					<Button name="GroupButton13" label="All" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+				</View>
+				<View view_layout="horizontal" layout_borders="Rect(73,-10,0,0)">
+					<TextView value="Macro Window"/>
+					<Button name="GroupButton14" label="ON" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+					<Button name="GroupButton15" label="OFF" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+				</View>
+
+				<View view_layout="horizontal" layout_borders="Rect(75,-10,0,0)">
+					<TextView value="Flash Castbars"/>
+					<Button name="GroupButton19" label="ON" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+					<Button name="GroupButton20" label="OFF" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+				</View>
+				
+				<View view_layout="horizontal" layout_borders="Rect(55,-10,0,0)">
+					<TextView value="Normal Castbars"/>
+					<Button name="GroupButton37" label="ON" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+					<Button name="GroupButton38" label="OFF" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+				</View>
+
+				<View view_layout="horizontal" layout_borders="Rect(65,-10,0,0)">
+					<TextView value="Debuffs Tracker"/>
+					<Button name="GroupButton41" label="ON" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1" view_tooltip_text  = "Helps you track Goad, Forced engage, Bewilder and Fangs of Set debuffs"/>
+					<Button name="GroupButton42" label="OFF" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>
+				</View>
+							
+				<View view_layout="horizontal" layout_borders="Rect(20,-10,0,0)">
+					<Button name="GroupButton21" label="STOPWATCH" max_size_extend="Point(95,-1" min_size_extend="Point(95,-1"/>
+					<Button name="GroupButton22" label="OFF" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>					
+				
+					<Button name="GroupButton31" label="CLOCK" max_size_extend="Point(70,-1" min_size_extend="Point(70,-1"/>
+					<Button name="GroupButton32" label="OFF" max_size_extend="Point(50,-1" min_size_extend="Point(50,-1"/>					
+				</View>
+				
+
+					<View view_layout="horizontal" layout_borders="Rect(20,-10,0,0)">
+					<Button name="GroupButton16" label="BYCROM" max_size_extend="Point(80,-1" min_size_extend="Point (80,-1"/>
+					<Button name="GroupButton17" label="QUICK SETTINGS" max_size_extend="Point(120,-1" min_size_extend="Point (120,-1"/>
+					<Button name="GroupButton18" label="RELOAD UI" max_size_extend="Point(90,-1" min_size_extend="Point (90,-1"/>
+				</View>	
+
+				<View view_layout="horizontal" layout_borders="Rect(30,5,0,0)"><TextView value="Raid scripts"/>
+</View>
+				<View view_layout="horizontal" layout_borders="Rect(17,-5,0,0)">
+					<Button name="GroupButton23" label="YAREMKA" max_size_extend="Point(80,-1" min_size_extend="Point(80,-1"/>
+					<Button name="GroupButton24" label="ZODIAC 12" max_size_extend="Point(90,-1" min_size_extend="Point(90,-1"/>
+					<Button name="GroupButton25" label="ENTITY ACQUIRING" max_size_extend="Point(140,-1" min_size_extend="Point(140,-1"/>
+				</View>
+				<View view_layout="horizontal" layout_borders="Rect(17,-5,0,0)">
+					<Button name="GroupButton26" label="EMPEROR GOLEMS" max_size_extend="Point(130,-1" min_size_extend="Point(130,-1"/>
+					<Button name="GroupButton27" label="EMPEROR PACT" max_size_extend="Point(120,-1" min_size_extend="Point(120,-1"/>
+				</View>
+				<View view_layout="horizontal" layout_borders="Rect(30,5,0,0)"><TextView value="Kithai scripts"/>
+</View>
+					<View view_layout="horizontal" layout_borders="Rect(17,-5,0,0)">
+					<Button name="GroupButton28" label="ABYSS" max_size_extend="Point(70,-1" min_size_extend="Point(70,-1"/>
+					<Button name="GroupButton29" label="NECROPOLIS" max_size_extend="Point(100,-1" min_size_extend="Point(100,-1"/>
+					<Button name="GroupButton30" label="CAVERN" max_size_extend="Point(80,-1" min_size_extend="Point(80,-1"/>
+				</View>
+
+				<View view_layout="horizontal" layout_borders="Rect(30,5,0,0)"><TextView value="Rage O meter"/>
+</View>
+					<View view_layout="horizontal" layout_borders="Rect(17,-5,0,0)">
+					<Button name="GroupButton33" label="LOW" max_size_extend="Point(55,-1" min_size_extend="Point(55,-1"/>
+					<Button name="GroupButton34" label="MEDIUM" max_size_extend="Point(75,-1" min_size_extend="Point(75,-1"/>
+					<Button name="GroupButton35" label="HIGH" max_size_extend="Point(60,-1" min_size_extend="Point(60,-1"/>
+					<Button name="GroupButton36" label="OVER 9000" max_size_extend="Point(90,-1" min_size_extend="Point(90,-1"/>
+				</View>
+
+			</ScrollViewChild>
+		</ScrollView>		
+			</BorderView>
+
+		
+	</View>
+	
+	</View>
+
+</View>

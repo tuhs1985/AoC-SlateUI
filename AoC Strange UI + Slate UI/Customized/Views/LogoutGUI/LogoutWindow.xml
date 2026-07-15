@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View selected_color="active" 
+      unselected_color="standard" 
+      view_layout="vertical">
+    	
+    <TextView default_color="active" feature_flags="TVF_RENDER_HALO|TVF_RENDER_SHADOW" font="LARGE" value="&lt;localized token=LogoutGUI_Heading /&gt;">
+    </TextView>
+
+		<View view_layout="stacked">
+			<ProgressBar name="TimerBar" layout_borders="Rect(0,0,0,0)"
+				     orientation="right"
+				     left_margin="1"
+				     bg_gfx=""
+					 fg_gfx=""/>
+<TextView name="ActionName" value="30" layout_borders="Rect(0,0,0,3)"/>
+		
+</View>
+
+  
+
+       
+  <View view_layout="horizontal">
+        <Button label="&lt;localized token=LogoutGUI_ExitNow /&gt;" name="exitnowos_button" template:source="StdButtonPaper" width_group="NavButtons" width_group_owner=":our_parent:"/>
+		<Button label="&lt;localized token=LogoutGUI_Cancel /&gt;" name="cancel_button" template:source="StdButtonPaper" width_group="NavButtons" width_group_owner=":our_parent:"/>
+    </View>
+</View>

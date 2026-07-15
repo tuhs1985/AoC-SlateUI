@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 559017 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View name="HUDView" xmlns:template="template.dtd" view_layout="stacked" v_alignment="BOTTOM" >
+	<View view_layout="vertical" max_size_extend="Point(COORD_MAX,COORD_MAX)" >
+		<View view_layout="horizontal" v_alignment="TOP" >
+		<HLayoutSpacer/>
+			<View view_layout="vertical" h_alignment="LEFT" layout_borders="Rect(0,0,0,0)" view_alpha= "0.5"> 
+					<View view_layout="stacked" v_alignment="TOP" h_alignment="CENTER">
+	<!-- Lagmeter informations -->
+		
+							<BitmapView view_layout="stacked" bitmap_gfx="../../Customized/gfx/frames/social_frameultrainvisible.png" layout_borders="Rect(0,0,0,0)" >
+							<Button name="PlayfieldAccessButton" 
+									layout_borders="Rect(0,-25,140,0)" 
+									label="TP" 
+									label_font="LARGE" 
+									label_color="white"
+									gfxid_raised=""
+									gfxid_pressed=""
+									gfxid_highlight=""
+									
+							/>
+
+							<Button name="GroupFinderButton" 
+									layout_borders="Rect(0,-25,65,0)" 
+									label="Raid" 
+									label_font="LARGE" 
+									label_color="white"                         
+									gfxid_raised=""
+                          
+									gfxid_pressed=""
+                          
+									gfxid_highlight=""
+
+                          />
+
+
+							<View name="TeamButtonDock"
+								view_layout="stacked" 
+								layout_borders="Rect(0,-25,5,0)"/>
+
+							<View name="SocialIconDock" 
+								view_layout="stacked" 
+								layout_borders="Rect(70,0,0,0)"
+								view_alpha="0.0"/>
+
+							<Button name="GuildManagementButton"
+								label="Guild"
+								layout_borders="Rect(170,-25,0,0)"
+								gfxid_raised=""
+								gfxid_pressed=""
+								gfxid_highlight=""/>
+
+						</BitmapView>
+						<View view_layout="vertical">
+						<View name="WorldClockDock"
+							view_layout="horizontal" 
+							layout_borders="Rect(85,-20,0,0)" />						
+						</View>
+					</View>
+				<View name="PetViewDock" view_layout="stacked" layout_borders="Rect(5,15,0,0)"/>
+				
+				<VLayoutSpacer/>
+				
+			</View> 
+			
+			<View view_layout="vertical" h_alignment="RIGHT">                
+				<View view_layout="stacked" v_alignment="TOP" h_alignment="RIGHT">                    
+					
+					<View view_layout="horizontal" v_alignment="TOP">                        
+						
+							  
+						<View name="RadarViewDock" 
+							  view_layout="horizontal" 
+							  layout_borders="Rect(0,0,0,0)" 
+							  min_size_extend="Point(170,170)" 
+							  view_flags="WID_IGNORE_WHEN_HIDDEN" 
+							  v_local_alignment="TOP"/>							  
+					</View>
+				</View>
+				
+				<View name="PvPMiniScoreDock" view_layout="stacked" layout_borders="Rect(0,0,0,0)"/>
+				<WindowDockView name="BugReportBtnDock" view_layout="stacked" layout_borders="Rect(0,0,0,0)"/>
+			</View>
+		</View>
+		
+		<VLayoutSpacer/>	
+		
+	</View>
+	
+	<View view_layout="vertical" v_alignment="TOP" layout_borders="Rect(0,0,0,0)">
+	<BuffListView name="HudFriendlyBuffListView"
+		      view_flags="WID_IGNORE_WHEN_HIDDEN"
+		      hover_info_orientation="VERTICAL"
+		      filter="friendly"
+		      full_size_limit="20"
+		      max_columns="20"
+		      icon_size="Point(35,35)"
+		      icon_spacing="Point(2,2)"
+		      />
+        <View name="StateWindow" view_layout="stacked" layout_weight="0"/>
+        <View name="LevelTearView" view_layout="stacked"/>
+        <View name="SpellWeavingView" view_layout="stacked"/>        
+        <View name="SearchHintWindow" view_layout="stacked"/>
+        <View name="FeatPointsViewDock" view_layout="stacked" layout_borders="Rect(0,30,0,0)">
+        </View>
+        <VLayoutSpacer/>
+    </View>
+	<VLayoutSpacer/>
+<View view_layout="vertical">	
+
+		<BottomBar layout_borders="Rect(0,0,0,-5)"/>
+		<View name="XPBarViewDock"
+			view_layout="stacked"
+			view_flags="WID_IGNORE_WHEN_HIDDEN"
+			layout_borders="Rect(0,-10,0,0)"
+			min_size_extend="Point(-1,-1)"/>
+		<View name="PvPXPBarViewDock"
+			view_layout="stacked"
+			view_flags="WID_IGNORE_WHEN_HIDDEN"
+			layout_borders="Rect(0,-10,0,0)"
+			min_size_extend="Point(-1,-1)"/>
+
+</View>
+	
+	<View view_layout="vertical" max_size_extend="Point(COORD_MAX,COORD_MAX)" h_alignment="LEFT" v_alignment="BOTTOM">
+		<VLayoutSpacer layout_weight="0"/>
+		<WindowDockView global_dock_name="DefaultChatWindowDock" layout_borders="Rect(0,0,0,195)" min_size_limit="Point(50,50)"/>
+	</View>
+	<View view_layout="stacked" v_alignment="TOP" max_size_extend="Point(COORD_MAX,COORD_MAX)">
+		<DrowningBar layout_borders="Rect(0,150,0,0)"/>    
+	</View>
+</View>
+

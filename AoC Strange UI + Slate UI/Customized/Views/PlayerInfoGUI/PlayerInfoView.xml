@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 492930 $ (must be within the first 200 characters of the file) -->
+
+<!-- Strange UI 2015 -->
+<View view_layout="stacked" layout_borders="Rect(40,15,40,15)">
+  
+<View view_layout="vertical" h_alignment="CENTER">
+    
+<TextView name="CharacterName"
+              
+default_color="active"
+              
+font="LARGE"
+              
+view_flags="WID_IGNORE_WHEN_HIDDEN"
+              
+layout_borders="Rect(0,0,0,10)" />
+   
+
+
+<View view_layout="horizontal" v_alignment="TOP">
+      
+<View h_alignment="RIGHT" name="ContentViewLeft" view_layout="vertical">
+        
+<TextView default_color="active" value="&lt;Localized token=Race&gt;" />
+        
+<TextView default_color="active" value="&lt;Localized token=Class&gt;" />
+       
+<TextView default_color="active" value="&lt;Localized token=Level&gt;" />
+ 
+      
+<TextView name="GuildLabel" 
+default_color="active" 
+value="&lt;Localized token=Guild&gt;" 
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+	
+
+<TextView default_color="active" value="&lt;Localized token=AchievementLabel&gt;" />
+ 
+       
+<TextView name="CharacterCraftingClass1_label"
+                  
+default_color="active"
+                  
+value="&lt;Localized token=Crafting&gt;"
+             
+view_flags="WID_IGNORE_WHEN_HIDDEN"
+                  
+layout_borders="Rect(0,10,0,0)" />
+        
+
+<TextView name="CharacterCraftingClass2_label" 
+default_color="active" value=" " 
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="PvPLevelLabel"
+                  
+default_color="active"
+                  
+value="&lt;Localized token=PVPLevel&gt;"
+                  
+layout_borders="Rect(0,10,0,0)"
+                  
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+
+        
+
+<TextView name="AnnihilationWon_label"
+                  
+default_color="active"
+                  
+layout_borders="Rect(0,10,0,0)"
+                  
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="AnnihilationLost_label"
+                  
+default_color="active"
+                  
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="CTFWon_label"
+                  
+default_color="active"
+                  
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="CTFLost_label"
+                  
+default_color="active"
+                  
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="ConquestWins_label"
+                  
+default_color="active"
+                  
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="ConquestLosses_label"
+                  
+default_color="active"
+                  
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="TournamentWins_label"
+                  
+default_color="active"
+                  
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="SiegeWon_label"
+                  
+default_color="active"
+                  
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="SiegeLost_label"
+                  
+default_color="active"
+                  
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="MinigamesAbandoned_label"
+                  
+default_color="active"
+                  
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+      
+
+</View>
+      
+
+<BitmapView bitmap_gfx="GUIcomponents/list_vertical_divider.tga"
+                  
+layout_borders="Rect(10,0,10,0)"
+                  
+max_size_extend="Point(-1,COORD_MAX)"
+                  
+min_size_limit="Point(COORD_MAX,-1)"
+                  
+name="BitmapView"/>
+      
+
+<View h_alignment="LEFT" 
+name="ContentViewRight" 
+view_layout="vertical">
+ 
+       
+<TextView name="CharacterRace" />
+        
+
+<TextView name="CharacterClass" />
+        
+<TextView name="CharacterLevel" />
+        
+
+<TextView name="CharacterGuild" 
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+		
+
+<TextView name="Achievement" 
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="CharacterCraftingClass1" 
+view_flags="WID_IGNORE_WHEN_HIDDEN" 
+layout_borders="Rect(0,10,0,0)" />
+        
+
+<TextView name="CharacterCraftingClass2" 
+view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="CharacterPvPLevel" layout_borders="Rect(0,10,0,0)" view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="AnnihilationWon" layout_borders="Rect(0,10,0,0)" view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="AnnihilationLost" view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="CTFWon" view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="CTFLost" view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="ConquestWins" view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="ConquestLosses" view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="TournamentWins" view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="SiegeWon" view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="SiegeLost" view_flags="WID_IGNORE_WHEN_HIDDEN" />
+        
+
+<TextView name="MinigamesAbandoned" view_flags="WID_IGNORE_WHEN_HIDDEN" />
+ 
+    
+</View>
+    
+</View>
+    
+
+<View name="char_view_container" view_layout="stacked">
+    
+
+</View>
+  
+</View>
+
+</View>

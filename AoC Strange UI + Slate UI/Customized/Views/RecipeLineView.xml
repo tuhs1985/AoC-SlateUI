@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View view_layout="vertical" layout_borders="Rect(10,0,0,10)" xmlns:template="template.dtd"
+      plus_image_path="custom/plus.tga"
+      plus_image_borders="Rect(0,0,0,0)"
+      h_alignment="CENTER"
+      no_feat_color="active">
+    <TextView name="RecipeName" default_color="active" font="LARGE_bold" value="&lt;localized token=RecipeView_Recipe /&gt;" layout_borders="Rect(25,10,25,0)" view_flags="WID_IGNORE_WHEN_HIDDEN"/>            
+    <View name="MissingFeats" layout_borders="Rect(0,5,0,5)" view_flags="WID_IGNORE_WHEN_HIDDEN" view_layout="vertical">
+        <TextView default_color="silver" font="NORMAL" value="&lt;localized token=RecipeView_UnkownRecipeFeats /&gt;" layout_borders="Rect(0,0,0,5)" view_flags="WID_IGNORE_WHEN_HIDDEN"/>
+        <View name="MissingFeatsDock" layout_borders="Rect(0,0,0,5)" view_flags="WID_IGNORE_WHEN_HIDDEN" view_layout="vertical">
+        </View>
+    </View>            
+    <View view_layout="horizontal">
+        <View name="RecipeComponents" view_layout="horizontal"/>        
+        <BitmapView name="EqualBitmap" bitmap_gfx="../../Customized/gfx/craft/equals.tga" layout_borders="Rect(4,0,-24,0)" view_flags="WID_IGNORE_WHEN_HIDDEN"/>
+        <View view_layout="horizontal" v_alignment="BOTTOM">
+            <Button name="DecButton" gfxid_pressed="tradeskills/result_less_hover.tga" gfxid_raised="../../Customized/gfx/craft/result_less.tga" layout_borders="Rect(0,0,0,-1)" view_flags="WID_IGNORE_WHEN_HIDDEN"/>
+            <RecipeItemView layout_borders="Rect(-13,0,-13,0)" name="ResultItem" view_flags="RIF_ACCEPT_INPUT"/>        
+            <Button name="IncButton" gfxid_pressed="tradeskills/result_more_hover.tga" gfxid_raised="../../Customized/gfx/craft/result_more.tga" layout_borders="Rect(0,0,0,-1)" view_flags="WID_IGNORE_WHEN_HIDDEN"/>        
+        </View>    
+        <Button client_borders="Rect(40,70,10,30)" label="&lt;localized token=RecipeLineView_Create /&gt;" 
+                layout_borders="Rect(0,0,0,0)" layout_inner_borders="Rect(10,0,10,0)" name="BuildButton" 
+                template:source="StdButtonPaper" tooltip_text_disabled="&lt;localized token=RecipeView_NotEnoughIngredients /&gt;"/>
+    </View>
+</View>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View view_layout="stacked"
+      h_alignment="LEFT"
+      v_alignment="TOP"
+      text_color="active"
+      recipes_per_page ="20"
+      >
+  <BorderView   gfx_tl         = "../../Customized/gfx/frames/right_tab_topleft.png"
+				gfx_tr         = "../../Customized/gfx/frames/left_tab_topright.png"
+				gfx_bl         = "../../Customized/gfx/frames/right_tab_bottomleft.png"
+				gfx_br         = "../../Customized/gfx/frames/left_tab_bottomright.png"
+				gfx_left       = "../../Customized/gfx/frames/right_tab_left.png"
+				gfx_top        = "../../Customized/gfx/frames/left_tab_top.png"
+				gfx_right      = "../../Customized/gfx/frames/left_tab_right.png"
+				gfx_bottom     = "../../Customized/gfx/frames/left_tab_bottom.png"
+				gfx_background = "../../Customized/gfx/frames/bg.png"
+				bg_bitmap_borders     = "Rect(20,20,20,20)"
+        layout_borders="Rect(0,0,0,0)"
+        layout_inner_borders="Rect(5,5,5,5)"
+        max_size_extend="Point(COORD_MAX,COORD_MAX)"/>
+  <View view_layout="horizontal" h_alignment="LEFT" layout_borders="Rect(0,10,162,0)">
+    <VLayoutSpacer min_size ="26.0" max_size="26.0"/>
+    <Button name="Weapons"             
+            gfxid_raised="../../Customized/gfx/craft/tab_weapons.png" 
+            gfxid_pressed="../../Customized/gfx/craft/tab_weapons_active.png"
+            gfxid_highlight="../../Customized/gfx/craft/tab_weapons_hover.png"
+            view_flags="BTF_NOT_HOVER_ON_HL | WID_IGNORE_WHEN_HIDDEN"
+            layout_borders="Rect(1,3,1,0)"/>
+    <Button name="ArmorSmithing"             
+            gfxid_raised="../../Customized/gfx/craft/tab_armorsmithing.png"
+            gfxid_pressed="../../Customized/gfx/craft/tab_armorsmithing_active.png"
+            gfxid_highlight="../../Customized/gfx/craft/tab_armorsmithing_hover.png"
+            view_flags="BTF_NOT_HOVER_ON_HL | WID_IGNORE_WHEN_HIDDEN"
+            layout_borders="Rect(1,3,1,0)"/>
+    <Button name="Alchemy"             
+            gfxid_raised="../../Customized/gfx/craft/tab_alchemy.png"
+            gfxid_pressed="../../Customized/gfx/craft/tab_alchemy_active.png"
+            gfxid_highlight="../../Customized/gfx/craft/tab_alchemy_hover.png"
+            view_flags="BTF_NOT_HOVER_ON_HL | WID_IGNORE_WHEN_HIDDEN"
+            layout_borders="Rect(1,3,1,0)"/>
+    <Button name="Engineering"             
+            gfxid_raised="../../Customized/gfx/craft/tab_engineering.png"
+            gfxid_pressed="../../Customized/gfx/craft/tab_engineering_active.png"
+            gfxid_highlight="../../Customized/gfx/craft/tab_engineering_hover.png"
+            view_flags="BTF_NOT_HOVER_ON_HL | WID_IGNORE_WHEN_HIDDEN"
+            layout_borders="Rect(1,3,1,0)"/>
+    <Button name="GemCutting"             
+            gfxid_raised="../../Customized/gfx/craft/tab_gemcutting.png"
+            gfxid_pressed="../../Customized/gfx/craft/tab_gemcutting_active.png"
+            gfxid_highlight="../../Customized/gfx/craft/tab_gemcutting_hover.png"
+            view_flags="BTF_NOT_HOVER_ON_HL | WID_IGNORE_WHEN_HIDDEN"
+            layout_borders="Rect(1,3,1,0)"/>
+    <Button name="Gathering"             
+            gfxid_raised="../../Customized/gfx/craft/tab_gathering.png"
+            gfxid_pressed="../../Customized/gfx/craft/tab_gathering_active.png"
+            gfxid_highlight="../../Customized/gfx/craft/tab_gathering_hover.png"
+            view_flags="BTF_NOT_HOVER_ON_HL | WID_IGNORE_WHEN_HIDDEN"
+            layout_borders="Rect(1,3,1,0)"/>
+  </View>
+  <View view_layout="vertical" layout_borders="Rect(12,12,13,8)" >  
+   <View view_layout="horizontal" >
+      <View view_layout="vertical" h_alignment="LEFT">          
+          <MultiColListView 
+              name="LeftPage"
+			  default_color="silver"			  
+              view_flags="MLF_ALLOW_SINGLE_SELECT|MLF_AUTOLAYOUT|MLF_HIDE_HEADERS|MLF_DISABLE_REARANGING|MLF_DISABLE_BEGIN_DRAG|MLF_DISABLE_SORTING"              
+              layout_borders="Rect(0,75,0,0)"
+              list_cell_borders="Rect(0,0,0,0)"
+              min_size_extend="Point(220,271)"
+              max_size_limit="Point(220,271)"
+              row_bg_alpha_even="0.0"
+              row_bg_alpha_odd="0.0"
+              border_gfx_tl=""
+              border_gfx_tr="" 
+              border_gfx_bl=""
+              border_gfx_br=""
+              border_gfx_left=""
+              border_gfx_top=""
+              border_gfx_right=""
+              border_gfx_bottom=""
+              border_gfx_background=""
+              content_borders="Rect(0,0,0,0)"
+          />
+      </View>
+      <HLayoutSpacer/>
+      <View view_layout="vertical" h_alignment="RIGHT">          
+          <MultiColListView 
+              name="RightPage" 
+			  default_color="silver"
+              view_flags="MLF_ALLOW_SINGLE_SELECT|MLF_AUTOLAYOUT|MLF_HIDE_HEADERS|MLF_DISABLE_REARANGING|MLF_DISABLE_BEGIN_DRAG|MLF_DISABLE_SORTING"
+              view_layout="vertical"  
+              min_size_extend="Point(220,271)"
+              max_size_limit="Point(220,271)"
+              row_bg_alpha_even="0.0"
+              row_bg_alpha_odd="0.0"
+              layout_borders="Rect(0,75,0,0)"
+              list_cell_borders="Rect(0,0,0,0)"
+              border_gfx_tl="" 
+              border_gfx_tr=""
+              border_gfx_bl=""
+              border_gfx_br=""
+              border_gfx_left=""
+              border_gfx_top=""
+              border_gfx_right=""
+              border_gfx_bottom=""
+              border_gfx_background=""
+              content_borders="Rect(0,0,0,0)"
+          />
+      </View>
+    </View> 
+    <VLayoutSpacer/>
+  </View>
+  <View h_alignment="RIGHT" layout_borders="Rect(0,0,0,0)" max_size_extend="Point(COORD_MAX,-1)" view_layout="vertical">
+        <Button gfxid_highlight="GUIcomponents/closebuttons/close_white_hover.tga"
+        gfxid_pressed="GUIcomponents/closebuttons/close_white_pressed.tga"
+        gfxid_raised="GUIcomponents/closebuttons/close_white.tga"
+        layout_borders="Rect(0,8,8,0)"
+        max_zoom="1"
+        name="CloseButton"/>
+  </View>
+  <TextView name="TabTitle" font="HYBORIANSMALL" default_color="active" h_local_alignment="CENTER"layout_borders="Rect(0,65,0,0)"/>
+  <View name="PageButtons" layout_borders="Rect(100,63,100,0)" view_layout="horizontal" h_local_alignment="LEFT" view_flags="WIDI_IGNORE_WHEN_HIDDEN">
+    <Button name="LeftArrowButton" gfxid_highlight="Misc/arrow_left_active.tga" gfxid_pressed="Misc/arrow_left_black.tga" gfxid_raised="Misc/arrow_left.tga" layout_borders="Rect(0,0,0,0)"/>
+    <HLayoutSpacer/>
+    <Button name="RightArrowButton" gfxid_highlight="Misc/arrow_right_active.tga" gfxid_pressed="Misc/arrow_right_black.tga" gfxid_raised="Misc/arrow_right.tga" layout_borders="Rect(0,0,0,0)"/>		
+  </View>
+</View>

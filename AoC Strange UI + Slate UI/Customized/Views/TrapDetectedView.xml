@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<root>
+	<View view_layout="vertical">
+		<TextView feature_flags="TVF_MULTILINE|TVF_ACTIVE_HYPERLINKS|TVF_ALLOW_TEXT_SELECTION" layout_borders="Rect(10,10,10,10)" value="&lt;localized token=TrapDetectedView_TrapDetectedInYourVicinity /&gt;"/>
+		<Button label="&lt;localized token=TrapDetectedView_Detect /&gt;" layout_borders="Rect(10,0,10,10)" name="DetectButton" template:source="StdButtonPaper"/>
+	</View>
+</root>

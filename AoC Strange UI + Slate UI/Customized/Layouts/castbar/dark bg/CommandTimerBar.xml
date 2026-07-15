@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View view_layout="stacked" h_alignment="CENTER" v_alignment="CENTER" >
+	
+	<ProgressBar name="TimerBar" layout_borders="Rect(0,1,0,0)"
+		     orientation="right"
+		left_margin="0"
+		     bg_gfx="../../Customized/gfx/castbar/castbar_bg2.png"
+		     fg_gfx="../../Customized/gfx/castbar/castbar.png"
+					 view_flags="WID_IGNORE_WHEN_HIDDEN"/>
+	<TextView name="ActionName" value="Casting" font="LARGE_BOLD" label_color="white" max_size_limit="Point(210, COORD_MAX)" layout_borders="Rect(0,0,0,3)" feature_flags="TVF_RENDER_HALO|TVF_RENDER_SHADOW|TVF_ENABLE_SHADOW|TVF_ENABLE_ELLIPSIS"/>
+
+</View>

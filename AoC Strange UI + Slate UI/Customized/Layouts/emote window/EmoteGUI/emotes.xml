@@ -1,0 +1,190 @@
+<?xml versionng="U" encoding="utf-8" standalone="yes"?>
+<!-- $Change: 554999 $ (must be within the first 200 characters of the file) -->
+<EmoteData name="EmoteData">
+	<EmoteGroups name="EmoteGroups">
+		
+		<EmoteGroup link="GroupButton1"><Emote cmd_name="setoption SpellEffect_DisplayLevel 0"/></EmoteGroup>
+		<EmoteGroup link="GroupButton2"><Emote cmd_name="setoption SpellEffect_DisplayLevel 1"/></EmoteGroup>
+		<EmoteGroup link="GroupButton3"><Emote cmd_name="setoption SpellEffect_DisplayLevel 2"/></EmoteGroup>
+		<EmoteGroup link="GroupButton4"><Emote cmd_name="setoption SpellEffect_DisplayLevel 3"/></EmoteGroup>
+		<EmoteGroup link="GroupButton5"><Emote cmd_name="setoption SpellEffect_DisplayLevel 4"/></EmoteGroup>
+		<EmoteGroup link="GroupButton6"><Emote cmd_name="setoption ShowVicinityPlayerNames true"/></EmoteGroup>
+		<EmoteGroup link="GroupButton7"><Emote cmd_name="setoption ShowVicinityPlayerNames false"/></EmoteGroup>
+		<EmoteGroup link="GroupButton8"><Emote cmd_name="setoption ShowVicinityPlayerHealthbar true"/></EmoteGroup>
+		<EmoteGroup link="GroupButton9"><Emote cmd_name="setoption ShowVicinityPlayerHealthbar false"/></EmoteGroup>
+		<EmoteGroup link="GroupButton10"><Emote cmd_name="logcombat on"/></EmoteGroup>
+		<EmoteGroup link="GroupButton11"><Emote cmd_name="logcombat off"/></EmoteGroup>		
+		<EmoteGroup link="GroupButton12"><Emote cmd_name="act_selected"/></EmoteGroup>		
+		<EmoteGroup link="GroupButton13"><Emote cmd_name="act_report_all"/></EmoteGroup>		
+		<EmoteGroup link="GroupButton14"><Emote cmd_name="setoption chat_macro_window 1"/></EmoteGroup>
+		<EmoteGroup link="GroupButton15"><Emote cmd_name="setoption chat_macro_window 0"/></EmoteGroup>
+		<EmoteGroup link="GroupButton16"><Emote cmd_name="bycrom"/></EmoteGroup>
+		<EmoteGroup link="GroupButton17"><Emote cmd_name="StrangeUI2015_Quicksettings_script"/></EmoteGroup>
+		<EmoteGroup link="GroupButton18"><Emote cmd_name="reloadui"/></EmoteGroup>
+		<EmoteGroup link="GroupButton19"><Emote cmd_name="option castbar true"/></EmoteGroup>
+		<EmoteGroup link="GroupButton20"><Emote cmd_name="option castbar false"/></EmoteGroup>
+		<EmoteGroup link="GroupButton21"><Emote cmd_name="loadclip stopwatch.swf"/></EmoteGroup>
+		<EmoteGroup link="GroupButton22"><Emote cmd_name="unloadclip stopwatch.swf"/></EmoteGroup>
+		<EmoteGroup link="GroupButton23"><Emote cmd_name="StrangeUI2015_Yaremka_script"/></EmoteGroup>
+		<EmoteGroup link="GroupButton24"><Emote cmd_name="StrangeUI2015_Zodiac12_script"/></EmoteGroup>
+		<EmoteGroup link="GroupButton25"><Emote cmd_name="StrangeUI2015_EntityAcquiring_script"/></EmoteGroup>
+		<EmoteGroup link="GroupButton26"><Emote cmd_name="StrangeUI2015_EmperorGolems_script"/></EmoteGroup>
+		<EmoteGroup link="GroupButton27"><Emote cmd_name="StrangeUI2015_EmperorPact_script"/></EmoteGroup>
+		<EmoteGroup link="GroupButton28"><Emote cmd_name="StrangeUI2015_Abyss_script"/></EmoteGroup>
+		<EmoteGroup link="GroupButton29"><Emote cmd_name="StrangeUI2015_Necropolis_script"/></EmoteGroup>
+		<EmoteGroup link="GroupButton30"><Emote cmd_name="StrangeUI2015_Cavern_script"/></EmoteGroup>
+		<EmoteGroup link="GroupButton31"><Emote cmd_name="loadclip clock.swf"/></EmoteGroup>
+		<EmoteGroup link="GroupButton32"><Emote cmd_name="unloadclip clock.swf"/></EmoteGroup>	
+		<EmoteGroup link="GroupButton33"><Emote cmd_name="StrangeUI2015_Rage_Low"/></EmoteGroup>
+		<EmoteGroup link="GroupButton34"><Emote cmd_name="StrangeUI2015_Rage_Medium"/></EmoteGroup>
+		<EmoteGroup link="GroupButton35"><Emote cmd_name="StrangeUI2015_Rage_High"/></EmoteGroup>
+		<EmoteGroup link="GroupButton36"><Emote cmd_name="StrangeUI2015_Rage_9000"/></EmoteGroup>
+		<EmoteGroup link="GroupButton37"><Emote cmd_name="setoption DisplayTimerBar 1"/></EmoteGroup>
+		<EmoteGroup link="GroupButton38"><Emote cmd_name="setoption DisplayTimerBar 0"/></EmoteGroup>
+		<EmoteGroup link="GroupButton39"><Emote cmd_name="setoption RenderSetting_HideInspectOption true"/></EmoteGroup>
+		<EmoteGroup link="GroupButton40"><Emote cmd_name="setoption RenderSetting_HideInspectOption false"/></EmoteGroup>
+		<EmoteGroup link="GroupButton41"><Emote cmd_name="StrangeUI2015_Fassmod_on"/></EmoteGroup>
+		<EmoteGroup link="GroupButton42"><Emote cmd_name="StrangeUI2015_Fassmod_off"/></EmoteGroup>	
+			</EmoteGroups>
+
+	<EmotesAll name="EmotesAll">
+		<Emote cmd_name="adjust"			display_name="Adjust"/>
+		<Emote cmd_name="afraid"			display_name="&lt;localized token=TXT_Afraid category=Emotes /&gt;"/>
+		<Emote cmd_name="amused"			display_name="&lt;localized token=TXT_Amused category=Emotes /&gt;"/>
+		<Emote cmd_name="angry"				display_name="&lt;localized token=TXT_Angry category=Emotes /&gt;"/>
+		<Emote cmd_name="applaud"			display_name="&lt;localized token=TXT_Applaud category=Emotes /&gt;"/> 
+		<Emote cmd_name="apprehensive"		display_name="&lt;localized token=TXT_Apprehensive category=Emotes /&gt;"/>
+		<Emote cmd_name="approve"			display_name="&lt;localized token=TXT_Approve category=Emotes /&gt;"/>
+		<Emote cmd_name="ashamed"			display_name="&lt;localized token=TXT_Ashamed category=Emotes /&gt;"/>
+		<!--Emote cmd_name="emote battleshout" display_name="Battleshout"/-->
+		<Emote cmd_name="bearhug"			display_name="&lt;localized token=TXT_Bearhug category=Emotes /&gt;"/>
+		<Emote cmd_name="beckon"			display_name="&lt;localized token=TXT_Beckon category=Emotes /&gt;"/>
+		<Emote cmd_name="beg"				display_name="&lt;localized token=TXT_Beg category=Emotes /&gt;"/>
+		<Emote cmd_name="bloodthirst"		display_name="Bloodthirst"/>
+		<Emote cmd_name="blowkiss"			display_name="&lt;localized token=TXT_Blowkiss category=Emotes /&gt;"/>
+		<Emote cmd_name="bonk"				display_name="Bonk"/>
+		<Emote cmd_name="bow"				display_name="&lt;localized token=TXT_Bow category=Emotes /&gt;"/>
+		<Emote cmd_name="bow_khitai_formal"	display_name="Khitai Formal Bow"/>
+		<Emote cmd_name="bow_khitai_formal"	display_name="Khitai Greet Bow"/>
+		<Emote cmd_name="bow_khitai_formal"	display_name="Khitai Kneel Bow"/>
+		<Emote cmd_name="bow_khitai_formal"	display_name="Khitai Short Bow"/>
+		<Emote cmd_name="burning"			display_name="&lt;localized token=TXT_Burningman category=Emotes /&gt;"/>
+		<Emote cmd_name="burp"				display_name="&lt;localized token=TXT_Burp category=Emotes /&gt;"/>
+		<Emote cmd_name="bycrom"			display_name="&lt;localized token=TXT_Bycrom category=Emotes /&gt;"/>
+		<Emote cmd_name="bymitra"			display_name="&lt;localized token=TXT_Bymitra category=Emotes /&gt;"/>
+		<Emote cmd_name="byset"				display_name="&lt;localized token=TXT_Byset category=Emotes /&gt;"/>
+		<Emote cmd_name="chair_cheer"		display_name="Sitting cheer"/>
+		<Emote cmd_name="chair_clap"		display_name="Sitting clap"/>
+		<Emote cmd_name="chair_drink"		display_name="Sitting drink"/>
+		<Emote cmd_name="chair_eat"			display_name="Sitting eat"/>
+		<Emote cmd_name="chair_give"		display_name="Sitting give"/>
+		<Emote cmd_name="chair_lookaround"	display_name="Sitting looking around"/>
+		<Emote cmd_name="chair_nod"			display_name="Sitting nod"/>
+		<Emote cmd_name="chair_receive"		display_name="Sitting receive"/>
+		<Emote cmd_name="chair_shake"		display_name="Sitting shake"/>
+		<Emote cmd_name="chair_talk"		display_name="Sitting talk"/>
+		<Emote cmd_name="cheer"				display_name="&lt;localized token=TXT_Cheer category=Emotes /&gt;"/>
+		<Emote cmd_name="chicken"			display_name="&lt;localized token=TXT_Chicken category=Emotes /&gt;"/>
+		<Emote cmd_name="clap"				display_name="&lt;localized token=TXT_Clap category=Emotes /&gt;"/>
+		<Emote cmd_name="combhair"			display_name="&lt;localized token=TXT_Combhair category=Emotes /&gt;"/>
+		<Emote cmd_name="concession"		display_name="Concession"/>
+		<Emote cmd_name="confused"			display_name="&lt;localized token=TXT_Confused category=Emotes /&gt;"/>
+		<Emote cmd_name="cough"				display_name="&lt;localized token=TXT_Cough category=Emotes /&gt;"/>
+		<Emote cmd_name="crossarms"			display_name="&lt;localized token=TXT_Crossarms category=Emotes /&gt;"/>
+		<Emote cmd_name="cry"				display_name="&lt;localized token=TXT_Cry category=Emotes /&gt;"/>
+		<Emote cmd_name="curse"				display_name="&lt;localized token=TXT_Curse category=Emotes /&gt;"/>
+		<Emote cmd_name="curtsey"			display_name="&lt;localized token=TXT_Curtsey category=Emotes /&gt;"/>
+		<Emote cmd_name="dance_sexy"		display_name="Dance Sexy"/>
+		<Emote cmd_name="danglefeet"		display_name="Dangle feet"/>
+		<Emote cmd_name="disagree"			display_name="&lt;localized token=TXT_Disagree category=Emotes /&gt;"/>
+		<Emote cmd_name="disappointed"		display_name="&lt;localized token=TXT_Disappointed category=Emotes /&gt;"/>
+		<Emote cmd_name="disgusted"			display_name="&lt;localized token=TXT_Disgusted category=Emotes /&gt;"/>
+		<Emote cmd_name="dismiss"			display_name="&lt;localized token=TXT_Dismiss category=Emotes /&gt;"/>
+		<Emote cmd_name="dissension"		display_name="Dissension"/>
+		<Emote cmd_name="drink"				display_name="&lt;localized token=TXT_Drink category=Emotes /&gt;"/>
+		<Emote cmd_name="dustoff"			display_name="Dust Off"/>
+		<Emote cmd_name="embarassed"		display_name="&lt;localized token=TXT_Embrassed category=Emotes /&gt;"/>
+		<Emote cmd_name="embrace"			display_name="&lt;localized token=TXT_Embrace category=Emotes /&gt;"/>
+		<Emote cmd_name="emphasize"			display_name="&lt;localized token=TXT_Emphasize category=Emotes /&gt;"/>
+		<Emote cmd_name="excited"			display_name="Excited"/>
+		<Emote cmd_name="excitedclap"		display_name="Excited Clap"/>
+		<Emote cmd_name="exhausted"			display_name="Exhausted"/>
+		<Emote cmd_name="fart"				display_name="Fart"/>
+		<Emote cmd_name="flirt"				display_name="&lt;localized token=TXT_Flirt category=Emotes /&gt;"/>
+		<Emote cmd_name="formalgreeting"	display_name="&lt;localized token=TXT_Formalgreeting category=Emotes /&gt;"/>
+		<Emote cmd_name="frustrated"		display_name="&lt;localized token=TXT_Frustrated category=Emotes /&gt;"/>
+		<Emote cmd_name="fury"				display_name="Fury"/>
+		<Emote cmd_name="gigolo"			display_name="&lt;localized token=TXT_Gigolo category=Emotes /&gt;"/>
+		<Emote cmd_name="give"				display_name="Give"/>
+		<Emote cmd_name="greet"				display_name="&lt;localized token=TXT_Greet category=Emotes /&gt;"/>
+		<Emote cmd_name="grief"				display_name="Grief"/>
+		<Emote cmd_name="grin"				display_name="&lt;localized token=TXT_Grin category=Emotes /&gt;"/>
+		<Emote cmd_name="haggle"			display_name="&lt;localized token=TXT_Haggle category=Emotes /&gt;"/>
+		<Emote cmd_name="harmony"			display_name="Harmony"/>
+		<Emote cmd_name="hi"				display_name="&lt;localized token=TXT_Hi category=Emotes /&gt;"/>
+		<Emote cmd_name="horizon"			display_name="&lt;localized token=TXT_Horizon category=Emotes /&gt;"/>
+		<Emote cmd_name="hugefish"			display_name="&lt;localized token=TXT_Hugefish category=Emotes /&gt;"/>
+		<Emote cmd_name="irritated"			display_name="&lt;localized token=TXT_Irritated category=Emotes /&gt;"/>
+		<Emote cmd_name="joy"				display_name="Joy"/>
+		<Emote cmd_name="kneel"				display_name="Kneel"/>
+		<Emote cmd_name="laugh"				display_name="&lt;localized token=TXT_Laugh category=Emotes /&gt;"/>
+		<Emote cmd_name="laughheartily"		display_name="&lt;localized token=TXT_Laughheartily category=Emotes /&gt;"/>
+		<Emote cmd_name="lightheaded"		display_name="&lt;localized token=TXT_Lightheaded category=Emotes /&gt;"/>
+		<Emote cmd_name="lookaround"		display_name="&lt;localized token=TXT_Lookaround category=Emotes /&gt;"/>
+		<Emote cmd_name="lounge"			display_name="Lounge"/>
+		<Emote cmd_name="lowembrace"		display_name="&lt;localized token=TXT_Lowembrace category=Emotes /&gt;"/>
+		<Emote cmd_name="mediumfish"		display_name="&lt;localized token=TXT_Mediumfish category=Emotes /&gt;"/>
+		<Emote cmd_name="ovation"			display_name="&lt;localized token=TXT_Ovation category=Emotes /&gt;"/>
+		<Emote cmd_name="picknose"			display_name="Pick nose"/>
+		<Emote cmd_name="point"				display_name="&lt;localized token=TXT_Point category=Emotes /&gt;"/>
+		<Emote cmd_name="pointback"			display_name="&lt;localized token=TXT_Pointback category=Emotes /&gt;"/>
+		<Emote cmd_name="pointdown"			display_name="&lt;localized token=TXT_Pointdown category=Emotes /&gt;"/>
+		<Emote cmd_name="pointleft"			display_name="&lt;localized token=TXT_Pointleft category=Emotes /&gt;"/>
+		<Emote cmd_name="pointright"		display_name="&lt;localized token=TXT_Pointright category=Emotes /&gt;"/>
+		<Emote cmd_name="pointup"			display_name="&lt;localized token=TXT_Pointup category=Emotes /&gt;"/>
+		<Emote cmd_name="ponder"			display_name="&lt;localized token=TXT_Ponder category=Emotes /&gt;"/>
+		<Emote cmd_name="poundchest"		display_name="&lt;localized token=TXT_Poundchest category=Emotes /&gt;"/>
+		<Emote cmd_name="prone"				display_name="Prone"/>
+		<Emote cmd_name="pumpleftfist"		display_name="&lt;localized token=TXT_Pumpleftfist category=Emotes /&gt;"/>
+		<Emote cmd_name="pumprightfist"		display_name="&lt;localized token=TXT_Pumprightfist category=Emotes /&gt;"/>
+		<Emote cmd_name="pushaway"			display_name="&lt;localized token=TXT_Pushaway category=Emotes /&gt;"/>
+		<Emote cmd_name="relaxed_lean"		display_name="Relaxed lean"/>
+		<Emote cmd_name="rude"				display_name="&lt;localized token=TXT_Rude category=Emotes /&gt;"/>
+		<Emote cmd_name="sad"				display_name="&lt;localized token=TXT_Sad category=Emotes /&gt;"/>
+		<Emote cmd_name="salute"			display_name="&lt;localized token=TXT_Salute category=Emotes /&gt;"/>
+		<Emote cmd_name="scout"				display_name="&lt;localized token=TXT_Scout category=Emotes /&gt;"/>
+		<Emote cmd_name="scared"			display_name="&lt;localized token=TXT_Scared category=Emotes /&gt;"/>
+		<Emote cmd_name="scratcharm"		display_name="&lt;localized token=TXT_Scratcharm category=Emotes /&gt;"/>
+		<Emote cmd_name="scratchhead"		display_name="&lt;localized token=TXT_Scratchhead category=Emotes /&gt;"/>
+		<Emote cmd_name="secret_handshake"	display_name="Secret handshake"/>
+		<Emote cmd_name="shakehead"			display_name="&lt;localized token=TXT_Shakehead category=Emotes /&gt;"/>
+		<Emote cmd_name="shocked"			display_name="&lt;localized token=TXT_Shocked category=Emotes /&gt;"/>
+		<Emote cmd_name="shoo"				display_name="&lt;localized token=TXT_Shoo category=Emotes /&gt;"/>
+		<Emote cmd_name="shrug"				display_name="Shrug"/>
+		<Emote cmd_name="sigh"				display_name="&lt;localized token=TXT_Sigh category=Emotes /&gt;"/>
+		<Emote cmd_name="sit"				display_name="Sit"/>
+		<Emote cmd_name="slap"				display_name="Slap"/>
+		<Emote cmd_name="sleep"				display_name="Sleep"/>
+		<Emote cmd_name="slitthroat"		display_name="&lt;localized token=TXT_Slitthroat category=Emotes /&gt;"/>
+		<Emote cmd_name="smallfish"			display_name="&lt;localized token=TXT_Smallfish category=Emotes /&gt;"/>
+		<Emote cmd_name="sneeze"			display_name="Sneeze"/>
+		<Emote cmd_name="spit"				display_name="Spit"/>
+		<Emote cmd_name="squat"				display_name="Squat"/>
+		<Emote cmd_name="stand"				display_name="Stand"/>
+		<Emote cmd_name="stop"				display_name="&lt;localized token=TXT_Stop category=Emotes /&gt;"/>
+		<Emote cmd_name="surprised"			display_name="&lt;localized token=TXT_Surprised category=Emotes /&gt;"/>
+		<Emote cmd_name="sway"				display_name="&lt;localized token=TXT_Sway category=Emotes /&gt;"/>
+		<Emote cmd_name="tantrum"			display_name="&lt;localized token=TXT_Tantrum category=Emotes /&gt;"/>
+		<Emote cmd_name="think"				display_name="&lt;localized token=TXT_Think category=Emotes /&gt;"/>
+		<Emote cmd_name="thirsty"			display_name="&lt;localized token=TXT_Thristy category=Emotes /&gt;"/>
+		<Emote cmd_name="toast"				display_name="&lt;localized token=TXT_Toast category=Emotes /&gt;"/>
+		<Emote cmd_name="track"				display_name="&lt;localized token=TXT_Track category=Emotes /&gt;"/>
+		<Emote cmd_name="trance"			display_name="Trance"/>
+		<Emote cmd_name="uneasy"			display_name="&lt;localized token=TXT_Uneasy category=Emotes /&gt;"/>
+		<Emote cmd_name="vomit"				display_name="&lt;localized token=TXT_Vomit category=Emotes /&gt;"/>
+		<Emote cmd_name="warm_hands"		display_name="Warm hands"/>
+		<Emote cmd_name="warn"				display_name="&lt;localized token=TXT_Warn category=Emotes /&gt;"/>
+		<Emote cmd_name="wary"				display_name="&lt;localized token=TXT_Wary category=Emotes /&gt;"/>
+		<Emote cmd_name="waveaway"			display_name="&lt;localized token=TXT_Waveaway category=Emotes /&gt;"/>
+	</EmotesAll>
+</EmoteData>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View name="Root" view_layout="stacked" layout_borders="Rect(0,0,0,0)"
+	max_size_extend="Point(COORD_MAX,-1)"
+	shadow_offset="Point(1.0,1.0)">
+	<View view_layout="horizontal" layout_borders="Rect(0,0,0,3)">
+		<BitmapView name="BitmapViewLeft"
+			layout_borders="Rect(0,0,15,2)"
+			bitmap_gfx="icons/crossed_swords.tga" />
+		<TextView name="TextView"
+			font="LARGE_BOLD"
+			layout_borders="Rect(0,0,0,2)"
+			default_color="active" feature_flags="TVF_RENDER_SHADOW|TVF_RENDER_HALO"/>
+		<BitmapView name="BitmapViewRight" 
+			layout_borders="Rect(13,0,0,2)"
+			bitmap_gfx="icons/crossed_swords.tga" />
+	</View>
+</View>

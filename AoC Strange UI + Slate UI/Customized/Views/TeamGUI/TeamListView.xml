@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View view_layout="stacked" h_alignment="LEFT" view_flags="WID_HANDLE_MOUSE">
+	<BorderView name           = "Background"
+				view_layout    = "stacked"
+				max_size_extend="Point(COORD_MAX,COORD_MAX)"
+				gfx_tl         = "../../Customized/gfx/frames/raid_topleft.png"
+				gfx_tr         = "../../Customized/gfx/frames/raid_topright.png"
+				gfx_bl         = "../../Customized/gfx/frames/raid_bottomleft.png"
+				gfx_br         = "../../Customized/gfx/frames/raid_bottomright.png"
+				gfx_left       = "../../Customized/gfx/frames/right_tab_left.png"
+				gfx_top        = "../../Customized/gfx/frames/raid_top.png"
+				gfx_right      = "../../Customized/gfx/frames/left_tab_right.png"
+				gfx_bottom     = "../../Customized/gfx/frames/raid_bottom.png"
+				gfx_background = "../../Customized/gfx/frames/bg.png"
+				bg_bitmap_borders     = "Rect(20,20,20,20)"
+	/>
+	<MiniCharListView name="ListView"
+		max_char_count="6"
+		view_layout="vertical"
+		layout_borders="Rect(10,3,0,10)"
+		hide_empty_slots="true" />
+</View>

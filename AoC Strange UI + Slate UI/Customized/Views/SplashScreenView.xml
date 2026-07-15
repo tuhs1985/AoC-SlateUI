@@ -1,0 +1,86 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+
+<View view_layout = "stacked"
+      view_flags="WID_HANDLE_MOUSE"
+      light_text_color   = "green"
+      dark_text_color = "negative"
+	  h_alignment="CENTER"
+      >
+    
+    <!-- background bitmap -->
+
+    <View name="ImageView"
+          max_size_extend = "Point(COORD_MAX, COORD_MAX)"
+          />
+    
+    <!-- progress bars and status text -->
+<VLayoutSpacer/>
+    <View view_layout = "vertical"
+          max_size_extend = "Point(COORD_MAX, COORD_MAX)" >
+<VLayoutSpacer/>     
+	   <View view_layout = "stacked">
+
+            <BitmapView bitmap_gfx="../../Customized/gfx/loading/empty.png"
+                        view_flags="BMF_TILE_HORIZONTALLY"
+                        max_size_extend = "Point(0,0)"
+                        />
+
+            <View view_layout = "vertical">
+
+                <View view_layout = "stacked"
+                      max_size_extend="Point(COORD_MAX,-1)" >
+
+                    <ProgressBar name="PatcherBar"
+                                 layout_borders="Rect(0,0,0,0)"
+                                 orientation="right"
+                                 bg_gfx="../../Customized/gfx/loading/logoempty.png"
+                                 fg_gfx="../../Customized/gfx/loading/logofull.png"
+                                 view_flags = "PBF_TILE_FG_HORIZONTAL"
+                                 _min_size_limit="Point(-1,COORD_MAX)"
+                                 max_size_extend="Point(COORD_MAX,-1)"
+                             />
+
+                </View>
+
+            </View>
+
+        </View>
+
+		    <View name="TipsAndDescription" view_layout = "horizontal" h_alignment="CENTER">
+
+            <View view_layout = "vertical" h_alignment="CENTER">
+
+                <BorderView view_layout = "vertical"
+                        gfx_tl         = ""
+                        gfx_tr         = ""
+                        gfx_bl         = ""
+                        gfx_br         = ""
+                        gfx_left       = ""
+                        gfx_top        = ""
+                        gfx_right      = ""
+                        gfx_bottom     = ""
+                        gfx_background = "zoning/zoning_text_background.tga"
+                        layout_inner_borders = "Rect(10,10,10,10)"
+                        _min_size_extend = "Point(COORD_MAX, COORD_MAX)"
+                    >
+
+                <BitmapView bitmap_gfx = "../../Customized/gfx/loading/top.png" max_size_extend = "Point(COORD_MAX,-1)"/>
+				<TextView name="PatchingInfo"
+						  font = "HYBORIANSMALL"
+                          feature_flags = "TVF_MULTILINE|TVF_WORD_WRAP|TVF_RENDER_HALO|TVF_RENDER_SHADOW"
+                          pref_size_mode = "FLEXIBLE_WIDTH" />
+                <TextView name="PlayfieldTextView"
+						  font = "SMALL"
+                          pref_size_mode = "FLEXIBLE_WIDTH"
+                          feature_flags = "TVF_MULTILINE|TVF_WORD_WRAP|TVF_RENDER_HALO|TVF_RENDER_SHADOW"
+                          />
+            </BorderView>
+
+        </View>
+		
+    </View>
+	
+    </View>
+
+</View>

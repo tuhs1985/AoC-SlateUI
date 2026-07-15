@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Root>
+    <Waypoint type="destination" instance="101" name="&lt;font color=&apos;#FFFF00&apos;&gt;#1&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#FFFF00&apos;&gt;Maratus Demon Queen&lt;/font&gt;" tooltip_text="The Maze #1" position="Point(414.672485,431.960907)" normal_bitmap="WpIcons/target_of_interest.tga" />
+    <Waypoint type="destination" instance="102" name="&lt;font color=&apos;#FFFF00&apos;&gt;#2&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#FFFF00&apos;&gt;Nemedian Sergeant&lt;/font&gt;" tooltip_text="The Maze #2" position="Point(81.960022,265.479614)" normal_bitmap="WpIcons/target_of_interest.tga" />
+    <Waypoint type="destination" instance="103" name="&lt;font color=&apos;#FFFF00&apos;&gt;#3&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#FFFF00&apos;&gt;Ancient Pond Demon&lt;/font&gt;" tooltip_text="The Maze #3" position="Point(433.881866,58.268463)" normal_bitmap="WpIcons/target_of_interest.tga" />
+</Root>

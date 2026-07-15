@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<View grid_borders="Rect(0,0,0,0)" text_color="#307090" view_layout="vertical"
+	hard_color="#D71919" 
+	medium_color="active" 
+	normal_color="#FDFF34" 
+	easy_color="positive" 
+	trivial_color="std_disabled" 
+	completed_color="standard">
+  <BorderView 
+    gfx_background="QuestJournal/questpopup_background.tga" 
+    gfx_bl="QuestJournal/questpopup_bottomleft.tga" 
+    gfx_bottom="QuestJournal/questpopup_bottom.tga" 
+    gfx_br="QuestJournal/questpopup_bottomright.tga" 
+    gfx_left="QuestJournal/questpopup_left.tga" 
+    gfx_right="QuestJournal/questpopup_right.tga" 
+    gfx_tl="QuestJournal/questpopup_topleft.tga" 
+    gfx_top="QuestJournal/questpopup_top.tga" 
+    gfx_tr="QuestJournal/questpopup_topright.tga" 
+    layout_borders="Rect(0,0,0,0)" 
+    layout_inner_borders="Rect(30,120,30,50)" 
+    view_flags="BVF_TILE_ALL_BORDERS | BVF_TILE_BACKGROUND" 
+    view_layout="vertical">
+    <TextView default_color="#E38F35" font="NORMAL_BOLD" layout_borders="Rect(3,0,0,0)" name="StatusText" value="&lt;localized token=QS_GetQuestsForTeam category=MiscGUI /&gt;"/>
+    <MultiColListView 
+      col_hdr_label_offset="Point(5,3)" 
+      item_selected_font_color="active" 
+      label_color_sorted="active" 
+      label_color_unsorted="active" 
+      label_font_sorted="LARGE" 
+      label_font_unsorted="LARGE" 
+      min_size_extend="Point(400.0, 200.0)" 
+      name="quests_listview" 
+      view_flags="MLF_AUTOLAYOUT|MLF_ALLOW_SINGLE_SELECT"/>
+    <View h_alignment="LEFT" view_layout="horizontal" >
+			<CheckBox label="" name="DisplayLocalPlayfieldOnly" layout_borders="Rect(20,0,0,0)" label_font="normal" value="false"/>
+      <TextView default_color="#E38F35" font="NORMAL_BOLD" layout_borders="Rect(3,0,0,0)" name="DisplayLocalPlayfieldLabel" value="&lt;localized token=QS_DisplayLocalPlayfieldLabel category=MiscGUI /&gt;"/>
+    </View>
+    <View h_alignment="CENTER" view_layout="vertical">
+      <View view_layout="horizontal">
+        <Button label="&lt;localized token=QS_GetQuests category=MiscGUI /&gt;" min_size_extend="Point(80,-1)" name="TakeQuestsButton" template:source="StdButtonPaper"/>
+        <Button label="&lt;localized token=InstanceSelectView_Cancel category=GenericGUI /&gt;" min_size_extend="Point(80,-1)" name="CloseButton" template:source="StdButtonPaper"/>
+      </View>
+    </View>
+  </BorderView>
+</View>

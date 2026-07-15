@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- $Change: 554999 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View view_layout="stacked">
+    <Button name="Button"
+	interaction_borders="Rect(5,5,5,5)"
+	gfxid_raised="PortraitGUI/team_button_icons/team_icon.tga"
+	    
+	gfxid_pressed="PortraitGUI/team_button_icons/team_icon.tga"
+	    	gfxid_highlight="PortraitGUI/team_button_icons/round_icon_hover.tga"
+	layout_borders="Rect(0,0,0,0)"  />
+</View>

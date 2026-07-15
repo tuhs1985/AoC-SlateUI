@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+
+
+<View view_layout="vertical"
+>
+	
+<BorderView view_layout="vertical" layout_inner_borders="Rect(10,10,10,10)" view_local_alpha="0.9"
+		
+fx_tl         = ""
+gfx_tr         = ""
+gfx_bl         = ""
+gfx_br         = ""
+gfx_left       = ""
+gfx_top        = ""
+gfx_right      = ""
+gfx_bottom     = ""
+gfx_background = "../../Customized/gfx/frames/bg.png">  
+
+<PetCommandBar	layout_borders="Rect(0,0,0,0)"/>  
+
+<PetPointView name="PetPointView"
+		  
+petpoint_gfx_empty="PortraitGUI/petpoint_empty.tga"
+		  
+petpoint_gfx_full="PortraitGUI/petpoint_full.tga"
+		  
+max_pet_points = "12" 
+layout_borders="Rect(0,10,0,-5)"/>
+    
+    
+
+<MiniCharListView name="ListView"
+		      
+hide_empty_slots="true"
+		      
+show_char_stats_in_hoverinfo="true"
+		      
+max_char_count="20"
+		      
+iew_layout="vertical"
+		      
+layout_borders="Rect(0,10,0,0)" />
+
+  	
+</BorderView>
+</View>

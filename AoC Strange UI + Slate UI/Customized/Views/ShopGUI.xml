@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View Buy_ColIconSize="40" 
+      Buy_ColNameSize="180" 
+      Buy_ColPriceSize="50" 
+      Buy_ColStockSize="40"
+      Sell_ColIconSize="40" 
+      Sell_ColNameSize="180" 
+      Sell_ColPriceSize="50" 
+      criteria_not_met_color="negative" 
+      item_selected_color="white" 
+      item_selected_font_color="active" 
+      list_font_color="LARGE" 
+      name="Root" 
+      row_bg_alpha_even="0.0" 
+      row_bg_alpha_odd="0.33" 
+      v_alignment="BOTTOM" 
+      view_layout="stacked"
+      max_size_extend="Point(COORD_MAX,COORD_MAX)"
+      start_size="Point(421,510)">		
+    <BorderView bg_bitmap_borders="Rect(20,20,20,20)" 
+                gfx_tl         = "../../Customized/gfx/frames/right_tab_topleft.png"
+				gfx_tr         = "../../Customized/gfx/frames/left_tab_topright.png"
+				gfx_bl         = "../../Customized/gfx/frames/right_tab_bottomleft.png"
+				gfx_br         = "../../Customized/gfx/frames/left_tab_bottomright.png"
+				gfx_left       = "../../Customized/gfx/frames/right_tab_left.png"
+				gfx_top        = "../../Customized/gfx/frames/left_tab_top.png"
+				gfx_right      = "../../Customized/gfx/frames/left_tab_right.png"
+				gfx_bottom     = "../../Customized/gfx/frames/left_tab_bottom.png"
+				gfx_background = "../../Customized/gfx/frames/bg.png" 
+                layout_borders="Rect(15,10,8,0)" 
+                layout_inner_borders="Rect(0,0,0,0)" 
+                max_size_extend="Point(COORD_MAX,COORD_MAX)"  
+                min_size_extend="Point(421,400)"                
+                name="PlayerTrade" 
+                view_flags="BVF_TILE_ALL_BORDERS|BVF_TILE_BACKGROUND" 
+                view_layout="vertical">
+        <View layout_borders="Rect(0,0,0,0)" name="top_view" view_layout="stacked">
+            <View layout_borders="Rect(25,10,0,10)" view_layout="stacked">
+              <TextView name="ShopTitle"
+                        default_color="active"
+                        feature_flags="TVF_RENDER_SHADOW|TVF_RENDER_HALO|TVF_MULTILINE|TVF_WORD_WRAP"
+                        font="NORMAL_BOLD"
+                        value="&lt;localized token=ShopGUI_SShop /&gt;"/>
+            </View>
+            <View layout_borders="Rect(0,5,40,0)" view_layout="horizontal">
+                <HLayoutSpacer/>
+                <TabSelector left_margin				 ="8.0" 
+                             name						 ="TabSelector" 
+                             right_margin				 ="8.0" 
+                             tab_gfx_selected_left     	 = "sidebars/darksetin_tab_active_left.tga"
+							 tab_gfx_selected_middle   	 = "sidebars/darksetin_tab_active_center.tga"
+							 tab_gfx_selected_right    	 = "sidebars/darksetin_tab_active_right.tga"
+							 tab_gfx_unselected_left     = "sidebars/darksetin_tab_inactive_left.tga"
+							 tab_gfx_unselected_middle   = "sidebars/darksetin_tab_inactive_center.tga"
+							 tab_gfx_unselected_right    = "sidebars/darksetin_tab_inactive_right.tga"
+                             tab_label_borders_selected	 ="Rect(20,5,20,0)" 
+                             tab_label_borders_unselected="Rect(20,5,20,0)" 
+                             tab_selected_color			 ="active" 
+                             tab_unselected_color		 ="gray" 
+							 font				 		 ="NORMAL_BOLD"
+                             view_flags					 ="TSF_USE_TABS_SIZE" 
+                             view_layout				 ="horizontal">
+                    <Tab label="&lt;localized token=ShopGUI_Buy /&gt;"/>
+                    <Tab label="&lt;localized token=ShopGUI_Sell /&gt;"/>
+                </TabSelector>
+            </View>
+        </View>
+        <View layout_borders="Rect(15,-10,15,35)" name="main_view" view_layout="stacked" max_size_extend="Point(COORD_MAX,COORD_MAX)">
+          <ViewSelector name="ViewSelector">
+            <View view_layout="vertical">
+              <View view_layout="vertical">
+                <View name="BuyListViewDock"/>
+                <BorderView name="WoodenDivider" layout_borders="Rect(0,-18,0,0)" gfx_background="TradeItemGUI/wooden_divider_center.tga"
+                      gfx_bl="" gfx_bottom="" gfx_br="" gfx_left="TradeItemGUI/wooden_divider_left.tga" gfx_right="TradeItemGUI/wooden_divider_right.tga" gfx_tl="" gfx_top="" gfx_tr=""
+                      max_size_extend="Point(COORD_MAX,-1)" min_size_limit="Point(-1,COORD_MAX)" view_flags="BVF_TILE_BACKGROUND" view_layout="horizontal"/>
+                <View layout_borders="Rect(0,-5,12,0)" name="checkboxs_view" view_layout="horizontal" max_size_extend="Point(COORD_MAX,-1)">
+                  <CheckBox label="&lt;localized token=ShopGUI_CanBuyOnly /&gt;" name="CanBuyFilter" layout_borders="Rect(20,0,0,0)" label_font="normal" value="false"/>
+                  <CheckBox label="&lt;localized token=ShopGUI_CanUseOnly /&gt;" name="CanUseFilterBuy" layout_borders="Rect(20,0,0,0)" label_font="normal" value="false"/>
+                  <HLayoutSpacer/>
+                  <Button label="&lt;localized token=ShopGUI_Buy /&gt;" layout_borders="Rect(0,0,0,0)" name="BuyButton"/>
+                </View>
+                <BorderView name="WoodenDivider" layout_borders="Rect(0,-7,0,0)" gfx_background="TradeItemGUI/wooden_divider_center.tga"
+                      gfx_bl="" gfx_bottom="" gfx_br="" gfx_left="TradeItemGUI/wooden_divider_left.tga" gfx_right="TradeItemGUI/wooden_divider_right.tga" gfx_tl="" gfx_top="" gfx_tr=""
+                      max_size_extend="Point(COORD_MAX,-1)" min_size_limit="Point(-1,COORD_MAX)" view_flags="BVF_TILE_BACKGROUND" view_layout="horizontal"/>
+                <View layout_borders="Rect(8,4,0,7)" view_layout="horizontal">
+                  <TextView name              = "Money"
+                            font              = "HYBORIANSMALL"
+                            value             = "&lt;localized token=Generic_MoneyLabel /&gt;"
+                            layout_borders    = "Rect(10,0,10,0)"
+                            width_group       = "CurrencyLabels"
+                            width_group_owner = "main_view"
+                  />
+                  <MoneyView layout_borders="Rect(0,0,15,0)" name="BuyPriceView"/>
+                  <HLayoutSpacer/>
+                </View>
+              </View>
+              <View view_layout="vertical" name="BuyTokenListView" view_flags="WID_IGNORE_WHEN_HIDDEN">
+                <BorderView name="ThinDivider" layout_borders="Rect(5,2,8,4)" gfx_background="TradeItemGUI/playertrade_window_thin_divider.tga"
+                      gfx_bl="" gfx_bottom="" gfx_br="" gfx_left="" gfx_right="" gfx_tl="" gfx_top="" gfx_tr=""
+                      max_size_extend="Point(COORD_MAX,-1)" min_size_limit="Point(-1,COORD_MAX)" view_flags="BVF_TILE_BACKGROUND" view_layout="horizontal"/>
+                <View layout_borders="Rect(8,0,0,5)" view_layout="horizontal" >
+                  <View view_layout="vertical">
+                    <TextView font              = "HYBORIANSMALL"
+                              value             = "&lt;localized token=TokenGUI_TokensShop /&gt;"
+                              layout_borders    = "Rect(10,8,10,0)"
+                              width_group       = "CurrencyLabels"
+                              width_group_owner = "main_view"
+                    />
+                    <VLayoutSpacer/>
+                  </View>
+                  <TokenView layout_borders="Rect(0,0,15,0)" name="BuyTokens"/>
+                </View>
+              </View>
+            </View>
+            <View view_layout="vertical">
+              <View view_layout="vertical">
+                <View name="SellListViewDock"/>
+                <View layout_borders="Rect(0,-5,12,0)" name="checkboxs_view" view_layout="horizontal" max_size_extend="Point(COORD_MAX,-1)">
+                  <CheckBox label="&lt;localized token=ShopGUI_CanNotUseOnly /&gt;" name="CanNotUseFilterSell" layout_borders="Rect(20,0,0,0)" label_font="normal" value="false"/>
+                  <HLayoutSpacer/>
+                  <Button label="&lt;localized token=ShopGUI_Undo /&gt;" layout_borders="Rect(0,0,0,0)" name="UndoButton"/>
+                  <Button label="&lt;localized token=ShopGUI_Sell /&gt;" layout_borders="Rect(0,0,0,0)" name="SellButton"/>
+                </View>
+                <View layout_borders="Rect(8,4,0,7)" view_layout="horizontal">
+                  <TextView name              = "Money"
+                            font              = "HYBORIANSMALL"
+                            value             = "&lt;localized token=Generic_MoneyLabel /&gt;"
+                            layout_borders    = "Rect(10,0,10,0)"
+                            width_group       = "CurrencyLabels"
+                            width_group_owner = "main_view"
+                  />
+                  <MoneyView layout_borders="Rect(0,0,20,0)" name="SellPriceView"/>
+                  <HLayoutSpacer/>
+                </View>
+              </View>
+              <View view_layout="vertical" name="SellTokenListView" view_flags="WID_IGNORE_WHEN_HIDDEN">
+                <BorderView name="ThinDivider" layout_borders="Rect(5,2,8,4)" gfx_background="TradeItemGUI/playertrade_window_thin_divider.tga"
+                      gfx_bl="" gfx_bottom="" gfx_br="" gfx_left="" gfx_right="" gfx_tl="" gfx_top="" gfx_tr=""
+                      max_size_extend="Point(COORD_MAX,-1)" min_size_limit="Point(-1,COORD_MAX)" view_flags="BVF_TILE_BACKGROUND" view_layout="horizontal"/>
+                <View layout_borders="Rect(8,0,0,5)" view_layout="horizontal" >
+                  <View view_layout="vertical">
+                    <TextView font              = "HYBORIANSMALL"
+                              value             = "&lt;localized token=TokenGUI_TokensShop /&gt;"
+                              layout_borders    = "Rect(10,8,10,0)"
+                              width_group       = "CurrencyLabels"
+                              width_group_owner = "main_view"
+                    />
+                    <VLayoutSpacer/>
+                  </View>
+                  <TokenView layout_borders="Rect(0,0,15,0)" name="SellTokens"/>
+                </View>
+              </View>
+            </View>
+          </ViewSelector>
+          </View>
+          </BorderView>
+    <View h_alignment="RIGHT" view_layout="horizontal">
+      <HLayoutSpacer/>
+      <!-- <Button template:source="ClearButton" label_font="normal" layout_borders="Rect(0,0,25,8)" name="Expand" /> -->
+      <View name="ExpandButtonView" view_layout="horizontal" layout_borders="Rect(0,0,30,10)">
+        <TextView name="ExpandButtonTextView" label_font="normal" />
+        <BitmapView name="ExpandButtonIconView" layout_borders="Rect(0,0,0,-6)">
+          <nocreate:Bitmap name="GUIcomponents/Window/collapse_up.tga"/>
+          <nocreate:Bitmap name="GUIcomponents/Window/collapse_up_hover.tga"/>
+          <nocreate:Bitmap name="GUIcomponents/Window/collapse_down.tga"/>
+          <nocreate:Bitmap name="GUIcomponents/Window/collapse_down_hover.tga"/>
+        </BitmapView>
+      </View>
+    </View>
+    <View h_alignment="RIGHT" max_size_extend="Point(COORD_MAX,-1)" view_layout="vertical">
+        <Button gfxid_pressed="TradeItemGUI/listmode_icons.tga" gfxid_raised="TradeItemGUI/listmode_list.tga" layout_borders="Rect(8,75,0,0)" max_zoom="1" name="ViewModeButton"/>
+    </View>
+    <View h_alignment="RIGHT" max_size_extend="Point(COORD_MAX,-1)" view_layout="vertical">
+        <Button gfxid_highlight="GUIcomponents/closebuttons/close_white_hover.tga" gfxid_pressed="GUIcomponents/closebuttons/close_white_pressed.tga" gfxid_raised="GUIcomponents/closebuttons/close_white.tga" layout_borders="Rect(8,15,15,0)" max_zoom="1" name="CloseButton"/>
+        <VLayoutSpacer/>
+    </View>
+</View>

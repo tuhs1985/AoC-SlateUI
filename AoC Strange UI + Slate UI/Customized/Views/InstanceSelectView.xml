@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+
+
+<View friend_icon="PortraitGUI/icon_friend.tga" 
+      multiplefriends_icon="PortraitGUI/icon_manyfriends.tga" 
+      selected_color="active" 
+      teamleader_icon="PortraitGUI/icon_partyleader.tga" 
+      unselected_color="gray" 
+      your_instance_color="white"
+      view_layout="vertical">
+    
+    <TextView default_color="active" feature_flags="TVF_RENDER_HALO|TVF_RENDER_SHADOW" font="LARGE" value="&lt;localized token=InstanceSelectView_SelectYourDestination /&gt;">
+    </TextView>
+
+    <MultiColListView col_hdr_label_offset="Point(5,3)" item_selected_font_color="active" label_color_sorted="active" label_color_unsorted="active" label_font_sorted="LARGE" label_font_unsorted="LARGE" min_size_extend="Point(400.0, 200.0)" name="instances_listview" view_flags="MLF_AUTOLAYOUT|MLF_ALLOW_SINGLE_SELECT"/>
+
+    <View view_layout="horizontal">
+        <Button label="&lt;localized token=InstanceSelectView_Ok /&gt;" name="ok_button" template:source="StdButtonPaper" width_group="foo" width_group_owner=":our_parent:"/>
+        <Button label="&lt;localized token=InstanceSelectView_Cancel /&gt;" name="cancel_button" template:source="StdButtonPaper" width_group="foo" width_group_owner=":our_parent:"/>
+    </View>
+</View>

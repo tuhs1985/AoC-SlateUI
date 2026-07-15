@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<View layout_borders="Rect(0,0,0,0)" min_size_extend="Point(610,450)" view_layout="vertical">
+    <View name="PageHeader"/>
+    <View name="ItemList" view_layout="horizontal"/>
+    <View h_align="RIGHT" max_size_extend="Point(CORD_MAX,-1)" view_layout="horizontal">
+        <HLayoutSpacer/>
+        <Button label="&lt;localized token=ConstructionMenuGUI_ConstructionListView_Build /&gt;" name="BuildButton" template:source="StdButtonPaper"/>
+        <Button label="&lt;localized token=Close /&gt;" name="CloseButton" template:source="StdButtonPaper"/>
+    </View>
+</View>

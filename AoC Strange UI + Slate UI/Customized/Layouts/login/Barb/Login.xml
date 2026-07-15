@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392105 $ (must be within the first 200 characters of the file) -->
+<!-- .................STRANGE.UI.3...v.1...by.Bombata.FdS.................. -->
+<View  name="Root" view_layout="stacked" xmlns:template="template.dtd">
+    <template:TextInputView layout_borders="Rect(5,5,5,0)"
+			    max_size_limit="Point( 300, COORD_MAX )"
+			    min_size_extend="Point( 300, -1 )"
+			    template:name="InputViewTempl"
+			    textview_templ="TextViewTempl">
+	<template:TextView default_color="active"
+			   feature_flags="TVF_ACCEPT_TXT_INPUT | TVF_ACTIVE_HYPERLINKS | TVF_ALLOW_TEXT_SELECTION | TVF_FOCUS_SELECT_ALL"
+                           max_character_count="30"
+			   template:name="TextViewTempl"
+			   template:source="TextInputView:TextViewTempl"/>
+    </template:TextInputView>
+    
+    <template:Button layout_borders="Rect(5,0,5,0)"
+		     max_size_extend="Point( 100, -1 )"
+		     min_size_extend="Point( 100, -1 )"
+		     template:name="ButtonTempl"
+		     template:source="StdButtonPaper">
+    </template:Button>
+    
+  <View view_layout="vertical">
+  		  
+    <FadingBackgroundImageView name="BackImage"
+			bitmap_gfx0="../../Customized/gfx/Launcher/Barbarian.jpg"
+			bitmap_gfx1="../../Customized/gfx/Launcher/Assassin.jpg"
+			bitmap_gfx2="../../Customized/gfx/Launcher/Necromancer.jpg"
+			bitmap_gfx3="../../Customized/gfx/Launcher/Guardian.jpg"
+ 			bitmap_gfx4="../../Customized/gfx/Launcher/Herald_of_Xotli.jpg"
+			bitmap_gfx5="../../Customized/gfx/Launcher/Demonologist.jpg"
+			bitmap_gfx6="../../Customized/gfx/Launcher/Conqueror.jpg"
+			bitmap_gfx7="../../Customized/gfx/Launcher/Bear_Shaman.jpg"
+			bitmap_gfx8="../../Customized/gfx/Launcher/Dark_Templar.jpg"
+			bitmap_gfx9="../../Customized/gfx/Launcher/Tempest_of_Set.jpg"			
+			bitmap_gfx10="../../Customized/gfx/Launcher/Priest_of_Mitra.jpg"			
+			bitmap_gfx11="../../Customized/gfx/Launcher/Ranger.jpg"
+			
+             min_size_extend="Point(COORD_MAX, COORD_MAX)" 
+             max_size_limit="Point(COORD_MAX, COORD_MAX)" 
+             layout_borders="Rect(0,0,0,0)"
+             view_layout="vertical">
+
+      <VLayoutSpacer layout_weight="30"/>
+
+      <View max_size_extend="Point(COORD_MAX,-1.0)"
+            min_size_limit="Point(COORD_MAX,COORD_MAX)"
+            name="ContentView"
+            view_layout="stacked"
+            layout_borders="Rect(0, 0, 0, -30)">
+		<BitmapView bitmap_gfx="../../Customized/gfx/Launcher/bottom.png"
+          max_size_extend="Point(COORD_MAX,-1.0)"
+          min_size_limit="Point(-1.0,COORD_MAX)"
+          view_flags="BMF_TILE_HORIZONTALLY"/>
+        <View name="Content" view_layout="vertical" layout_borders="Rect(0, -50, 0, 0)">
+          <View view_layout="horizontal" layout_borders="Rect(0, 0, 0, 0)">
+            <TextView layout_borders="Rect(0,5,5,0)"
+                value_token="15000:Launcher_Login_Username"
+                width_group="Col1"
+                width_group_owner="Content"/>
+            <TextInputView name="Username"
+               neighbour_e="Root:Login"
+               neighbour_s="Root:Password"
+               neighbour_w="Root:Quit"
+               template:source="InputViewTempl"/>
+          </View>
+          <View view_layout="horizontal">
+            <TextView layout_borders="Rect(0,0,5,5)"
+                value_token="15000:Launcher_Login_Password"
+                width_group="Col1"
+                width_group_owner="Content"/>
+
+            <TextInputView name="Password"
+               neighbour_e="Root:Login"
+               neighbour_n="Root:Username"
+               neighbour_s="Root:Quit"
+               neighbour_w="Root:Quit"
+               template:source="InputViewTempl"/>
+          </View>
+        </View>
+      </View>
+      <VLayoutSpacer layout_weight="1"/>
+    </FadingBackgroundImageView>
+    </View>
+    <View view_layout="vertical">
+      <VLayoutSpacer/>
+	  	 
+      <View layout_borders="Rect(0, 0, 0, 0)" min_size_extend="Point(70,-1)" name="NavButtons" view_layout="horizontal">
+
+        <Button label="&lt;localized token=Launcher_Login_Quit category=Launcher /&gt;"
+          name="Quit"
+          template:source="ButtonTempl"
+          width_group="NavButtons"
+          width_group_owner=":our_parent:"/>
+		  
+		<Button label="&lt;localized token=Launcher_Login_Login category=Launcher /&gt;"
+			layout_borders="Rect(0,0,0,0)"
+            name="Login"
+            neighbour_e="Root:Quit"
+            neighbour_n="Root:Password"
+            neighbour_s="Root:Username"
+            neighbour_w="Root:Account"
+            template:source="ButtonTempl"
+            width_group="NavButtons"
+            width_group_owner=":our_parent:"/>
+
+        <Button label="&lt;localized token=Launcher_Login_Settings category=Launcher /&gt;"
+          name="Settings"
+          template:source="ButtonTempl"
+          width_group="NavButtons"
+          width_group_owner=":our_parent:"/>
+
+        <Button label="&lt;localized token=Launcher_Login_ManageAccount category=Launcher /&gt;"
+          name="Account"
+          template:source="ButtonTempl"
+          width_group="NavButtons"
+          width_group_owner=":our_parent:"/>
+      </View>
+    </View>
+  </View>

@@ -1,0 +1,18 @@
+	<Waypoint type="region" instance="4569" position="Point(838.8,654.2)"
+		  normal_bitmap="WorldmapGUI/minimap_marker_red.tga"
+	      tooltip_title="&lt;localized token=MapGUI_RegionMapPOI_TortageUnderhalls&gt;"
+	      min_level="10"
+	      max_level="20"
+	      >
+		  <Attribute label="&lt;localized id=1 category=GameActionData /&gt;"  value="&lt;localized token=WPTooltip_Dungeon&gt;"/>
+		  <Attribute label="&lt;localized token=Level&gt;" value=":LEVEL_RANGE"/>	
+    </Waypoint>
+    <Waypoint type="destination" instance="101" name="&lt;font color=&apos;#00FF00&apos;&gt;Tortage Port&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#00FF00&apos;&gt;Tortage Port&lt;/font&gt;" tooltip_text="Panorama #1" position="Point(1145.980591,635.746216)" normal_bitmap="WpIcons/Panorama.tga" />
+    <Waypoint type="destination" instance="102" name="&lt;font color=&apos;#00FF00&apos;&gt;Tortage Keep&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#00FF00&apos;&gt;Tortage Keep&lt;/font&gt;" tooltip_text="Panorama #2" position="Point(1076.950439,725.120605)" normal_bitmap="WpIcons/Panorama.tga" />
+    <Waypoint type="destination" instance="103" name="&lt;font color=&apos;#00FF00&apos;&gt;Tortage Gate&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#00FF00&apos;&gt;Tortage Gate&lt;/font&gt;" tooltip_text="Panorama #3" position="Point(760.506348,644.439514)" normal_bitmap="WpIcons/Panorama.tga" />
+    <Waypoint type="destination" instance="104" name="&lt;font color=&apos;#00FF00&apos;&gt;Visage of Acheron&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#00FF00&apos;&gt;Visage of Acheron&lt;/font&gt;" tooltip_text="Panorama #4" position="Point(878.799500,551.771667)" normal_bitmap="WpIcons/Panorama.tga" />
+    <Waypoint type="destination" instance="105" name="&lt;font color=&apos;#00FF00&apos;&gt;Rum and Rumble&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#00FF00&apos;&gt;Rum and Rumble&lt;/font&gt;" tooltip_text="Panorama #5" position="Point(1046.783203,787.918213)" normal_bitmap="WpIcons/Panorama.tga" />
+    <Waypoint type="destination" instance="106" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Treasure Chest&lt;/font&gt;" tooltip_text="#1" position="Point(1177.126587,591.789063)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="107" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Treasure Chest&lt;/font&gt;" tooltip_text="#2" position="Point(977.159058,666.608459)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="108" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Treasure Chest&lt;/font&gt;" tooltip_text="#3" position="Point(1086.926880,753.872681)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="109" name="Excavator" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;&lt;font color=&apos;#D4AF37&apos;&gt;Sunken Treasure&lt;/font&gt;&lt;/font&gt;" tooltip_text="Excavator #1" position="Point(1192,649)" normal_bitmap="WpIcons/excavator.tga" />

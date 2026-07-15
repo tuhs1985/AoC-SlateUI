@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View bck_paths_path="../Customized/Views/MainGUI/StoneruneInventoryAlternateBitmapPaths.xml" cell_counts="Point( 5, 2 )" grid_borders="Rect(0,0,0,0)" icon_borders="Rect(8,8,8,8)" 
+	icon_size="Point(60,60)" layout_inner_borders="Rect(0,0,0,0)" max_icon_zoom="1.75" move_to="Point(0.5,0.35)" preferred_icon_spacing="Point2(0,0)" 
+	text_color="active" view_layout="stacked">
+	<BorderView	gfx_tl         = "../../Customized/gfx/frames/right_tab_topleft.png"
+				gfx_tr         = "../../Customized/gfx/frames/left_tab_topright.png"
+				gfx_bl         = "../../Customized/gfx/frames/right_tab_bottomleft.png"
+				gfx_br         = "../../Customized/gfx/frames/left_tab_bottomright.png"
+				gfx_left       = "../../Customized/gfx/frames/right_tab_left.png"
+				gfx_top        = "../../Customized/gfx/frames/left_tab_top.png"
+				gfx_right      = "../../Customized/gfx/frames/left_tab_right.png"
+				gfx_bottom     = "../../Customized/gfx/frames/left_tab_bottom.png"
+				gfx_background = "../../Customized/gfx/frames/bg.png"
+				bg_bitmap_borders     = "Rect(20,20,20,20)"
+		h_alignment="LEFT" layout_borders="Rect(0,0,0,0)" layout_inner_borders="Rect(5,0,5,0)" view_flags="BVF_TILE_ALL_BORDERS | BVF_TILE_BACKGROUND"
+		view_layout="vertical">
+		<TextView default_color="active" font="HYBORIANSMALL" layout_borders="Rect(5,5,0,0)" name="ViewName" value="&lt;localized token=LootView_Loot /&gt;"/>
+		<View layout_borders="Rect(0,10,0,10)" name="ItemContainer" view_layout="stacked"/>
+		<View h_alignment="CENTER" layout_borders="Rect(0,-12,0,0)" view_layout="horizontal">
+			<Button label="&lt;localized token=LootView_TakeAll /&gt;" layout_borders="Rect(0,0,0,0)" min_size_extend="Point(80,-1)" name="TakeAllButton"
+				neighbour_e="Root:Close" neighbour_w="Root:Close" template:source="StdButtonPaper"/>
+			<Button label="&lt;localized token=Close /&gt;" layout_borders="Rect(0,0,0,0)" min_size_extend="Point(80,-1)" name="CloseButton"
+				neighbour_e="Root:TakeAll" neighbour_w="Root:TakeAll" template:source="StdButtonPaper"/>
+		</View>       
+	</BorderView>
+</View>

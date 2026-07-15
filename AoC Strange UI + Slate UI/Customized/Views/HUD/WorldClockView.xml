@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View view_layout="horizontal">
+	<BorderView view_layout="horizontal"
+		layout_borders="Rect(0,0,0,0)"
+		layout_inner_borders="Rect(0,0,0,0)"
+		gfx_tl         = ""
+		gfx_tr         = ""
+		gfx_bl         = ""
+		gfx_br         = ""
+		gfx_left       = ""
+		gfx_top        = ""
+		gfx_right      = ""
+		gfx_bottom     = ""
+		gfx_background = "../../Customized/gfx/Launcher/empty.png"
+		>
+		<TextView name="WorldClockText" view_layout="horizontal" layout_borders="Rect(0,0,0,0)" font="SMALL" default_color="silver"  feature_flags="TVF_ENABLE_SHADOW | TVF_RENDER_SHADOW | TVF_RENDER_HALO"/>
+		
+	</BorderView>
+</View>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<View active_text_color="#B7B7B7" background_tile="Launcher/big_background_standin.tga" content_text_color="#8A8A89" gery_text_color="#555555" header_text_color="#E38F35" view_layout="vertical">
+	
+
+<BitmapView bitmap_gfx="Launcher/big_bar_top_outside.tga" max_size_extend="Point(-1.0,COORD_MAX)" min_size_limit="Point(COORD_MAX,-1.0)" name="BTopOutside" view_flags="BMF_TILE_HORIZONTALLY|BMF_TILE_VERTICALLY"/>
+	
+
+<BitmapView bitmap_gfx="Launcher/big_bar_top_inside.tga" name="BTopInside"/>
+	
+
+<View name="ContentView" view_layout="vertical">
+		
+<View name="ContentTopView" view_layout="horizontal">
+			
+<View view_layout="vertical" width_group="LeftGroup" width_group_owner="ContentView">
+
+				<BorderView gfx_background="Launcher/black_window_2_background.tga" 
+gfx_bl="Launcher/black_window_2_bottomleft.tga" gfx_bottom="Launcher/black_window_2_bottom.tga" gfx_br="Launcher/black_window_2_bottomright.tga" gfx_left="Launcher/black_window_2_left.tga" gfx_right="Launcher/black_window_2_right.tga" gfx_tl="Launcher/black_window_2_topleft.tga" gfx_top="Launcher/black_window_2_top.tga" gfx_tr="Launcher/black_window_2_topright.tga" 
+layout_borders="Rect(10,10,10,10)" layout_inner_borders="Rect(60,60,60,60)" name="BlackView2" view_layout="vertical">
+
+<TextView name="PatchName"/>
+					
+
+<!-- ListView -->
+				
+</BorderView>
+				
+<VLayoutSpacer/>
+			
+</View>
+			
+
+<BorderView gfx_background="Launcher/black_window_1_background.tga" 
+gfx_bl="Launcher/black_window_1_bottomleft.tga" 
+gfx_bottom="Launcher/black_window_1_bottom.tga" 
+gfx_br="Launcher/black_window_1_bottomright.tga" 
+gfx_left="Launcher/black_window_1_left.tga" 
+gfx_right="Launcher/black_window_1_right.tga" 
+gfx_tl="Launcher/black_window_1_topleft.tga" 
+gfx_top="Launcher/black_window_1_top.tga" 
+gfx_tr="Launcher/black_window_1_topright.tga" 
+layout_borders="Rect(10,10,10,10)" layout_inner_borders="Rect(60,60,60,60)" name="BlackView1" view_layout="vertical" width_group="CenterGroup" width_group_owner="ContentView">
+				
+
+<TextView feature_flags="TVF_MULTILINE|TVF_WORD_WRAP|TVF_ACTIVE_HYPERLINKS|TVF_ALLOW_TEXT_SELECTION" h_scrollctrl_mode="SCROLLBAR_AUTO" layout_borders="Rect(3,3,3,3)" max_size="Point(COORD_MAX,COORD_MAX)" min_size="Point( 100, 100 )" name="DescriptionText" v_scrollctrl_mode="SCROLLBAR_AUTO_RESERVE"/>
+
+			
+</BorderView>
+			
+
+<View name="Dummy" width_group="RightGroup" width_group_owner="ContentView"/>
+			
+		
+</View>
+		
+
+<View name="ContentBottomView" view_layout="horizontal">
+			
+<View name="InfoView1" view_layout="vertical" width_group="LeftGroup" width_group_owner="ContentView">
+				<TextView value=""/>
+			
+</View>
+			
+
+<View layout_borders="Rect(10,10,10,10)" name="ProgressView" view_layout="stacked">
+				<BitmapView bitmap_gfx="Launcher/progress_blackwindow.tga" name="BTopOutside" width_group="CenterGroup" width_group_owner="ContentView"/>
+				
+<View view_layout="vertical">
+					
+<TextView name="ProgressHeader" value="&lt;localized token=Patcher_DownloatingChanges category=Patcher /&gt;"/>
+			
+
+<ProgressBar bg_gfx="Launcher/progressbar_empty.tga" fg_gfx="Launcher/progressbar_full_red.tga" layout_borders="Rect(0,5,0,5)" max_size_extend="Point(400,-1)" min_size_limit="Point(400,-1)" name="PatcherBar" orientation="right"/>
+
+
+<TextView name="ProgressInfo" value="&lt;localized token=Patcher_XDone category=Patcher /&gt;"/>
+				</View>	
+			
+</View>
+			
+
+<View name="InfoView2" view_layout="vertical" width_group="RightGroup" width_group_owner="ContentView">
+				<TextView value=""/>
+			
+</View>
+			
+		
+</View>	
+	
+</View>
+	
+
+<BitmapView bitmap_gfx="Launcher/big_bar_bottom_inside.tga" name="BBottomInside"/>
+	
+<BitmapView bitmap_gfx="Launcher/big_bar_bottom_outside.tga" max_size_extend="Point(COORD_MAX,COORD_MAX)" min_size_limit="Point(COORD_MAX,-1.0)" name="BBottomOutside" view_flags="BMF_TILE_HORIZONTALLY|BMF_TILE_VERTICALLY"/>
+
+</View>
+
+<!--
+min_size_limit="Point(-1,COORD_MAX)"
+ max_size_extend="Point(COORD_MAX,-1)" 
+
+<HLayoutSpacer/>
+<HLayoutSpacer/>
+				<TextView name="DescriptionText" value="wfwefjwejfwk" />
+
+			
+</BorderView>
+			
+
+width_group_owner="ContentView" width_group="CenterGroup"
+		
+			
+
+<View name="CenterTopView" view_layout="horizontal">
+				
+
+		
+</View>
+		
+	
+
+<TextView name="InfoTextView"
+ layout_borders="Rect(3,3,3,3)"
+ h_scrollctrl_mode="SCROLLBAR_AUTO"
+ v_scrollctrl_mode="SCROLLBAR_AUTO_RESERVE"
+ feature_flags="TVF_MULTILINE|TVF_WORD_WRAP|TVF_ACTIVE_HYPERLINKS|TVF_ALLOW_TEXT_SELECTION"
+ min_size="Point( 0, 0 )"
+ max_size="Point(COORD_MAX,COORD_MAX)" />
+
+	
+<View name="ContentBottomView" view_layout="vertical" width_group_owner="ContentView" width_group="CenterGroup" >
+
+
+<View name="CenterBottomView" view_layout="horizontal">
+				
+<View name="InfoLeft" >
+</View>
+				
+
+<View name="ProgressView" view_layout="vertical" >
+					
+					<View view_layout="horizontal" layout_borders="Rect(0,5,0,5)">
+						
+<TextView value="Patching:" layout_borders="Rect(0,0,5,0)" />
+						
+<TextView name="PatchingInfo" value="Files"/>
+					
+</View>
+					
+				
+</View>
+				
+
+<View name="InfoRight" >
+</View>
+
+			
+</View>
+
+		
+</View>
+	-->

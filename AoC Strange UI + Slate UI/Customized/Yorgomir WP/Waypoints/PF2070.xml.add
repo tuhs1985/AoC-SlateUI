@@ -1,0 +1,11 @@
+	<Waypoint type="region" instance="2080" position="Point(1519.498047,1477.593018)"
+		  normal_bitmap="WorldmapGUI/minimap_marker_yellow.tga"
+	      tooltip_title="&lt;localized token=MapGUI_WorldMap_WildLandsofZelata&gt;"
+	      tooltip_text="&lt;localized token=MapGUI_WorldMapRegionPositions_WildLandsofZelata /&gt;"
+	      tooltip_image="WorldMap/regionimage_2080.tga"
+	      min_level="20"
+	      max_level="37"
+	      >
+		  <Attribute label="&lt;localized id=1 category=GameActionData /&gt;"  value="&lt;localized token=WPTooltip_AdventureRegion&gt;"/>
+		  <Attribute label="&lt;localized token=Level&gt;" value=":LEVEL_RANGE"/>	
+    </Waypoint>

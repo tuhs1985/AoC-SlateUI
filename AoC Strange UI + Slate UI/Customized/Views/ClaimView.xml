@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 67064 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View Claim_ColIconSize   = "40"
+      Claim_ColBoundTo    = "80"
+      Claim_ColNameSize   = "190"
+      Claim_ColAmountSize = "60"
+      Claim_ColOriginSize = "100"
+      Claim_ColExpirySize = "50"
+      token_list_id       = "0"
+      icon_size           = "Point(60,60)"
+      list_font           = "LARGE"
+      row_bg_alpha_even   = "0.0"
+      row_bg_alpha_odd    = "0.33"
+      v_alignment         = "BOTTOM"
+      view_layout         = "stacked"
+      max_size_extend     = "Point(COORD_MAX,COORD_MAX)"
+      start_size          = "Point(400,400)">
+  <BorderView bg_bitmap_borders    = "Rect(20,20,20,20)"
+			  gfx_tl         = "../../Customized/gfx/frames/right_tab_topleft.png"
+			  gfx_tr         = "../../Customized/gfx/frames/left_tab_topright.png"
+			  gfx_bl         = "../../Customized/gfx/frames/right_tab_bottomleft.png"
+			  gfx_br         = "../../Customized/gfx/frames/left_tab_bottomright.png"
+			  gfx_left       = "../../Customized/gfx/frames/right_tab_left.png"
+			  gfx_top        = "../../Customized/gfx/frames/left_tab_top.png"
+			  gfx_right      = "../../Customized/gfx/frames/left_tab_right.png"
+			  gfx_bottom     = "../../Customized/gfx/frames/left_tab_bottom.png"
+			  gfx_background = "../../Customized/gfx/frames/bg.png"
+              layout_borders       = "Rect(0,0,0,0)"
+              layout_inner_borders = "Rect(0,0,0,0)"
+              max_size_extend      = "Point(COORD_MAX,COORD_MAX)"
+              min_size_extend      = "Point(400,400)"
+              view_flags           = "BVF_TILE_ALL_BORDERS|BVF_TILE_BACKGROUND"
+              view_layout          = "vertical">
+
+    <View view_layout="vertical" layout_borders="Rect(10,18,10,5)" max_size_extend="Point(COORD_MAX,COORD_MAX)">
+      <View  name="ClaimListViewDock" />
+      
+      <View layout_borders="Rect(0,-3,12,3)" name="checkboxs_view" view_layout="horizontal" max_size_extend="Point(COORD_MAX,-1)">      
+        <HLayoutSpacer/>
+        <Button label="&lt;localized token=ClaimGUI_ClaimSelected /&gt;" layout_borders="Rect(0,0,0,0)" name="ClaimSelectedButton" template:source="StdButtonPaper"/>
+        <Button label="&lt;localized token=ClaimGUI_Claimall /&gt;" layout_borders="Rect(0,0,0,0)" name="ClaimAllButton" template:source="StdButtonPaper"/>
+      </View>
+    </View>
+
+  </BorderView>
+  <View layout_borders="Rect(0,0,0,0)" view_layout="vertical">
+    <View layout_borders="Rect(25,5,0,0)" view_layout="horizontal">
+      <TextView default_color = "active"
+                feature_flags = "TVF_RENDER_SHADOW|TVF_RENDER_HALO"
+                font          = "LARGE"
+                value         = "&lt;localized token=ClaimGUI_Claims /&gt;"/>
+      <HLayoutSpacer/>
+    </View>
+    <VLayoutSpacer/>
+  </View>
+  <View h_alignment="RIGHT" max_size_extend="Point(COORD_MAX,-1)" view_layout="vertical">
+    <Button gfxid_highlight = "GUIcomponents/closebuttons/close_white_hover.tga"
+            gfxid_pressed   = "GUIcomponents/closebuttons/close_white_pressed.tga"
+            gfxid_raised    = "GUIcomponents/closebuttons/close_white.tga"
+            layout_borders  = "Rect(8,5,5,0)"
+            max_zoom        = "1"
+            name            = "CloseButton"/>
+    <VLayoutSpacer/>
+  </View>
+</View>

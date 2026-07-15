@@ -1,0 +1,4 @@
+/setoption SplashScreenFadeOutTime 0
+/setoption SplashScreenFadeInTime 0
+/setoption dailyLogin_window false
+/setoption itemshop_window false

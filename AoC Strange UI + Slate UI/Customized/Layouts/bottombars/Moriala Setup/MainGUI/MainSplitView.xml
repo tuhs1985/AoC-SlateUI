@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 559017 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View xmlns:template="template.dtd"
+      view_layout="stacked"
+      v_alignment="BOTTOM"
+      panel_size_normal   = "Point(512,612)"
+      panel_size_extended = "Point(539,612)"
+      slide_sound          = "sfx/gui/gui_sidebar_sliding.wav"
+      >
+
+
+	
+	<View view_layout="horizontal" layout_borders="Rect(0,0,0,25)" view_alpha= "0.6" >
+	
+	<template:SidepanelTab/>
+
+
+<!-- === BOTTOM LEFT SHORTCUTS=== -->
+<template:ShortcutView out_of_range_bitmap="icons/outofrange_icon.tga" 
+							   icon_spacing= "3" 
+							   slot_template="SlotTemplate">
+			<template:ItemSlotView template:name="SlotTemplate" 
+								   layout_borders="Rect(0,0,0,0)" 
+								   slot_size= "Point(20,20)" 
+								   icon_borders= "Point(0,0)" 
+								   max_zoom="0" 
+								   gfx_background=""/>
+		</template:ShortcutView>
+
+
+				<View view_layout="stacked" h_alignment="RIGHT" v_alignment="TOP">
+					<View view_layout="horizontal">         
+					</View>
+					<View view_layout="horizontal">
+						<ShortcutView first_slot="400000" slot_count="6"/>
+						
+
+					</View>
+				</View>
+<!-- === BOTTOM LEFT END === -->
+
+		<SidepanelTab name="SPTabItemShopView"
+		  	layout_borders="Rect(0,0,0,0)"
+		  	view_flags="WID_IGNORE_WHEN_HIDDEN"
+		  	gfx_inactive       = "../../Customized/gfx/menubtn/btn.png"
+		 	gfx_left_active    = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_right_active   = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_active         = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_inactive_h     = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_left_active_h  = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_right_active_h = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_active_h       = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	view_tooltip_text  = "&lt;localized token=TabItemSaleTooltip&gt;"
+		  	left_module = "ItemShopWindow"
+		 	right_module = ""
+        />
+
+		  <SidepanelTab name="SPTabInventoryView"
+			layout_borders="Rect(0,0,0,0)"
+			gfx_inactive       = "../../Customized/gfx/menubtn/btn.png"
+		  	gfx_left_active    = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_right_active   = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_active         = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_inactive_h     = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_left_active_h  = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_right_active_h = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_active_h       = "../../Customized/gfx/menubtn/btn_active1.png"
+			view_tooltip_text  = "&lt;localized token=TabInventoryTooltip&gt;"
+			hotkey      = "Toggle_InventoryView"
+			left_module = "SPWearView"
+			right_module = "SPInventoryView"
+		/>
+		<SidepanelTab name="SPTabCharacter"
+			layout_borders="Rect(0,0,0,0)"
+			gfx_inactive       = "../../Customized/gfx/menubtn/btn.png"
+		  	gfx_left_active    = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_right_active   = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_active         = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_inactive_h     = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_left_active_h  = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_right_active_h = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_active_h       = "../../Customized/gfx/menubtn/btn_active1.png"
+			view_tooltip_text  = "&lt;localized token=TabCharacterTooltip&gt;"
+			hotkey      = "Toggle_SP_Character"
+			left_module = "SPCharAttribView"
+			right_module = "SPCharSkillsView"
+		/>
+		<SidepanelTab name="SPTabSpells"
+			view_flags="WID_IGNORE_WHEN_HIDDEN"
+			layout_borders="Rect(0,0,0,0)"
+			gfx_inactive       = "../../Customized/gfx/menubtn/btn.png"
+		  	gfx_left_active    = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_right_active   = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_active         = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_inactive_h     = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_left_active_h  = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_right_active_h = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_active_h       = "../../Customized/gfx/menubtn/btn_active1.png"
+			view_tooltip_text  = "&lt;localized token=TabSpellsTooltip&gt;"
+			hotkey      = "Toggle_SP_Spells"
+			left_module = "SPSpellsLeft"
+			right_module = "SPSpellsRight"
+		/>
+		<SidepanelTab name="SPTabFeats"
+            view_flags="WID_IGNORE_WHEN_HIDDEN"
+            layout_borders="Rect(0,0,0,0)"
+			gfx_inactive       = "../../Customized/gfx/menubtn/btn.png"
+		  	gfx_left_active    = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_right_active   = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_active         = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_inactive_h     = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_left_active_h  = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_right_active_h = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_active_h       = "../../Customized/gfx/menubtn/btn_active1.png"
+            view_tooltip_text  = "&lt;localized token=TabFeatsTooltip&gt;"
+            left_module  = "FeatPlanner"
+            right_module = ""
+            view_show_expression="s:level>=10"
+		/>
+		<SidepanelTab name="SPTabJournal"
+			layout_borders="Rect(0,0,0,0)"
+			gfx_inactive       = "../../Customized/gfx/menubtn/btn.png"
+		  	gfx_left_active    = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_right_active   = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_active         = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_inactive_h     = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_left_active_h  = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_right_active_h = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_active_h       = "../../Customized/gfx/menubtn/btn_active1.png"
+			view_tooltip_text  = "&lt;localized token=TabQuestJournalTooltip&gt;"
+			hotkey      = "Toggle_SP_Journal"
+			left_module  = "SPQuestJournal"
+			right_module = "SPQuestView"
+		/>
+
+		<SidepanelTab name="SPTabAchievement"
+			layout_borders="Rect(0,0,0,0)"         
+			gfx_inactive       = "../../Customized/gfx/menubtn/btn.png"
+		  	gfx_left_active    = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_right_active   = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_active         = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_inactive_h     = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_left_active_h  = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_right_active_h = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_active_h       = "../../Customized/gfx/menubtn/btn_active1.png" 
+view_tooltip_text  = "&lt;localized                    
+token=TabAchievementsTooltip&gt;"
+hotkey      = "Toggle_AchievementLore"
+left_module  = "AchievementLoreWindow"
+right_module = "" 
+/>
+
+ 		<SidepanelTab name="SPTabDailyBrowser"
+            
+			layout_borders="Rect(0,0,0,0)"         
+			gfx_inactive       = "../../Customized/gfx/menubtn/btn.png"
+		  	gfx_left_active    = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_right_active   = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_active         = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_inactive_h     = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_left_active_h  = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_right_active_h = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_active_h       = "../../Customized/gfx/menubtn/btn_active1.png"           
+			view_tooltip_text  = "&lt;localized token=TabDailyBrowserTooltip&gt;"
+            
+			hotkey      = "Toggle_DailyLoginBrowser"
+            
+			left_module  = "DailyLoginBrowser"
+            
+			right_module = ""
+		      />
+    
+
+		<SidepanelTab name="SPTabChallengeJournal"
+            
+			layout_borders="Rect(0,0,0,0)"         
+			gfx_inactive       = "../../Customized/gfx/menubtn/btn.png"
+		  	gfx_left_active    = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_right_active   = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_active         = "../../Customized/gfx/menubtn/btn_active3.png"
+		  	gfx_inactive_h     = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_left_active_h  = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_right_active_h = "../../Customized/gfx/menubtn/btn_active1.png"
+		  	gfx_active_h       = "../../Customized/gfx/menubtn/btn_active1.png" 
+			view_tooltip_text  = "&lt;localized token=TabChallengeJournalTooltip&gt;"
+            
+			hotkey      = "Toggle_ChallengeJournal"
+            
+			left_module  = "ChallengeJournal"
+            
+			right_module = ""
+		      />
+
+
+
+<!-- === BOTTOM RIGHT SHORTCUTS=== -->
+<template:ShortcutView out_of_range_bitmap="icons/outofrange_icon.tga" 
+							   icon_spacing= "3" 
+							   slot_template="SlotTemplate">
+			<template:ItemSlotView template:name="SlotTemplate" 
+								   layout_borders="Rect(0,0,0,0)" 
+								   slot_size= "Point(20,20)" 
+								   icon_borders= "Point(0,0)" 
+								   max_zoom="0" 
+								   gfx_background=""/>
+							
+		</template:ShortcutView>
+
+
+				<View view_layout="stacked" h_alignment="LEFT" v_alignment="TOP">
+					<View view_layout="horizontal">         
+					</View>
+					<View view_layout="horizontal">
+						<ShortcutView  first_slot="500000" slot_count="6" />
+						
+
+					</View>
+				</View>
+<!-- === BOTTOM RIGHT END === -->
+			  
+	</View>
+	
+
+
+
+
+
+    <View view_layout="horizontal" layout_inner_borders="Rect(0,19,0,0)" layout_borders="Rect(0,0,0,375)" v_alignment="TOP">
+	<View name="LeftPanelBorders"
+	      view_flags="WID_HANDLE_MOUSE|WID_AUTO_HIGHLIGHT"
+	      interaction_borders="Rect(0,0,20,30)"
+	      view_layout="stacked"
+	      h_alignment="RIGHT"
+	      v_alignment="TOP"
+	      >
+	    <BorderView view_flags="BVF_TILE_LEFT|BVF_TILE_RIGHT|BVF_TILE_TOP|BVF_TILE_BOTTOM|BVF_TILE_BACKGROUND"
+			view_layout="vertical"
+			layout_borders="Rect(0,0,7,0)"
+			bg_bitmap_borders    = "Rect(0,20,20,40)"
+			_min_size_extend="Point(569,690)"
+			_max_size_limit ="Point(569,690)"
+			gfx_tl         = ""
+			gfx_tr         = ""
+			gfx_bl         = ""
+			gfx_br         = ""
+			gfx_left       = ""
+			gfx_top        = "../../Customized/gfx/frames/left_tab_top.png"
+			gfx_right      = ""
+			gfx_bottom     = ""
+			gfx_background = "../../Customized/gfx/frames/bg.png"
+			>
+		<View view_layout="stacked" h_alignment="LEFT" v_alignment="TOP" max_size_extend="Point(COORD_MAX,-1)" layout_borders="Rect(15,12,0,4)">
+		    <TextView name="LeftPanelTitle" default_color="active" font="HYBORIANSMALL" feature_flags="TVF_RENDER_SHADOW|TVF_RENDER_HALO" />
+		</View>
+		<SideBarDock name="LeftPanelDock"
+			     layout_borders = "Rect(-12,0,5,5)"
+			     dock_type_name="SideBarLeft"
+			     view_layout="stacked"
+			     min_size_extend="Point(541,612)"
+			     max_size_limit ="Point(541,612)"
+			     />
+	    </BorderView>
+	    <_View name="ExpandButtonGroupLeft" view_layout="stacked" h_alignment="RIGHT">
+		<Button name="ExpandButtonLeft"
+			layout_borders="Rect(0,80,0,0)"
+			gfxid_raised    = "featgui/expand_sidebar.tga"
+			gfxid_pressed   = "featgui/expand_sidebar_click.tga"
+			gfxid_highlight = "featgui/expand_sidebar_hover.tga"/>
+		<Button name="ContractButtonLeft"
+			layout_borders="Rect(0,80,26,0)"
+			gfxid_raised    = "featgui/contract_sidebar.tga"
+			gfxid_pressed   = "featgui/contract_sidebar_click.tga"
+			gfxid_highlight = "featgui/contract_sidebar_hover.tga"/>
+	    </_View>
+	</View>
+	<_View _layout_borders="Rect(-14,0,-14,0)" max_size_extend="Point(-1,COORD_MAX)"/>
+	<HLayoutSpacer/>
+	
+	<View name="RightPanelBorders"
+	      view_flags="WID_HANDLE_MOUSE|WID_AUTO_HIGHLIGHT"
+	      interaction_borders="Rect(20,0,0,30)"
+	      view_layout="stacked"
+	      h_alignment="LEFT"
+	      v_alignment="TOP"
+	      >
+	    <BorderView view_flags="BVF_TILE_LEFT|BVF_TILE_RIGHT|BVF_TILE_TOP|BVF_TILE_BOTTOM|BVF_TILE_BACKGROUND"
+			view_layout="vertical"
+			layout_borders="Rect(7,0,0,0)"
+			layout_inner_borders ="Rect(30,0,0,25)"
+			bg_bitmap_borders    = "Rect(20,20,0,40)"
+			gfx_tl         = ""
+			gfx_tr         = ""
+			gfx_bl         = ""
+			gfx_br         = ""
+			gfx_left       = ""
+			gfx_top        = "../../Customized/gfx/frames/right_tab_top.png"
+			gfx_right      = ""
+			gfx_bottom     = ""
+			gfx_background = "../../Customized/gfx/frames/bg.png"
+			>
+		<View view_layout="stacked" h_alignment="RIGHT" v_alignment="TOP" max_size_extend="Point(COORD_MAX,-1)" layout_borders="Rect(0,10,10,4)">
+		    <TextView name="RightPanelTitle" default_color="active" font="HYBORIANSMALL" feature_flags="TVF_RENDER_SHADOW|TVF_RENDER_HALO"/>
+				</View>
+				<SideBarDock name="RightPanelDock"
+					layout_borders = "Rect(-22,0,10,-15)"
+					dock_type_name="SideBarRight"
+					view_layout="stacked"
+					min_size_extend="Point(541,600)"
+					max_size_limit ="Point(541,600)"/>
+			</BorderView>
+			<_View name="ExpandButtonGroupRight" view_layout="stacked" h_alignment="LEFT">
+				<Button name="ExpandButtonRight"
+					layout_borders="Rect(0,80,0,0)"
+					gfxid_raised    = "featgui/contract_sidebar.tga"
+					gfxid_pressed   = "featgui/contract_sidebar_click.tga"
+					gfxid_highlight = "featgui/contract_sidebar_hover.tga"/>
+				<Button name="ContractButtonRight"
+					layout_borders="Rect(26,80,0,0)"
+					gfxid_raised    = "featgui/expand_sidebar.tga"
+					gfxid_pressed   = "featgui/expand_sidebar_click.tga"
+					gfxid_highlight = "featgui/expand_sidebar_hover.tga"/>
+			</_View>
+		</View>
+	</View>
+
+
+</View>
+
+
+
+
+
+
+
+
+
+

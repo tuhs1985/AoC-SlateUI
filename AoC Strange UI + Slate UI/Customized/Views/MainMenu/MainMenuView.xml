@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View view_layout="stacked" xmlns:template="template.dtd">
+
+    <template:MenuButton _label_color="active"
+			 fade_in_duration="0.05"
+			 fade_out_duration="0.05"
+			 highlight_bitmap_name="mainmenu/mainmenu_selection.tga"
+			 label_border="Rect(0,3,0,3)"
+			 label_color="standard"
+			 label_color_highlight="active"
+			 
+			 max_size_extend="Point(COORD_MAX,-1)"
+			 selected_bitmap_name="GUIcomponents/menu/menu_extend.tga"
+			 view_alpha="1.0"/>
+
+    <BitmapView _layout_inner_borders="Rect(19,0,19,0)" bitmap_gfx="mainmenu/mainmenu_bg.tga" layout_borders="Rect(19,0,19,0)" max_size_extend="Point(COORD_MAX,COORD_MAX)" min_size_extend="Point(260,-1)" view_flags="BMF_TILE_HORIZONTALY|BMF_TILE_VERTICALLY|BMF_IGNORE_BITMAP_SIZE" view_layout="vertical">
+
+<VLayoutSpacer/>
+	<BitmapView bitmap_gfx="../../Customized/gfx/MainMenu/logo.png" />
+		
+		
+
+        <BitmapView bitmap_gfx="../../Customized/gfx/MainMenu/mainmenu_glow_up_jade.tga" max_size_extend="Point(COORD_MAX,-1)" view_flags="BMF_TILE_HORIZONTALY|BMF_IGNORE_BITMAP_WIDTH" view_layout="vertical">
+
+        </BitmapView>
+
+        <View layout_inner_borders="Rect(0,30,0,30)" name="MenuButtons" view_layout="vertical">
+
+	    <template:Button border_templ_highlight="Highlight" border_templ_pressed="Pressed" border_templ_raised="Raised" highlight_fade_out_time="0.3" highlight_flash_period="1.0" label_borders="Rect(0,3,0,3)" label_color_highlight="active" label_color_pressed="standard" label_color_raised="standard" layout_borders="Rect(0,0,0,0)" max_size_extend="Point(COORD_MAX,-1)" max_specular_highlight="1.5">			     
+		<template:BorderView gfx_background="" gfx_bl="" gfx_bottom="" gfx_br="" gfx_left="" gfx_right="" gfx_tl="" gfx_top="" gfx_tr="" template:name="Raised"/>
+		<template:BorderView gfx_background="mainmenu/mainmenu_selection.tga" gfx_bl="" gfx_bottom="" gfx_br="" gfx_left="mainmenu/mainmenu_selection.tga" gfx_right="GUIcomponents/menu/menu_extend.tga " gfx_tl="" gfx_top="" gfx_tr="" template:name="Pressed"/>
+		<template:BorderView gfx_background="mainmenu/mainmenu_selection.tga" gfx_bl="" gfx_bottom="" gfx_br="" gfx_left="mainmenu/mainmenu_selection.tga" gfx_right="mainmenu/mainmenu_selection.tga" gfx_tl="" gfx_top="" gfx_tr="" template:name="Highlight"/>
+	    </template:Button>
+            
+
+            <View name="OptionButtonsView" view_layout="vertical"/>
+
+            <!--
+            <MenuButton name = "AudioOptionsButton" optionid = "audio" label = "Audio Options"/>
+            <MenuButton name = "VideoOptionsButton" optionid = "video" label = "Video Options"/>
+            <MenuButton name = "InterfaceOptionsButton" optionid = "interface" label = "Interface Options"/>
+            <MenuButton name = "ControlsButton" optionid = "controls" label = "Controls"/>
+            -->            
+            <MenuButton label="&lt;localized token=MainMenu_MainMenuView_ExitGame /&gt;" name="ExitGameButton"/>
+            
+            <MenuButton label="&lt;localized token=MainMenu_MainMenuView_ResumeGame /&gt;" name="ResumeGameButton"/>
+
+        </View>
+
+        <BitmapView bitmap_gfx="../../Customized/gfx/MainMenu/mainmenu_glow_down_jade.tga" max_size_extend="Point(COORD_MAX,-1)" view_flags="BMF_TILE_HORIZONTALY"/>
+		
+        <VLayoutSpacer layout_weight="2"/>
+
+    </BitmapView>
+
+    <BorderView gfx_background="" gfx_bl="" gfx_bottom="" gfx_br="" gfx_left="mainmenu/mainmenu_border_left.tga" gfx_right="mainmenu/mainmenu_border_right.tga" gfx_tl="" gfx_top="" gfx_tr="" max_size_extend="Point(COORD_MAX,COORD_MAX)" view_flags="BVF_TILE_LEFT|BVF_TILE_RIGHT" view_layout="stacked"/>
+
+</View>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<View min_size_extend="Point(571,145)" name="Root" view_flags="WID_IGNORE_WHEN_HIDDEN" view_layout="vertical">
+	<View name="StartMatchHeader"/>
+    <!--View max_size_extend="Point(COORD_MAX,-1)" view_layout="stacked">
+		<TextView default_color="active" font="LARGE" value="&lt;localized token=TeamGUI_PvPMatchBuildupView_PvpMatchCreated /&gt;"/>
+	</View-->
+	<View view_layout="horizontal">
+		<HLayoutSpacer/>
+		<BitmapView bitmap_gfx="matchmaking/pvp_icon_small_left.tga"/>
+		<View layout_weight="0" view_layout="horizontal">
+			<View h_alignment="LEFT" view_layout="vertical">
+				<View layout_borders="Rect(0,0,0,10)" view_layout="horizontal">
+					<TextView value="&lt;localized token=TeamGUI_PvPMatchBuildupView_MatchType /&gt;" width_group="LeftLabels" width_group_owner="Root"/>
+					<TextView default_color="active" layout_borders="Rect(10,0,0,0)" name="MatchTypeView"/>
+				</View>
+				<!--View layout_borders="Rect(0,0,0,10)" view_layout="horizontal">
+					<TextView value="&lt;localized token=TeamGUI_PvPMatchBuildupView_PvpMap /&gt;"/>
+					<TextView default_color="active" layout_borders="Rect(10,0,0,0)" name="RegionView"/>
+				</View>
+				<View view_layout="horizontal">
+					<TextView value="&lt;localized token=TeamGUI_PvPMatchBuildupView_NumberOfTeams /&gt;"/>
+					<TextView default_color="active" layout_borders="Rect(10,0,0,0)" name="TeamCountView"/>
+				</View-->
+                <View view_layout="horizontal">
+					<TextView value="&lt;localized token=TeamGUI_PvPMatchBuildupView_TimeLimit /&gt;" width_group="LeftLabels" width_group_owner="Root"/>
+					<TextView default_color="active" layout_borders="Rect(10,0,0,0)" name="TimeLimitView"/>
+				</View>
+			</View>
+
+			<View h_alignment="LEFT" layout_borders="Rect(20,0,0,0)" view_layout="vertical">
+				<View layout_borders="Rect(0,0,0,10)" view_layout="horizontal">
+					<TextView value="&lt;localized token=TeamGUI_PvPMatchBuildupView_TeamSize /&gt;" width_group="RightLabels" width_group_owner="Root"/>
+					<TextView default_color="active" layout_borders="Rect(10,0,0,0)" name="TeamSizeView"/>
+				</View>
+				<!--View layout_borders="Rect(0,0,0,10)" view_layout="horizontal">
+					<TextView value="&lt;localized token=TeamGUI_PvPMatchBuildupView_Password /&gt;"/>
+					<TextView default_color="active" layout_borders="Rect(10,0,0,0)" name="PasswordView"/>
+					<BitmapView bitmap_gfx="matchmaking/"/>
+				</View-->
+                <View view_layout="horizontal">
+					<TextView value="&lt;localized token=TeamGUI_PvPMatchBuildupView_ScoreLimit /&gt;" width_group="RightLabels" width_group_owner="Root"/>
+					<TextView default_color="active" layout_borders="Rect(10,0,0,0)" name="ScoreLimitView"/>
+				</View>
+			</View>
+		</View>
+		<BitmapView bitmap_gfx="matchmaking/pvp_icon_small_right.tga"/>
+		<HLayoutSpacer/>
+	</View>
+	<View view_layout="horizontal">
+		<Button label="&lt;localized token=TeamGUI_PvPMatchBuildupView_StartMatch /&gt;" layout_borders="Rect(0,0,10,0)" name="StartMatchButton" view_flags="WID_IGNORE_WHEN_HIDDEN" template:source="StdButtonPaper"/>
+		<Button label="&lt;localized token=TeamGUI_PvPMatchBuildupView_LeaveMatch /&gt;" name="LeaveMatchButton" template:source="StdButtonPaper"/>
+	</View>
+
+	<!--BitmapView bitmap_gfx="sidebars/horizontal_dividerline.tga" layout_borders="Rect(0,10,0,15)" max_size_extend="Point(COORD_MAX,-1)"/-->
+
+    <View name="MembersHeader" layout_borders="Rect(0,5,0,0)"/>
+	<!--TextView default_color="active" font="LARGE" value="&lt;localized token=TeamGUI_PvPMatchBuildupView_Members /&gt;"/-->
+
+	<MultiColListView name="PeopleStatusListView" layout_borders="Rect(10,5,10,0)" min_size_extend="Point(-1,100)" 
+                      row_bg_alpha_even="1" row_bg_alpha_odd="1"
+                      font="Large" label_font_unsorted="Large" label_font_sorted="Large"
+                      view_flags="MLF_AUTOLAYOUT|MLF_ALLOW_MULTI_SELECT"/>
+	<Button label="&lt;localized token=TeamGUI_PvPMatchBuildupView_KickSelected /&gt;" layout_borders="Rect(0,0,17,0)" name="KickTeamButton" view_flags="WID_IGNORE_WHEN_HIDDEN" template:source="StdButtonPaper"/>
+</View>

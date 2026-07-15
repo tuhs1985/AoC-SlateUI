@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<View view_layout="stacked" xmlns:template="template.dtd" yoffset="-5.0">
+    <template:Button border_templ_highlight="Highlight"
+		     border_templ_pressed="Pressed"
+		     border_templ_raised="Raised"
+		     highlight_fade_out_time="0.3"
+		     highlight_flash_period="1.0"
+		     label_borders="Rect(10,0,10,0)"
+		     label_color_highlight="active"
+		     label_color_pressed="active"
+		     label_color_raised="standard"
+		     layout_borders="Rect(4, 0, 4, 0)"
+		     max_size_extend="Point(-1,COORD_MAX)"
+		     max_specular_highlight="1.5"
+		     template:name="PageButtonTemplate">
+	<template:BorderView gfx_bitmap="" template:name="Raised"/>
+	<template:BorderView gfx_background="mainmenu/mainmenu_menu_active_center.tga"
+			     gfx_left="mainmenu/mainmenu_menu_active_left.tga"
+			     gfx_right="mainmenu/mainmenu_menu_active_right.tga"
+			     template:name="Pressed"/>
+	<template:BorderView gfx_background="mainmenu/mainmenu_menu_active_center.tga"
+			     gfx_left="mainmenu/mainmenu_menu_active_left.tga"
+			     gfx_right="mainmenu/mainmenu_menu_active_right.tga"
+			     template:name="Highlight"/>
+    </template:Button>
+    
+    <template:ScrollView scroll_target="OptionsScrollViewChild"
+			 template:name="OptionsScrollView"
+			 view_flags="WID_HANDLE_MOUSE"
+			 v_scrollctrl_mode="SCROLLBAR_AUTO"
+			 view_layout="vertical">
+	<ScrollViewChild name="OptionsScrollViewChild" view_flags="SVCF_USE_H_PREFSIZE" view_layout="vertical">
+	    <View h_alignment="LEFT" layout_borders="Rect(0,0,0,0)" max_size_extend="Point(COORD_MAX,-1)" name="OptionsView" view_layout="vertical"/>
+	</ScrollViewChild>
+    </template:ScrollView>
+    
+    
+    <BitmapView bitmap_gfx="mainmenu/mainmenu_bg.tga"
+		layout_borders="Rect(0,0,19,0)"
+		max_size_extend="Point(COORD_MAX,COORD_MAX)"
+		min_size_extend="Point(410,-1)"
+		view_flags="BMF_TILE_HORIZONTALY|BMF_TILE_VERTICALLY|BMF_IGNORE_BITMAP_SIZE"
+		view_layout="vertical">
+	
+	<BitmapView bitmap_gfx="mainmenu/mainmenu_menu_inactive.tga"
+		    max_size_extend="Point(COORD_MAX,-1)"
+		    view_flags="BMF_TILE_HORIZONTALY"
+		    view_layout="horizontal">
+	    
+	    <View name="PageButtonsView" view_layout="horizontal">
+		
+	    </View>
+	    
+	    <HLayoutSpacer/>
+	    
+	</BitmapView>
+	<!--
+	    <ViewSelector name = "OptionsView"
+	    view_layout = "vertical"
+	    layout_inner_borders = "Rect(0,30,0,30)"
+	    />
+	-->
+	
+	<ViewSelector _layout_inner_borders="Rect(0,30,0,30)" name="OptionsViewSelector" view_layout="vertical"/>
+	
+	<VLayoutSpacer layout_weight="0"/>
+	
+	<BitmapView bitmap_gfx="../../Customized/gfx/MainMenu/mainmenu_glow_down_jade.tga"
+		    max_size_extend="Point(COORD_MAX,80)"
+		    max_size_limit="Point(COORD_MAX,80)"
+		    min_size_extend="Point(-1,80)"
+		    view_flags="BMF_TILE_HORIZONTALY"
+		    view_layout="vertical">
+	    
+	    <View view_layout="horizontal">
+		
+
+<Button label="&lt;localized token=MainMenu_OptionsView_Default /&gt;" min_size_extend="Point(85,-1)" name="DefaultButton" template:source="StdButtonPaper"/>
+		
+		<HLayoutSpacer/>
+
+		<Button label="&lt;localized token=MainMenu_OptionsView_OK /&gt;" min_size_extend="Point(85,-1)" name="OKButton" template:source="StdButtonPaper"/>
+		
+		<Button label="&lt;localized token=MainMenu_OptionsView_Apply /&gt;" min_size_extend="Point(85,-1)" name="ApplyButton"template:source="StdButtonPaper"/>
+		
+		<Button label="&lt;localized token=MainMenu_OptionsView_Cancel /&gt;" min_size_extend="Point(85,-1)" name="CancelButton" template:source="StdButtonPaper"/>
+	    </View>
+	    
+	</BitmapView>
+	
+    </BitmapView>
+    
+    <BorderView gfx_background=""
+		gfx_bl="" gfx_bottom=""
+		gfx_br=""
+		gfx_left=""
+		gfx_right="mainmenu/mainmenu_border_right.tga"
+		gfx_tl=""
+		gfx_top=""
+		gfx_tr=""
+		max_size_extend="Point(COORD_MAX,COORD_MAX)"
+		view_flags="BVF_TILE_LEFT|BVF_TILE_RIGHT"
+		view_layout="stacked"/>
+    
+</View>

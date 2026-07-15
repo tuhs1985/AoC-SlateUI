@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Root>
+    <Waypoint type="destination" instance="101" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Treasure Chest&lt;/font&gt;" tooltip_text="#5" position="Point(378.499725,283.736877)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="102" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Treasure Chest&lt;/font&gt;" tooltip_text="#6" position="Point(573.640076,647.408081)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="103" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Treasure Chest&lt;/font&gt;" tooltip_text="#7" position="Point(732.374329,644.185120)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="104" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Dead Adventurer&lt;/font&gt;" tooltip_text="#10" position="Point(267.983826,557.123779)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="105" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Stolen Vigdis Supplies&lt;/font&gt;" tooltip_text="#16" position="Point(496.621246,460.862488)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="106" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Stolen Vigdis Supplies&lt;/font&gt;" tooltip_text="#17" position="Point(473.519165,438.947937)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="107" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Stolen Vigdis Supplies&lt;/font&gt;" tooltip_text="#18" position="Point(527.128723,269.815857)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="108" name="" tooltip_title="&lt;font color=&apos;#D4AF37&apos;&gt;Stolen Vigdis Supplies&lt;/font&gt;" tooltip_text="#19" position="Point(157.574493,416.982849)" normal_bitmap="WpIcons/treasure_chest.tga" />
+    <Waypoint type="destination" instance="109" name="ale" tooltip_title="ale" tooltip_text="" position="Point(572.979553,514.627563)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="110" name="ale" tooltip_title="ale" tooltip_text="" position="Point(491.346832,467.868652)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="111" name="ale" tooltip_title="ale" tooltip_text="" position="Point(577.209412,570.906982)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="112" name="ale" tooltip_title="ale" tooltip_text="" position="Point(691.327942,683.377258)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="113" name="ale" tooltip_title="ale" tooltip_text="" position="Point(635.747620,576.267334)" normal_bitmap="WpIcons/mark.tga" />
+    <Waypoint type="destination" instance="114" name="ale" tooltip_title="ale" tooltip_text="" position="Point(632.395142,577.929199)" normal_bitmap="WpIcons/mark.tga" />
+</Root>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Change: 558817 $ (must be within the first 200 characters of the file) -->
+<Root>
+	<Module name="LauncherGUI" variable="launcher_gui" criteria="launcher_gui &amp;&amp; (guimode &amp; GUIMODEFLAGS_LAUNCHER)"/>
+
+	<Module name="HUDWindow" variable="hud_window"
+		criteria="hud_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+	<Module name="InventoryWindow" variable="inventory_window" criteria="(inventory_window &amp;&amp; stat:gmlevel!=0)"/>
+
+    <Module name="ClaimWindow" variable="claim_window"
+      criteria="claim_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+    <Module name="ItemShopWindowKorea" variable="itemshop_window_kr"
+      criteria="itemshop_window_kr &amp;&amp; ( guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+    <Module name="ItemShopWindow" variable="itemshop_window"
+      criteria="itemshop_window &amp;&amp; (( guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI) ) || (guimode &amp; GUIMODEFLAGS_LAUNCHER) || (guimode &amp; GUIMODEFLAGS_CHARCREATE))"
+	/>
+  
+  <Module name="AlternateLoginBrowser" variable="login_window"
+          criteria="login_window &amp;&amp; (( guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI) ) || (guimode &amp; GUIMODEFLAGS_LAUNCHER) || (guimode &amp; GUIMODEFLAGS_CHARCREATE))"
+  />
+  
+	<Module name="FacebookBrowser" variable="facebook_browser"
+      criteria="facebook_browser &amp;&amp; (( guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI) ) || (guimode &amp; GUIMODEFLAGS_LAUNCHER) || (guimode &amp; GUIMODEFLAGS_CHARCREATE))"
+	/>
+	<Module name="FacebookWindow" variable="facebook_window"
+      criteria="facebook_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+	<Module name="PetitionBrowser" variable="petition_browser"
+      criteria="petition_browser &amp;&amp; (( guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI) ) || (guimode &amp; GUIMODEFLAGS_LAUNCHER) || (guimode &amp; GUIMODEFLAGS_CHARCREATE))"
+	/>
+  <Module name="RegistrationBrowser" variable="registration_browser"
+      criteria="registration_browser &amp;&amp; (( guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI) ) || (guimode &amp; GUIMODEFLAGS_LAUNCHER) || (guimode &amp; GUIMODEFLAGS_CHARCREATE))"
+	/>  
+    <Module name="PlayfieldAccessWindow" variable="playfield_access_window"
+      criteria="playfield_access_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+    <Module name="PlayfieldAccessPopup" variable="playfield_access_popup"
+      criteria="playfield_access_popup &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+    <Module name="SocialNetworkWindow" variable="social_network_window"
+      criteria="social_network_window &amp;&amp; (( guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI)) || (guimode &amp; GUIMODEFLAGS_IGNOREHIDEGUI))"
+	/>
+
+    <Module name="SPInventoryView" variable="sp_inventory_view"
+		criteria="sp_inventory_view &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+	<Module name="SPWearView" variable="sp_wear_view"
+		criteria="sp_wear_view &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+	<Module name="SPQuestJournal" variable="sp_quest_journal"
+		criteria="sp_quest_journal &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+	<Module name="SPQuestView" variable="sp_quest_view"
+		criteria="sp_quest_view &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+	<Module name="SPCharAttribView" variable="sp_char_attrib_view"
+		criteria="sp_char_attrib_view &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+	<Module name="SPCharSkillsView" variable="sp_char_skills_view"
+		criteria="sp_char_skills_view &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+	<Module name="BuffView" variable="sp_buffs"
+		criteria="sp_buffs &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+	<Module name="TearLevelUP" variable="sp_tear_level"
+		criteria="sp_tear_level &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+	<Module name="StateView" variable="sp_stateview"
+		criteria="sp_stateview &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+	<Module name="SearchHintView" variable="sp_searchhint"
+		criteria="sp_searchhint &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+	<Module name="SPSpellsLeft" variable="sp_spells_left"
+		criteria="sp_spells_left &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+	<Module name="SPSpellsRight" variable="sp_spells_right"
+		criteria="sp_spells_right &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+	<Module name="SpellWeaving" variable="spellweaving_gui"
+		criteria="spellweaving_gui &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+    <Module name="TradeskillWindow" variable="tradeskill_window"
+		criteria="tradeskill_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+    <Module name="SocialElements" variable="social_elements_view" 
+		criteria="social_elements_view &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+        />
+    <Module name="PetListWindow" variable="pet_list_view"
+		criteria="pet_list_view &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+        />
+    <Module name="LootWindow" variable="loot_window"
+		criteria="loot_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+	<Module name="InfoView" variable="info_window"
+		criteria="info_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+  
+  <!-- Debug windows, not available to normal players -->
+	<Module name="AnimSysDebugWindow" variable="animsysdebug_window" />
+	<Module name="CommandQueueDebugWindow" variable="commandqueuedebug_window" />
+  <Module name="CommunityServerDebugWindow" variable="communityserverdebug_window"
+    criteria="communityserverdebug_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI)) &amp;&amp; stat:gmlevel!=0" 
+  />
+  <Module name="NetworkDebugWindow" variable="networkdebug_window"
+    criteria="networkdebug_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI)) &amp;&amp; stat:gmlevel!=0"
+  />  
+  <Module name="DamageMeterWindow" variable="dps_window" />
+	<Module name="DebugLinesWindow" variable="debuglines_window" />
+  <Module name="GameCodeDebugWindow" variable="gamecodedebug_window"
+    criteria="gamecodedebug_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI)) &amp;&amp; stat:gmlevel!=0" 
+  />
+  <Module name="GodModeView" variable="god_mode_window"
+    criteria="god_mode_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+  <Module name="HiveDebugWindow" variable="hivedebug_window" />
+	<Module name="LootDebugWindow" variable="lootdebug_window" />
+  <Module name="MemoryManagerDebugWindow" variable="memorymanager_window" />
+  <Module name="NPCDebugWindow" variable="npcdebug_window" />
+  <Module name="HitAndMitigationWindow" variable="hitandmitigation_window" />
+  <Module name="PaintballWindow" variable="paintball_window"
+		criteria="paintball_window"
+	/>
+  <Module name="PlayfieldDebugWindow" variable="playfielddebug_window"
+		criteria="playfielddebug_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+  />
+	<Module name="ProcDebugWindow" variable="procdebug_window" />
+  <Module name="ResManWindow" variable="resman_window" />
+  <Module name="SkillDebugWindow" variable="skilldebug_window" />
+  <Module name="SoundWindow" variable="sound_window" />
+  <Module name="AmbxWindow" variable="ambx_window" />
+
+  <Module name="ThreatMeterWindow" variable="threatmeter_window" />
+
+  <!-- End of debug windows -->
+
+  <Module name="LimboWindow" variable="limbo_window"
+		criteria="limbo_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+		/>
+
+  <Module name="FramerateWindow" variable="framerate_window" />
+
+  <Module name="LPortraitWindow" variable="lportrait_window"
+		criteria="lportrait_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="SearchHintWindow" variable="search_hint_window"
+		criteria="search_hint_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="RPortraitWindow" variable="rportrait_window"
+		criteria="rportrait_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+
+  <Module name="MainWindow" variable="main_window"
+		criteria="main_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="ShortcutBar" variable="shortcut_window"
+		criteria="shortcut_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="CommandQueue" variable="commandqueue_window"
+		criteria="commandqueue_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="CombatRose" variable="combat_rose_window"
+		criteria="combat_rose_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="CombatModeButton" variable="combat_mode_button_window"
+		criteria="combat_mode_button_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="ComboCooldownView" variable="combo_cooldown_view"
+		criteria="combo_cooldown_view &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="FriendsView" variable="friends_window"
+		criteria="friends_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="GuildInfoEditWindow" variable="guild_infoedit_window"
+		criteria="guild_infoedit_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="GuildMatchMakingWindow" variable="guild_match_making_window"
+		criteria="guild_match_making_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="OptionPanel" variable="optionpanel_window"
+		criteria="optionpanel_window"
+	/>
+
+  <Module name="MapView" variable="map_window"
+		criteria="map_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="RadarView" variable="radar_window"
+		criteria="radar_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="WorldClockView" variable="world_clock_view"
+  criteria="world_clock_view &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="ChatGroupWindows" variable="chat_group_windows_force_on"
+		criteria="chat_group_windows_force_off == false &amp;&amp; (chat_group_windows_force_on || ( (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI)) &amp;&amp; (guimode &amp; GUIMODEFLAGS_CINEMATICS) == 0 ))"
+		__criteria="chat_group_windows &amp;&amp; ((guimode &amp; GUIMODEFLAGS_CINEMATICS) == 0 || (guimode &amp; GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="ChatMacroWindow" variable="chat_macro_window"
+		criteria="chat_macro_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="GroupMatchMakingWindow" variable="group_matchmaking_window"
+		criteria="group_matchmaking_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="BuffGUIWindow" variable="buff_window"
+		criteria="buff_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="SocialIconWindow" variable="social_icon_window"
+		criteria="social_icon_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="FriendListView" variable="friend_list_window"
+		criteria="friend_list_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+  <Module name="TutorialGUI" variable="tutorial_gui"
+		criteria="tutorial_gui &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+  
+  <Module name="MassivePvPTimeTable" variable="massive_pvp_time_table"
+		criteria="massive_pvp_time_table &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+  />
+
+  <Module name="PvPMiniScoreView" variable="pvp_mini_score"
+  criteria="pvp_mini_score &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+
+  <Module name="RaidView" variable="raid_view"
+		criteria="raid_view &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="QuestTrackerView" variable="quest_tracker_window"
+    criteria="quest_tracker_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="TradePostWindow" variable="trade_post_window"
+		criteria="trade_post_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="BugReportBtn" variable="bug_report_button"
+		criteria="bug_report_button &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="ControlCenterXPBar" variable="control_center_xpbar"
+    criteria="control_center_xpbar &amp;&amp; stat:level &lt; 80 &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+    />
+
+  <Module name="ControlCenterPvPXPBar" variable="control_center_PvP_xpbar"
+    criteria="control_center_PvP_xpbar &amp;&amp; stat:pvplevel &lt; 10 &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+    />        
+
+  <Module name="GuildMemberView" variable="guild_member_view"
+		criteria="guild_member_view &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+    <!-- Used for windows that want to hide when the gui is turned off-->
+    <Module name="GenericHideModule" criteria="guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI)"/>
+
+
+  <Module name="InstanceSelectWindow" variable="instanceselect_window" />
+  <Module name="MainMenuWindow" variable="mainmenu_window" />
+  <Module name="GuildWindow" variable="guild_window" criteria="guild_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))" />
+
+  <Module name="AAFeatPlanner" variable="aafeatplanner_window" criteria="aafeatplanner_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))" />
+  
+  <Module name="Credits" variable="credits_window" criteria="credits_window &amp;&amp; (( guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI) ) || (guimode &amp; GUIMODEFLAGS_LAUNCHER) || (guimode &amp; GUIMODEFLAGS_CHARCREATE))" />
+  
+  <Module name="FeatPlanner" variable="featplanner_window" criteria="featplanner_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))" />
+
+  <Module name="FactionsWindow" variable="factions_window" criteria="factions_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))" />
+  
+  <Module name="LogoutWindow" variable="logout_window" />
+
+  <Module name="ComboSequenceIndicator" variable="combo_sequence_indicator_window"
+	  criteria="combo_sequence_indicator_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	  />
+
+  <Module name="SprintBar" variable="sprintbar_window"
+	  criteria="sprintbar_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	  />
+	  
+  <Module name="FloatingShortcutBar1" variable="shortcutbar1_window"
+	  criteria="shortcutbar1_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	  />
+  <Module name="FloatingShortcutBar2" variable="shortcutbar2_window"
+	  criteria="shortcutbar2_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	  />
+
+  <Module name="Emotes" variable="emote_window" criteria="emote_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))" />
+  <Module name="FloatingSelfPortrait" variable="floating_selfportrait_window"
+      criteria="floating_selfportrait_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	  />
+
+  <Module name="FloatingTargetPortrait" variable="floating_targetportrait_window"
+        criteria="floating_targetportrait_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	  />
+
+  <Module name="FloatingTargetsTargetPortrait" variable="floating_targetstargetportrait_window"
+        criteria="floating_targetstargetportrait_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	  />
+
+  <Module name="QuestSharingView" variable="questshare_window" criteria="questshare_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))" />
+
+  <Module name="LootOptionsWindow" variable="loot_options_window"
+	        criteria="loot_options_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+  />
+
+  <Module name="TokenListWindow" variable="token_list_window"
+	        criteria="token_list_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+  />
+
+  <Module name="AchievementLoreWindow"
+  movie             = "Achievement.swf"
+  flags             = "GMF_CLOSE_ON_ESCAPE | GMF_CFG_STORE_USER_CONFIG"
+  depth_layer       = "Top"
+  sub_depth         = "0"
+  variable          = "achievement_lore_window"
+  criteria          = "achievement_lore_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+  config_name       = "AchievementLoreWindowConfig"
+	/>
+
+  <Module name="GroupFinder"
+    movie             = "GroupFinder.swf"
+    flags             = "GMF_CFG_STORE_USER_CONFIG | GMF_CLOSE_ON_ESCAPE"
+    depth_layer       = "Top"
+    sub_depth         = "0"
+    module_controller = "framework.Position"
+		variable          = "groupFinder_window"
+    criteria          = "groupFinder_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+    config_name       = "GroupFinderWindowConfig"
+	/>
+
+  <Module name="GroupFinderRoleSelecton"
+      movie             = "GroupFinderRoleSelection.swf"
+      flags             = "GMF_CFG_STORE_USER_CONFIG"
+      depth_layer       = "Top"
+      sub_depth         = "0"
+			module_controller = "framework.Position"
+      variable          = "groupFinder_roleSelect"
+      criteria          = "groupFinder_roleSelect &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+      config_name       = "GroupFinderWindowConfig"
+	/>
+
+  <Module name="GroupFinderReadyPrompt"
+      movie             = "GroupFinderReadyPrompt.swf"
+      depth_layer       = "Top"
+      sub_depth         = "0"
+			module_controller = "framework.Position"
+      variable          = "groupFinder_readyPrompt"
+      criteria          = "groupFinder_readyPrompt &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="ChallengeJournal"
+    movie             = "ChallengeJournal.swf"
+    flags             = "GMF_CLOSE_ON_ESCAPE"
+    depth_layer       = "Top"
+    sub_depth         = "0"
+    variable          = "challengeJournal_window"
+    criteria          = "challengeJournal_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="DailyLoginBrowser"
+    movie             = "DailyLoginBrowser.swf"
+    flags             = "GMF_CLOSE_ON_ESCAPE"
+    depth_layer       = "Top"
+    sub_depth         = "0"
+    module_controller = "framework.Position"
+    variable          = "dailyLogin_window"
+    criteria          = "dailyLogin_window &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+  <Module name="GetEffects"
+  movie             = "GetEffectsController.swf"
+  flags             = "GMF_PRELOAD"
+  depth_layer       = "OnScreenMessages"
+  sub_depth         = "3"
+  variable          = "get_effects_controller"
+  criteria          = "(guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+	/>
+
+</Root>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- $Change: 62500 $ (must be within the first 200 characters of the file) -->
+<View view_layout="horizontal"
+      v_alignment="TOP"
+      layout_borders="Rect(0,0,0,5)"
+      icon_size="Point(45.0,45.0)"
+      icon_borders="Rect(4,4,4,4)"
+      preferred_icon_spacing = "Point(3,3)"
+      cell_count="Point( 7, 7 )"
+      max_icon_zoom="1.15"
+>
+  <ItemSlotView name="MountIcon" slot_size="Point(45,45)" icon_borders="Point(2,2)"/>
+  <View view_layout="vertical" max_size_extend="Point(5,COORD_MAX)" />
+  <View view_layout="vertical">
+    <View view_layout="horizontal">
+      <TextView name="MountName" feature_flags="TVF_ENABLE_ELLIPSIS" default_color="active"/>
+      <HLayoutSpacer/>
+    </View>
+    <TextView name="MountInfo" feature_flags="TVF_MULTILINE|TVF_WORD_WRAP" pref_size_mode="FLEXIBLE_WIDTH"/>
+    <VLayoutSpacer/>
+  </View>
+</View>

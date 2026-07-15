@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Root>
+	<Waypoint type="region" instance="4020" position="Point(153,89.5)"
+		  normal_bitmap="WorldmapGUI/minimap_marker_yellow.tga"
+	      tooltip_title="&lt;localized token=MapGUI_WorldMap_CityofTortage&gt;"
+		  tooltip_text="&lt;localized token=MapGUI_WorldMapRegionPositions_CityofTortage /&gt;"
+	      tooltip_image="WorldMap/regionimage_4020.tga"
+		  min_level="5"
+	      max_level="19"
+		  >
+		  <Attribute label="&lt;localized id=1 category=GameActionData /&gt;"  value="&lt;localized token=WPTooltip_Hub&gt;"/>
+		  <Attribute label="&lt;localized token=Level&gt;" value=":LEVEL_RANGE"/>	
+	</Waypoint>
+	<Waypoint type="region" instance="4020" name=" " position="Point(155,422)"
+		  normal_bitmap="WorldmapGUI/minimap_marker_yellow.tga"
+	      tooltip_title="&lt;localized token=MapGUI_WorldMap_CityofTortage&gt;"
+		  tooltip_text="&lt;localized token=MapGUI_WorldMapRegionPositions_CityofTortage /&gt;"
+	      tooltip_image="WorldMap/regionimage_4020.tga"
+		  min_level="5"
+	      max_level="19"
+		  >
+		  <Attribute label="&lt;localized id=1 category=GameActionData /&gt;"  value="&lt;localized token=WPTooltip_Hub&gt;"/>
+		  <Attribute label="&lt;localized token=Level&gt;" value=":LEVEL_RANGE"/>	
+	</Waypoint>
+    <Waypoint type="destination" instance="101" name="&lt;font color=&apos;#FFFF00&apos;&gt;#2&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#FFFF00&apos;&gt;Askia&lt;/font&gt;" tooltip_text="Target of Interest #2" position="Point(279.134796,153.306335)" normal_bitmap="WpIcons/target_of_interest.tga" />
+    <Waypoint type="destination" instance="102" name="&lt;font color=&apos;#FFFF00&apos;&gt;#4&lt;/font&gt;" tooltip_title="&lt;font color=&apos;#FFFF00&apos;&gt;Ceremonial Master&lt;/font&gt;" tooltip_text="Target of Interest #4" position="Point(166.331223,322.907654)" normal_bitmap="WpIcons/target_of_interest.tga" />
+</Root>

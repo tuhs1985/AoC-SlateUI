@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 554999 $ (must be within the first 200 characters of the file) -->
+<!-- Strange UI 2015 -->
+<View cell_count             = "Point( 8, 8 )"
+      grid_borders           = "Rect(1,0,1,0)"
+      icon_borders           = "Rect(1,1,1,1)"
+      icon_size              = "Point(47,47)"
+      layout_inner_borders   = "Rect(0,0,0,0)"
+      max_icon_zoom          = "1"
+      preferred_icon_spacing = "Point(1,1)"
+      tweak_value            = "-2.0"
+      view_layout            = "vertical"
+      arrow_hover_timeout    = "0.9">
+  <View layout_borders="Rect(0,0,0,0)" view_layout="vertical">
+    <TabSelector border_gfx_center            = "sidebars/darksetin_t.tga"
+                 border_gfx_left              = "sidebars/darksetin_tl.tga"
+                 border_gfx_right             = "sidebars/darksetin_tr.tga"                
+                 name                         = "WndTabSelector"
+                 tab_gfx_selected_left        = "sidebars/darksetin_tab_active_left.tga"
+                 tab_gfx_selected_middle      = "sidebars/darksetin_tab_active_center.tga"
+                 tab_gfx_selected_right       = "sidebars/darksetin_tab_active_right.tga"
+                 tab_gfx_unselected_left      = "sidebars/darksetin_tab_inactive_left.tga"
+                 tab_gfx_unselected_middle    = "sidebars/darksetin_tab_inactive_center.tga"
+                 tab_gfx_unselected_right     = "sidebars/darksetin_tab_inactive_right.tga"
+                 tab_label_borders_selected   = "Rect(11,4,20,3)"
+                 tab_label_borders_unselected = "Rect(11,4,20,3)"
+                 tab_selected_color           = "active"
+                 tab_spacing                  = "-4.0"
+                 tab_unselected_color         = "gray"
+                 layout_borders               = "Rect(0,0,0,0)">
+      <Tab label="&lt;localized token=MainGUI_InventoryView_Bag /&gt;"/>
+      <Tab label="&lt;localized token=MainGUI_InventoryView_Quest /&gt;"/>
+      <Tab label="&lt;localized token=MainGUI_InventoryView_Resource /&gt;"/>
+    </TabSelector>
+    <BorderView gfx_background = "sidebars/darksetin_bg.tga"
+                gfx_bl         = "sidebars/darksetin_ll.tga"
+                gfx_bottom     = "sidebars/darksetin_bottom.tga"
+                gfx_br         = "sidebars/darksetin_lr.tga"
+                gfx_left       = "sidebars/darksetin_l.tga"
+                gfx_right      = "sidebars/darksetin_r.tga"
+                gfx_tl         = ""
+                gfx_top        = ""
+                gfx_tr         = ""
+                layout_borders = "Rect(0,0,0,0)"
+                view_layout    = "vertical">
+      <ViewSelector layout_borders="Rect(4,-2,4,-2)" name="ViewSelector"/> 
+<BitmapView name                 = "PageNumerationDock"
+                  view_flags           = "WID_HANDLE_MOUSE|BMF_IGNORE_BITMAP_SIZE"
+                  layout_borders       = "Rect(2,8,0,0)"
+                  layout_inner_borders = "Rect(0,0,0,0)"
+                  bitmap_gfx           = "Misc/black.tga"
+                  view_layout          = "horizontal"
+                  view_local_alpha     = "0.3">
+        <Button gfxid_highlight = "Misc/arrow_left_active.tga"
+                gfxid_pressed   = "Misc/arrow_left_black.tga"
+                gfxid_raised    = "Misc/arrow_left.tga"
+                layout_borders  = "Rect(0,0,0,0)"
+                max_zoom        = "1"
+                name            = "LeftArrowButton"
+        />
+        <HLayoutSpacer/>
+        <TextView name="PageNumeration"/>
+        <HLayoutSpacer/>
+        <Button gfxid_highlight = "Misc/arrow_right_active.tga"
+                gfxid_pressed   = "Misc/arrow_right_black.tga"
+                gfxid_raised    = "Misc/arrow_right.tga"
+                layout_borders  = "Rect(1(0,0,0,0)"
+                max_zoom        = "1"
+                name            = "RightArrowButton"
+        />		
+      </BitmapView>                      
+    </BorderView>        
+  </View>    
+
+
+ <!-- <BitmapView layout_borders="Rect(0,30,0,0)" bitmap_gfx="../../Customized/gfx/inventory/emptybar.png"/> -->
+
+				<BitmapView 
+						layout_borders="Rect(0,-2,0,0)" 
+						view_layout="horizontal" 
+						bitmap_gfx="../../Customized/gfx/inventory/emptybar.png" 
+						view_flags="BMF_IGNORE_BITMAP_SIZE">
+
+				<View view_layout="vertical" layout_borders="Rect(0,27,20,0)">
+					<MoneyView 
+								layout_borders="Rect(0,0,0,0)" 
+								layout_mode="horizontal" 
+								name="InvMoneyView" value="0"/>
+
+					<MoneyView 
+								layout_borders="Rect(0,0,0,25)" 
+								layout_mode="horizontal"  
+								name="InvDepositoryView" value="0" view_flags="WID_IGNORE_WHEN_HIDDEN"/>
+
+						
+				<HLayoutSpacer/>
+				</View>	
+
+				<View view_layout="horizontal" name="PremiumButtonsView" layout_borders="Rect(0,17,0,0)" view_flags="WID_IGNORE_WHEN_HIDDEN">
+				
+
+				<Button 
+					layout_borders="Rect(0,4,15,0)"
+					view_layout="vertical"
+					view_tooltip_text="&lt;localized token=TokenGUI_Tokens /&gt;"
+					gfxid_raised    = "../../Customized/gfx/inventory/tokenbuttona.png"
+					gfxid_pressed   = "../../Customized/gfx/inventory/tokenbuttond.png"
+					gfxid_highlight = "../../Customized/gfx/inventoryt/tokenbuttond.png"
+					name="TokensButton"
+					/>
+				 
+				
+				<Button 
+					layout_borders="Rect(0,4,17,0)"
+					view_layout="vertical"
+					view_tooltip_text="&lt;localized token=ClaimGUI_Claims /&gt;"
+					gfxid_raised    = "../../Customized/gfx/inventory/claimbutton.png"
+					gfxid_pressed   = "../../Customized/gfx/inventory/claimbutton4.png"
+					gfxid_highlight = "../../Customized/gfx/inventory/claimbutton4.png"
+					name="ClaimButton"/>
+				</View>
+
+<ItemSlotView 
+					icon_borders="Point(4,4)" 
+					view_flags="WID_HANDLE_MOUSE" 
+					layout_borders="Rect(-2,20,0,0)" 
+					max_zoom="1.0" 
+					name="BagSlot" 
+					no_item_gfx="Inventory/icon_bag.tga" 
+					slot_size="Point(36,36)" 
+					tooltip_title="Bag"
+								/>
+
+
+<View view_layout="horizontal" name="FreeButtonsView" layout_borders="Rect(0,12,0,0)" view_flags="WID_IGNORE_WHEN_HIDDEN">	
+	
+<Button layout_borders="Rect(6,8,0,0)"
+					view_layout="vertical"
+					view_tooltip_text="&lt;localized token=TokenGUI_Tokens /&gt;"
+					gfxid_raised    = "../../Customized/gfx/inventory/tokenbuttona.png"
+					gfxid_pressed   = "../../Customized/gfx/inventory/tokenbuttond.png"
+					gfxid_highlight = "../../Customized/gfx/inventoryt/tokenbuttond.png"
+					name="TokensFreeButton"/>
+
+
+		<Button 
+					layout_borders="Rect(4,8,0,0)"
+					view_layout="vertical"
+					view_tooltip_text="&lt;localized token=ClaimGUI_Claims /&gt;"
+					gfxid_raised    = "../../Customized/gfx/inventory/claimbutton.png"
+					gfxid_pressed   = "../../Customized/gfx/inventory/claimbutton4.png"
+					gfxid_highlight = "../../Customized/gfx/inventory/claimbutton4.png"
+					name="ClaimFreeButton"/>
+
+
+		<Button 
+					layout_borders="Rect(4,8,0,0)"
+					view_tooltip_text="&lt;localized token=TokenGUI_GoPremium /&gt;"
+					gfxid_raised    = "../../Customized/gfx/inventory/premium1.png"
+					gfxid_pressed   = "../../Customized/gfx/inventory/premium2.png"
+					gfxid_highlight = "../../Customized/gfx/inventory/premium2.png"
+					view_layout="vertical"
+					name="GoPremiumButton"/>
+
+
+		
+	</View>               
+		</BitmapView>
+
+		
+
+	  <HLayoutSpacer/>
+    </View>                 
+  </BitmapView>
+</View>
+</BitmapView>
+</View>

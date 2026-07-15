@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 392055 $ (must be within the first 200 characters of the file) -->
+<View view_layout="vertical">
+    <TextView feature_flags="TVF_MULTILINE|TVF_WORD_WRAP|TVF_ACTIVE_HYPERLINKS|TVF_ALLOW_TEXT_SELECTION" font="NORMAL" h_scrollctrl_mode="NONE" layout_borders="Rect(3,3,3,3)" max_size="Point(COORD_MAX,COORD_MAX)" min_size="Point( 0, 0 )" name="BrowserView" v_scrollctrl_mode="SCROLLBAR_AUTO"/>
+    <View view_layout="horizontal">
+	<HLayoutSpacer/>
+	<Button label="&lt;localized token=InfoView_Back /&gt;" layout_borders="Rect(5,0,5,5)" name="BackButton" template:source="StdButtonPaper"/>
+	<Button label="&lt;localized token=InfoView_Forward /&gt;" layout_borders="Rect(0,0,5,5)" name="ForwardButton" template:source="StdButtonPaper"/>
+    </View>
+</View>

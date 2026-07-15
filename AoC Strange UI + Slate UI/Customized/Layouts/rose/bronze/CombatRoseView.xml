@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Change: 83455 $ (must be within the first 200 characters of the file) -->
+<View center_mode_h_spacing="200"
+      center_mode_v_spacing="100"
+      inner_radius="30"
+      layout_borders="Rect(0,0,0,0)"
+      mouse_hit_inner_radius="2"
+      mouse_hit_max_deviation="27"
+      mouse_hit_outer_radius="70"
+      reactive_button_fade_in_time="0.2"
+      reactive_button_fade_out_time="0.3"
+      slide_back_time="0.5"
+      view_flags="WID_HANDLE_MOUSE"
+      view_layout="stacked"
+      xmlns:template="template.dtd">
+    <View layout_borders="Rect(4,14,4,0)" view_layout="stacked">
+	<View view_layout="vertical">
+	    <View v_alignment="TOP" view_layout="horizontal">
+		<View layout_borders="Rect(0,44,-4,0)" view_layout="stacked">
+		</View>
+		<View layout_borders="Rect(-4,44,0,0)" view_layout="stacked">
+		</View>
+	    </View>
+	    <VLayoutSpacer/>
+	</View>
+	<template:CombatRoseArrow radius="53"/>
+	
+	<View layout_borders="Rect(0,0,0,0)" name="GroupViewLeft" view_layout="stacked">
+	    <View view_layout="horizontal">
+		<_View layout_borders="Rect(38,0,0,7)" view_layout="stacked">
+		    <BitmapView bitmap_gfx="rose/shield_left_1.tga" name="ShieldLeft0"/>
+		    <BitmapView bitmap_gfx="rose/shield_left_2.tga" name="ShieldLeft1"/>
+		    <BitmapView bitmap_gfx="rose/shield_left_3.tga" name="ShieldLeft2"/>
+		</_View>
+		<HLayoutSpacer/>
+	    </View>
+	    <CombatRoseArrow angle="248"
+			     arrow_gfx="rose/rose_arrow_1.tga"
+			     button_disabled_gfx="rose/rosebut_1_disabled.tga"
+			     button_enabled_gfx="rose/rosebut_1.tga"
+			     button_glow1_gfx="../../Customized/gfx/rose/bronze/rosebut_1_color.tga"
+			     button_glow2_gfx="../../Customized/gfx/rose/bronze/rosebut_1_glow.tga"
+			     button_highlight_gfx="rose/rosebut_1_hover.tga"
+			     button_oneshot="rose/rosebut_1_red.tga"
+			     button_reactive_gfx="rose/rosebut_1_reactive.tga"
+			     label="&lt;localized token=CombatRose_CombatRoseView_Q /&gt;"
+			     name="Arrow0"
+			     radius="55"/>
+	    <CombatRoseArrow angle="302"
+			     arrow_gfx="rose/rose_arrow_2.tga"
+			     button_disabled_gfx="rose/rosebut_2_disabled.tga"
+			     button_enabled_gfx="rose/rosebut_2.tga"
+			     button_glow1_gfx="../../Customized/gfx/rose/bronze/rosebut_2_color.tga"
+			     button_glow2_gfx="../../Customized/gfx/rose/bronze/rosebut_2_glow.tga"
+			     button_highlight_gfx="rose/rosebut_2_hover.tga"
+			     button_oneshot="rose/rosebut_2_red.tga"
+			     button_reactive_gfx="rose/rosebut_2_reactive.tga"
+			     label="&lt;localized token=CombatRose_CombatRoseView_1 /&gt;"
+			     name="Arrow1"
+			     radius="53"/>
+	</View>
+	
+	<View layout_borders="Rect(0,0,0,0)" name="GroupViewTop" view_layout="stacked">
+	    <View view_layout="vertical">
+		<_View layout_borders="Rect(0,37,0,0)" v_alignment="TOP" view_layout="stacked">
+		    <BitmapView bitmap_gfx="rose/shield_up_1.tga" name="ShieldUp0"/>
+		    <BitmapView bitmap_gfx="rose/shield_up_2.tga" name="ShieldUp1"/>
+		    <BitmapView bitmap_gfx="rose/shield_up_3.tga" name="ShieldUp2"/>
+		</_View>
+		<VLayoutSpacer/>
+	    </View>
+	    <CombatRoseArrow angle="0"
+			     arrow_gfx="rose/rose_arrow_3.tga"
+			     button_disabled_gfx="rose/rosebut_3_disabled.tga"
+			     button_enabled_gfx="rose/rosebut_3.tga"
+			     button_glow1_gfx="../../Customized/gfx/rose/bronze/rosebut_3_color.tga"
+			     button_glow2_gfx="../../Customized/gfx/rose/bronze/rosebut_3_glow.tga"
+			     button_highlight_gfx="rose/rosebut_3_hover.tga"
+			     button_oneshot="rose/rosebut_3_red.tga"
+			     button_reactive_gfx="rose/rosebut_3_reactive.tga"
+			     label="&lt;localized token=CombatRose_CombatRoseView_2 /&gt;"
+			     name="Arrow2"
+			     radius="54"/>
+	</View>
+	
+	<View layout_borders="Rect(0,0,0,0)" name="GroupViewRight" view_layout="stacked">
+	    <View view_layout="horizontal">
+		<HLayoutSpacer/>
+		<_View layout_borders="Rect(0,0,40,7)" view_layout="stacked">
+		    <BitmapView bitmap_gfx="rose/shield_right_1.tga" name="ShieldRight0"/>
+		    <BitmapView bitmap_gfx="rose/shield_right_2.tga" name="ShieldRight1"/>
+		    <BitmapView bitmap_gfx="rose/shield_right_3.tga" name="ShieldRight2"/>
+		</_View>
+	    </View>
+	    <CombatRoseArrow angle="57"
+			     arrow_gfx="rose/rose_arrow_4.tga"
+			     button_disabled_gfx="rose/rosebut_4_disabled.tga"
+			     button_enabled_gfx="rose/rosebut_4.tga"
+			     button_glow1_gfx="../../Customized/gfx/rose/bronze/rosebut_4_color.tga"
+			     button_glow2_gfx="../../Customized/gfx/rose/bronze/rosebut_4_glow.tga"
+			     button_highlight_gfx="rose/rosebut_4_hover.tga"
+			     button_oneshot="rose/rosebut_4_red.tga"
+			     button_reactive_gfx="rose/rosebut_4_reactive.tga"
+			     label="&lt;localized token=CombatRose_CombatRoseView_3 /&gt;"
+			     name="Arrow3"
+			     radius="55"/>
+	    <CombatRoseArrow angle="110"
+			     arrow_gfx="rose/rose_arrow_5.tga"
+			     button_disabled_gfx="rose/rosebut_5_disabled.tga"
+			     button_enabled_gfx="rose/rosebut_5.tga"
+			     button_glow1_gfx="../../Customized/gfx/rose/bronze/rosebut_5_color.tga"
+			     button_glow2_gfx="../../Customized/gfx/rose/bronze/rosebut_5_glow.tga"
+			     button_highlight_gfx="rose/rosebut_5_hover.tga"
+			     button_oneshot="rose/rosebut_5_red.tga"
+			     button_reactive_gfx="rose/rosebut_5_reactive.tga"
+			     label="&lt;localized token=CombatRose_CombatRoseView_E /&gt;"
+			     name="Arrow4"
+			     radius="57"/>
+	</View>
+    </View>
+    
+    <View view_layout="horizontal">
+	<StackedCircCharBars bg_gfx="rose/bar_background_left.tga"
+			     health_bar_precedence="0.1"
+			     health_flash_gfx="rose/bar_hit_left.tga"
+			     health_gfx="rose/bar_health_left.tga"
+			     mana_gfx="rose/bar_mana_left.tga"
+			     max_sweep="83"
+			     name="LeftCharBars"
+			     origo="Point(1.0,0.56)"
+			     stamina_gfx="rose/bar_stamina_left.tga"
+			     start_angle="237"/>
+	<HLayoutSpacer/>
+	<StackedCircCharBars bg_gfx="rose/bar_background_right.tga"
+			     health_bar_precedence="0.1"
+			     health_flash_gfx="rose/bar_hit_right.tga"
+			     health_gfx="rose/bar_health_right.tga"
+			     mana_gfx="rose/bar_mana_right.tga"
+			     max_sweep="-84"
+			     name="RightCharBars"
+			     origo="Point(0.0,0.56)"
+			     stamina_gfx="rose/bar_stamina_right.tga"
+			     start_angle="124"/>
+    </View>
+</View>
